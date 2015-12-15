@@ -27,11 +27,17 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 
+  virtual void ReceiveHit(class UPrimitiveComponent *MyComp, AActor *Other, class UPrimitiveComponent *OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult &Hit);
+  
+  void OnMyActorHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit);
+
+  
     /** The main skeletal mesh associated with this Character (optional sub-object). */
     UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     class UPaperSpriteComponent* Sprite;
 
     class UPaperSprite* IdleSprite;
+  class UPaperSpriteAtlas *IdleSpriteAtlas;
 
     float posX = 0;
     float posY = 0;

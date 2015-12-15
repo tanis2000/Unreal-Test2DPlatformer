@@ -3,6 +3,7 @@
 #include "Test2DPlatformer.h"
 #include "Bunny.h"
 #include "PaperSpriteComponent.h"
+#include "PaperSpriteAtlas.h"
 
 FName ABunny::SpriteComponentName(TEXT("Sprite0"));
 
@@ -17,22 +18,27 @@ ABunny::ABunny()
     struct FConstructorStatics
     {
         ConstructorHelpers::FObjectFinderOptional<UPaperSprite> IdleSpriteAsset;
+      ConstructorHelpers::FObjectFinderOptional<UPaperSpriteAtlas> IdleSpriteAtlasAsset;
         FConstructorStatics()
-        : IdleSpriteAsset(TEXT("/Game/Sprites/HeroSprite"))
+        : IdleSpriteAsset(TEXT("/Game/Sprites/HeroSprite")),
+      IdleSpriteAtlasAsset(TEXT("/Game/Sprites/HeroSprite"))
         {
         }
     };
     static FConstructorStatics ConstructorStatics;
     
     IdleSprite = ConstructorStatics.IdleSpriteAsset.Get();
+  IdleSpriteAtlas = ConstructorStatics.IdleSpriteAtlasAsset.Get();
 
     // Create a dummy root component we can attach things to.
     RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
     UE_LOG(LogTemp, Warning, TEXT("Bunny"));
-    this->DisableComponentsSimulatePhysics();
+  
+  // Uncomment to disable physics
+  //this->DisableComponentsSimulatePhysics();
     
     // Try to create the sprite component
-    /*Sprite = CreateOptionalDefaultSubobject<UPaperSpriteComponent>(ABunny::SpriteComponentName);
+    Sprite = CreateOptionalDefaultSubobject<UPaperSpriteComponent>(ABunny::SpriteComponentName);
     if (Sprite)
     {
         Sprite->AlwaysLoadOnClient = true;
@@ -44,17 +50,23 @@ ABunny::ABunny()
         static FName CollisionProfileName(TEXT("CharacterMesh"));
         Sprite->SetCollisionProfileName(CollisionProfileName);
         Sprite->bGenerateOverlapEvents = false;
-        
+      Sprite->bAutoActivate = true;
+      Sprite->bCanEverAffectNavigation = false;
+      
         // Enable replication on the Sprite component so animations show up when networked
         Sprite->SetIsReplicated(true);
         Sprite->SetSprite(IdleSprite);
-        Sprite->SetActive(false);
-        
+      
     } else {
         UE_LOG(LogTemp, Warning, TEXT("Problem creating sprite"));
-    }*/
+    }
 
-    bReplicates = true;
+  // enables hit events
+  SetActorEnableCollision(true);
+  
+  OnActorHit.AddDynamic(this, &ABunny::OnMyActorHit);
+  
+  bReplicates = true;
     
     FVector v = GetActorLocation();
     posX = v.X;
@@ -116,5 +128,16 @@ void ABunny::SetupPlayerInputComponent(class UInputComponent* InputComponent)
 {
 	Super::SetupPlayerInputComponent(InputComponent);
 
+}
+
+void ABunny::ReceiveHit(class UPrimitiveComponent *MyComp, AActor *Other, class UPrimitiveComponent *OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult &Hit)
+{
+  UE_LOG(LogTemp, Warning, TEXT("ReceiveHit"));
+}
+
+void ABunny::OnMyActorHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit)
+{
+  UE_LOG(LogTemp, Warning, TEXT("OnActorHit"));
+  
 }
 

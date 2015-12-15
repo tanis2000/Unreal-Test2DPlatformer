@@ -31,13 +31,14 @@ void ABunnyManager::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
 
-    while (bunniesCount < 1000) {
+    while (bunniesCount < 10) {
         FVector Location = FVector(20, 0, 40);
         ABunny *bunny = (ABunny *)GetWorld()->SpawnActor(ABunny::StaticClass(), &Location);
-        group->AddInstance(bunny->GetTransform(), bunny->IdleSprite);
+        //group->AddInstance(bunny->GetTransform(), bunny->IdleSprite);
         bunniesCount++;
     }
 
+  /*
     int32 i = 0;
     for (TActorIterator<ABunny> ActorItr(GetWorld()); ActorItr; ++ActorItr)
     {
@@ -45,7 +46,7 @@ void ABunnyManager::Tick( float DeltaTime )
         group->UpdateInstanceTransform(i, t);
         i++;
     }
-
+*/
 }
 
 void ABunnyManager::AddBunnies(int num)
