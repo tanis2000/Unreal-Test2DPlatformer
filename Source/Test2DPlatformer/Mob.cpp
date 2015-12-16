@@ -81,7 +81,23 @@ void AMob::BeginPlay()
 void AMob::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
-
+    FVector StartLocation = GetActorLocation();
+    FVector EndLocation = FVector(StartLocation.X, StartLocation.Y, StartLocation.Z);
+    //EndLocation.Z -= 10;
+    
+    FVector bounds = FVector(8, 8, 8);
+    FCollisionShape box = FCollisionShape::MakeBox(bounds);
+    FCollisionQueryParams params = FCollisionQueryParams::FCollisionQueryParams();
+    
+    FHitResult hitRes;
+    
+    GetWorld()->SweepSingleByProfile(hitRes, StartLocation, EndLocation, FQuat::Identity, TEXT("OverlapAll"), box);
+    
+    if (hitRes.Actor != NULL) {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Time: %f"), hitRes.Time));
+        return;
+    }
+    SetActorLocation(EndLocation);
 }
 
 void AMob::MoveRight(float Value)
@@ -93,7 +109,24 @@ void AMob::MoveRight(float Value)
 
 void AMob::OnBeginOverlap(AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
-    //UE_LOG(LogTemp, Warning, TEXT("OnBeginOverlap"));
+    if (OtherActor != this) {
+        UE_LOG(LogTemp, Warning, TEXT("OnBeginOverlap"));
+        FVector Location = GetActorLocation();
+        
+        if (!SweepResult.bStartPenetrating) {
+            GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Distance: %f"), SweepResult.Distance));
+            GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Pene: %f"), SweepResult.PenetrationDepth));
+            GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Loc: %f %f %f"), SweepResult.Location.X, SweepResult.Location.Y, SweepResult.Location.Z));
+            Location.Z += SweepResult.Distance;
+            GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Imp: %f %f %f"), SweepResult.ImpactNormal.X, SweepResult.ImpactNormal.Y, SweepResult.ImpactNormal.Z));
+            Location.Z += SweepResult.Distance;
+        } else {
+            GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Pene: %f"), SweepResult.PenetrationDepth));
+            Location.Z += SweepResult.PenetrationDepth;
+        }
+        SetActorLocation(Location);
+    }
+
 }
 
 
