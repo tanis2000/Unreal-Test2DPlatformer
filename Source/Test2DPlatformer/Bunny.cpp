@@ -18,17 +18,14 @@ ABunny::ABunny()
     struct FConstructorStatics
     {
         ConstructorHelpers::FObjectFinderOptional<UPaperSprite> IdleSpriteAsset;
-      ConstructorHelpers::FObjectFinderOptional<UPaperSpriteAtlas> IdleSpriteAtlasAsset;
         FConstructorStatics()
-        : IdleSpriteAsset(TEXT("/Game/Sprites/HeroSprite")),
-      IdleSpriteAtlasAsset(TEXT("/Game/Sprites/HeroSprite"))
+        : IdleSpriteAsset(TEXT("/Game/Sprites/HeroSprite"))
         {
         }
     };
     static FConstructorStatics ConstructorStatics;
     
     IdleSprite = ConstructorStatics.IdleSpriteAsset.Get();
-  IdleSpriteAtlas = ConstructorStatics.IdleSpriteAtlasAsset.Get();
 
     // Create a dummy root component we can attach things to.
     RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
@@ -47,9 +44,9 @@ ABunny::ABunny()
         Sprite->bAffectDynamicIndirectLighting = true;
         Sprite->PrimaryComponentTick.TickGroup = TG_PrePhysics;
         Sprite->AttachParent = RootComponent;
-        static FName CollisionProfileName(TEXT("CharacterMesh"));
+        static FName CollisionProfileName(TEXT("OverlapAll"));
         Sprite->SetCollisionProfileName(CollisionProfileName);
-        Sprite->bGenerateOverlapEvents = false;
+        Sprite->bGenerateOverlapEvents = true;
       Sprite->bAutoActivate = true;
       Sprite->bCanEverAffectNavigation = false;
       
@@ -63,9 +60,11 @@ ABunny::ABunny()
 
   // enables hit events
   SetActorEnableCollision(true);
+    SpawnCollisionHandlingMethod = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
   
   OnActorHit.AddDynamic(this, &ABunny::OnMyActorHit);
-  
+    Sprite->OnComponentBeginOverlap.AddDynamic(this, &ABunny::OnBeginOverlap);
+    Sprite->OnComponentEndOverlap.AddDynamic(this, &ABunny::OnEndOverlap);
   bReplicates = true;
     
     FVector v = GetActorLocation();
@@ -120,7 +119,6 @@ void ABunny::Tick( float DeltaTime )
     newPos.Z = posY;
     
     SetActorLocation(newPos);
-
 }
 
 // Called to bind functionality to input
@@ -139,5 +137,35 @@ void ABunny::OnMyActorHit(AActor* SelfActor, AActor* OtherActor, FVector NormalI
 {
   UE_LOG(LogTemp, Warning, TEXT("OnActorHit"));
   
+}
+
+void ABunny::OnBeginOverlap(AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
+{
+    //UE_LOG(LogTemp, Warning, TEXT("OnBeginOverlap"));
+    speedX *= -1;
+    speedY *= -1;
+    posX = SweepResult.Normal.X * SweepResult.PenetrationDepth;
+    posY = SweepResult.Normal.Y * SweepResult.PenetrationDepth;
+    newPos.X = posX;
+    newPos.Y = 0;
+    newPos.Z = posY;
+    
+    SetActorLocation(newPos);
+}
+
+
+void ABunny::OnEndOverlap(AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+    //UE_LOG(LogTemp, Warning, TEXT("OnEndOverlap"));
+    /*if ((OtherActor != NULL) && (OtherActor != this) && (OtherComp != NULL))
+    {
+        // Only add impulse and destroy projectile if we hit a physics object
+        if (OtherComp->IsSimulatingPhysics())
+        {
+            OtherComp->AddImpulseAtLocation(MyVelocity * 100.f, GetActorLocation());
+            
+            Destroy();
+        }
+    }*/
 }
 

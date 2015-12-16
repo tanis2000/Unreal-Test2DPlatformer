@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="28" height="15" tilewidth="16" tileheight="16" nextobjectid="20">
+ <tileset firstgid="1" name="tileset" tilewidth="16" tileheight="16" tilecount="256">
+  <image source="tileset.png" width="256" height="256"/>
+ </tileset>
+ <layer name="bg" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYWBgYBnFo3gUj+JRPIoHGAMAnWsGkQ==
+  </data>
+ </layer>
+ <layer name="fg" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMAowATOdMQAZmABV
+  </data>
+ </layer>
+ <layer name="invisible" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAFbAzUA8SYNWrfqH2j9o3aN2rf0LCP1gAAU/4AqQ==
+  </data>
+ </layer>
+ <objectgroup name="enemy_spawners">
+  <object id="3" x="0" y="208" width="16" height="16"/>
+  <object id="4" x="432" y="208" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup name="friend_spawners">
+  <object id="1" x="96" y="224" width="16" height="16"/>
+  <object id="5" x="112" y="224" width="16" height="16"/>
+  <object id="6" x="128" y="224" width="16" height="16"/>
+  <object id="7" x="144" y="224" width="16" height="16"/>
+  <object id="8" x="160" y="224" width="16" height="16"/>
+  <object id="9" x="176" y="224" width="16" height="16"/>
+  <object id="10" x="192" y="224" width="16" height="16"/>
+  <object id="11" x="208" y="224" width="16" height="16"/>
+  <object id="12" x="224" y="224" width="16" height="16"/>
+  <object id="13" x="240" y="224" width="16" height="16"/>
+  <object id="14" x="256" y="224" width="16" height="16"/>
+  <object id="15" x="272" y="224" width="16" height="16"/>
+  <object id="16" x="288" y="224" width="16" height="16"/>
+  <object id="17" x="304" y="224" width="16" height="16"/>
+  <object id="18" x="320" y="224" width="16" height="16"/>
+  <object id="19" x="336" y="224" width="16" height="16"/>
+ </objectgroup>
+</map>
