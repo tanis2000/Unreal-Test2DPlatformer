@@ -19,8 +19,7 @@ ABunny::ABunny()
     {
         ConstructorHelpers::FObjectFinderOptional<UPaperSprite> IdleSpriteAsset;
         FConstructorStatics()
-        : IdleSpriteAsset(TEXT("/Game/Sprites/HeroSpriteNoColl")),
-      IdleSpriteAtlasAsset(TEXT("/Game/Sprites/HeroSpriteNoColl"))
+        : IdleSpriteAsset(TEXT("/Game/Sprites/HeroSpriteNoColl"))
         {
         }
     };

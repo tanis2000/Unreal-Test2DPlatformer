@@ -19,7 +19,7 @@ AFAPSpectatorPawn::AFAPSpectatorPawn(const FObjectInitializer& ObjectInitializer
     FAPCameraComponent->OrthoWidth = 160 * 2;
     FAPCameraComponent->AspectRatio = 320.0f/240.0f;
     FAPCameraComponent->bConstrainAspectRatio = true;
-    FAPCameraComponent->AttachParent = RootComponent;
+    FAPCameraComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 }
 
 UFAPCameraComponent* AFAPSpectatorPawn::GetFAPCameraComponent()

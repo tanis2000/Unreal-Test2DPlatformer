@@ -37,12 +37,13 @@ AMob::AMob()
         SpriteComponent->bOwnerNoSee = false;
         SpriteComponent->bAffectDynamicIndirectLighting = true;
         SpriteComponent->PrimaryComponentTick.TickGroup = TG_PrePhysics;
-        SpriteComponent->AttachParent = RootComponent;
+        SpriteComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
         static FName CollisionProfileName(TEXT("OverlapAll"));
         SpriteComponent->SetCollisionProfileName(CollisionProfileName);
         SpriteComponent->bGenerateOverlapEvents = true;
         SpriteComponent->bAutoActivate = true;
-        SpriteComponent->bCanEverAffectNavigation = false;
+      // TODO: maybe not needed
+      //SpriteComponent->bCanEverAffectNavigation = false;
         
         // Enable replication on the Sprite component so animations show up when networked
         SpriteComponent->SetIsReplicated(true);
