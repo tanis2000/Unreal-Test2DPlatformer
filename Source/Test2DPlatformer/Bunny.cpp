@@ -20,8 +20,8 @@ ABunny::ABunny()
         ConstructorHelpers::FObjectFinderOptional<UPaperSprite> IdleSpriteAsset;
       ConstructorHelpers::FObjectFinderOptional<UPaperSpriteAtlas> IdleSpriteAtlasAsset;
         FConstructorStatics()
-        : IdleSpriteAsset(TEXT("/Game/Sprites/HeroSprite")),
-      IdleSpriteAtlasAsset(TEXT("/Game/Sprites/HeroSprite"))
+        : IdleSpriteAsset(TEXT("/Game/Sprites/HeroSpriteNoColl")),
+      IdleSpriteAtlasAsset(TEXT("/Game/Sprites/HeroSpriteNoColl"))
         {
         }
     };
@@ -46,12 +46,13 @@ ABunny::ABunny()
         Sprite->bOwnerNoSee = false;
         Sprite->bAffectDynamicIndirectLighting = true;
         Sprite->PrimaryComponentTick.TickGroup = TG_PrePhysics;
-        Sprite->AttachParent = RootComponent;
+      Sprite->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
         static FName CollisionProfileName(TEXT("CharacterMesh"));
         Sprite->SetCollisionProfileName(CollisionProfileName);
         Sprite->bGenerateOverlapEvents = false;
       Sprite->bAutoActivate = true;
-      Sprite->bCanEverAffectNavigation = false;
+      // TODO: maybe not needed
+      //Sprite->bCanEverAffectNavigation = false;
       
         // Enable replication on the Sprite component so animations show up when networked
         Sprite->SetIsReplicated(true);

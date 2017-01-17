@@ -40,7 +40,7 @@ AHeroPawn::AHeroPawn()
         Sprite->bOwnerNoSee = false;
         Sprite->bAffectDynamicIndirectLighting = true;
         Sprite->PrimaryComponentTick.TickGroup = TG_PrePhysics;
-        Sprite->AttachParent = RootComponent;
+      Sprite->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
         static FName CollisionProfileName(TEXT("CharacterMesh"));
         Sprite->SetCollisionProfileName(CollisionProfileName);
         Sprite->bGenerateOverlapEvents = false;
