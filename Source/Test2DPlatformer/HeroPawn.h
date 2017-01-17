@@ -43,7 +43,7 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 
     /** Called for side to side input */
-    void MoveRight(float Value);
+    void MoveSide(float Value);
 
     void SpawnBunnies();
 	

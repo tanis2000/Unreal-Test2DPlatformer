@@ -109,20 +109,23 @@ void AHeroPawn::SetupPlayerInputComponent(class UInputComponent* InputComponent)
 {
     Super::SetupPlayerInputComponent(InputComponent);
 
-    InputComponent->BindAxis("MoveRight", this, &AHeroPawn::MoveRight);
+    InputComponent->BindAxis("MoveSide", this, &AHeroPawn::MoveSide);
     InputComponent->BindAction("SpawnBunny", EInputEvent::IE_Released, this, &AHeroPawn::SpawnBunnies);
 
 
 }
 
-void AHeroPawn::MoveRight(float Value)
+void AHeroPawn::MoveSide(float Value)
 {
     // Move at 100 units per second forward or backward
     CurrentVelocity.X = FMath::Clamp(Value, -1.0f, 1.0f) * 100.0f;
-    //GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Value: %f"), Value));
+    GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Value: %f"), Value));
+    GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("VX: %f"), CurrentVelocity.X));
 
-    if (Value > 0.5f) {
-        UE_LOG(LogTemp, Warning, TEXT("MOVE"));
+    if (Value > 0.0f) {
+        UE_LOG(LogTemp, Warning, TEXT("MOVE RIGHT"));
+    } else if (Value < 0.0f) {
+      UE_LOG(LogTemp, Warning, TEXT("MOVE LEFT"));
     }
     
     // Update animation to match the motion
