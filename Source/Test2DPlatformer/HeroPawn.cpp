@@ -110,6 +110,7 @@ void AHeroPawn::SetupPlayerInputComponent(class UInputComponent* InputComponent)
     Super::SetupPlayerInputComponent(InputComponent);
 
     InputComponent->BindAxis("MoveRight", this, &AHeroPawn::MoveRight);
+    InputComponent->BindAction("SpawnBunny", EInputEvent::IE_Released, this, &AHeroPawn::SpawnBunnies);
 
 
 }
@@ -122,10 +123,6 @@ void AHeroPawn::MoveRight(float Value)
 
     if (Value > 0.5f) {
         UE_LOG(LogTemp, Warning, TEXT("MOVE"));
-        for (TActorIterator<ABunnyManager> ActorItr(GetWorld()); ActorItr; ++ActorItr)
-        {
-            ActorItr->AddBunnies(1000);
-        }
     }
     
     // Update animation to match the motion
@@ -148,5 +145,13 @@ void AHeroPawn::MoveRight(float Value)
     // Apply the input to the character motion
     AddMovementInput(FVector(1.0f, 0.0f, 0.0f), Value);
      */
+}
+
+void AHeroPawn::SpawnBunnies()
+{
+    for (TActorIterator<ABunnyManager> ActorItr(GetWorld()); ActorItr; ++ActorItr)
+    {
+        ActorItr->AddBunnies(1000);
+    }
 }
 
