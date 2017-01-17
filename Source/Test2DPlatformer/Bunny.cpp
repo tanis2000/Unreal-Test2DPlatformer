@@ -141,7 +141,7 @@ void ABunny::OnMyActorHit(AActor* SelfActor, AActor* OtherActor, FVector NormalI
   
 }
 
-void ABunny::OnBeginOverlap(AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
+void ABunny::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
     //UE_LOG(LogTemp, Warning, TEXT("OnBeginOverlap"));
     speedX *= -1;
@@ -156,7 +156,7 @@ void ABunny::OnBeginOverlap(AActor* OtherActor, UPrimitiveComponent* OtherComp, 
 }
 
 
-void ABunny::OnEndOverlap(AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+void ABunny::OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
     //UE_LOG(LogTemp, Warning, TEXT("OnEndOverlap"));
     /*if ((OtherActor != NULL) && (OtherActor != this) && (OtherComp != NULL))
