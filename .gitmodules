@@ -1,0 +1,3 @@
+[submodule "Plugins/CLionSourceCodeAccess"]
+	path = Plugins/CLionSourceCodeAccess
+	url = https://github.com/dotBunny/CLionSourceCodeAccess.git
