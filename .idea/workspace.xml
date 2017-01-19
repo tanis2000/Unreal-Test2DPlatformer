@@ -37,7 +37,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2e06f1b8-fe76-4456-b783-8227452531aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Plugins/CLionSourceCodeAccess" afterPath="$PROJECT_DIR$/Plugins/CLionSourceCodeAccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test2DPlatformer.uproject" afterPath="$PROJECT_DIR$/Test2DPlatformer.uproject" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -465,16 +464,16 @@
       <updated>1484850979804</updated>
       <workItem from="1484850984113" duration="188000" />
       <workItem from="1484851213998" duration="317000" />
-      <workItem from="1484854259876" duration="399000" />
+      <workItem from="1484854259876" duration="507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="904000" />
+    <option name="totallyTimeSpent" value="1012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="747" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
