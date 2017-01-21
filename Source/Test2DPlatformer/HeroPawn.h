@@ -24,6 +24,8 @@ private:
 
     class UPaperFlipbookComponent *Sprite;
 
+    bool IgnoreJumpThrus;
+
 protected:
     // The animation to play while idle (standing still)
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
@@ -54,6 +56,8 @@ public:
     void NotifyActorBeginOverlap(AActor *OtherActor) override;
 
     bool MoveH(float moveH);
+
+    bool MoveV(float moveV);
 
     AActor *CollideFirst(float x, float y);
 

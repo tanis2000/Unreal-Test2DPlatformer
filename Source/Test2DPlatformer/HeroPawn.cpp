@@ -185,6 +185,64 @@ bool AHeroPawn::MoveH(float moveH) {
     return false;
 }
 
+bool AHeroPawn::MoveV(float moveV) {
+    AActor *entity;
+    SubPixelCounter.Y += moveV;
+    int32 dy = FMath::RoundToInt(SubPixelCounter.Y);
+    if (dy < 0)
+    {
+        SubPixelCounter.Y -= dy;
+        while (dy != 0)
+        {
+            entity = CollideFirst(/*GameTags.Solid, */GetActorLocation().X, GetActorLocation().Y - 1.0f);
+            if (entity != nullptr)
+            {
+                SubPixelCounter.Y = 0.0f;
+                /*if (onCollide != null)
+                {
+                    onCollide(entity as Platform);
+                }*/
+                return true;
+            }
+            FVector location = GetActorLocation();
+            location.Y += -1;
+            SetActorLocation(location);
+            dy -= -1;
+        }
+    }
+    else if (dy > 0)
+    {
+        SubPixelCounter.Y -= dy;
+        while (dy != 0)
+        {
+            entity = CollideFirst(/*GameTags.Solid, */GetActorLocation().X, GetActorLocation().Y + 1.0f);
+            if (entity != nullptr)
+            {
+                SubPixelCounter.Y = 0.0f;
+                /*if (onCollide != null)
+                {
+                    onCollide(entity as Platform);
+                }*/
+                return true;
+            }
+            if (!IgnoreJumpThrus && ((entity = CollideFirst(/*GameTags.JumpThru, */GetActorLocation().X, GetActorLocation().Y + 1.0f)) != nullptr))
+            {
+                SubPixelCounter.Y = 0.0f;
+                /*if (onCollide != null)
+                {
+                    onCollide(entity as Platform);
+                }*/
+                return true;
+            }
+            FVector location = GetActorLocation();
+            location.Y += 1.0f;
+            SetActorLocation(location);
+            dy--;
+        }
+    }
+    return false;
+}
+
 AActor *AHeroPawn::CollideFirst(float x, float y) {
     AActor *res = NULL;
     FVector originalLocation = GetActorLocation();
