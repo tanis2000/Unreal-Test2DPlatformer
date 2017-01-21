@@ -51,6 +51,8 @@ public:
     /** Called for side to side input */
     void MoveSide(float Value);
 
+    void MoveVertical(float Value);
+
     void SpawnBunnies();
 
     void NotifyActorBeginOverlap(AActor *OtherActor) override;

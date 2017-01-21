@@ -108,6 +108,7 @@ void AHeroPawn::SetupPlayerInputComponent(class UInputComponent *InputComponent)
     Super::SetupPlayerInputComponent(InputComponent);
 
     InputComponent->BindAxis("MoveSide", this, &AHeroPawn::MoveSide);
+    InputComponent->BindAxis("MoveVertical", this, &AHeroPawn::MoveVertical);
     InputComponent->BindAction("SpawnBunny", EInputEvent::IE_Released, this, &AHeroPawn::SpawnBunnies);
 }
 
@@ -146,6 +147,10 @@ void AHeroPawn::MoveSide(float Value) {
     // Apply the input to the character motion
     AddMovementInput(FVector(1.0f, 0.0f, 0.0f), Value);
      */
+}
+
+void AHeroPawn::MoveVertical(float Value) {
+    MoveV(Value);
 }
 
 void AHeroPawn::SpawnBunnies() {
