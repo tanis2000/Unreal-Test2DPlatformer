@@ -171,7 +171,7 @@ bool AHeroPawn::MoveH(float moveH) {
         int8 sign = FMath::Sign(dx);
         SubPixelCounter.X -= sign;
         while (dx != 0) {
-            AActor *entity = CollideFirst(/*GameTags.Solid, */GetActorLocation().X + sign, GetActorLocation().Y);
+            AActor *entity = CollideFirst(/*GameTags.Solid, */GetActorLocation().X + sign, GetActorLocation().Z);
             if (entity != NULL)
             {
                 SubPixelCounter.X = 0.0f;
@@ -192,17 +192,17 @@ bool AHeroPawn::MoveH(float moveH) {
 
 bool AHeroPawn::MoveV(float moveV) {
     AActor *entity;
-    SubPixelCounter.Y += moveV;
-    int32 dy = FMath::RoundToInt(SubPixelCounter.Y);
+    SubPixelCounter.Z += moveV;
+    int32 dy = FMath::RoundToInt(SubPixelCounter.Z);
     if (dy < 0)
     {
-        SubPixelCounter.Y -= dy;
+        SubPixelCounter.Z -= dy;
         while (dy != 0)
         {
-            entity = CollideFirst(/*GameTags.Solid, */GetActorLocation().X, GetActorLocation().Y - 1.0f);
+            entity = CollideFirst(/*GameTags.Solid, */GetActorLocation().X, GetActorLocation().Z - 1.0f);
             if (entity != nullptr)
             {
-                SubPixelCounter.Y = 0.0f;
+                SubPixelCounter.Z = 0.0f;
                 /*if (onCollide != null)
                 {
                     onCollide(entity as Platform);
@@ -210,29 +210,29 @@ bool AHeroPawn::MoveV(float moveV) {
                 return true;
             }
             FVector location = GetActorLocation();
-            location.Y += -1;
+            location.Z += -1;
             SetActorLocation(location);
             dy -= -1;
         }
     }
     else if (dy > 0)
     {
-        SubPixelCounter.Y -= dy;
+        SubPixelCounter.Z -= dy;
         while (dy != 0)
         {
-            entity = CollideFirst(/*GameTags.Solid, */GetActorLocation().X, GetActorLocation().Y + 1.0f);
+            entity = CollideFirst(/*GameTags.Solid, */GetActorLocation().X, GetActorLocation().Z + 1.0f);
             if (entity != nullptr)
             {
-                SubPixelCounter.Y = 0.0f;
+                SubPixelCounter.Z = 0.0f;
                 /*if (onCollide != null)
                 {
                     onCollide(entity as Platform);
                 }*/
                 return true;
             }
-            if (!IgnoreJumpThrus && ((entity = CollideFirst(/*GameTags.JumpThru, */GetActorLocation().X, GetActorLocation().Y + 1.0f)) != nullptr))
+            if (!IgnoreJumpThrus && ((entity = CollideFirst(/*GameTags.JumpThru, */GetActorLocation().X, GetActorLocation().Z + 1.0f)) != nullptr))
             {
-                SubPixelCounter.Y = 0.0f;
+                SubPixelCounter.Z = 0.0f;
                 /*if (onCollide != null)
                 {
                     onCollide(entity as Platform);
@@ -240,7 +240,7 @@ bool AHeroPawn::MoveV(float moveV) {
                 return true;
             }
             FVector location = GetActorLocation();
-            location.Y += 1.0f;
+            location.Z += 1.0f;
             SetActorLocation(location);
             dy--;
         }
@@ -248,12 +248,12 @@ bool AHeroPawn::MoveV(float moveV) {
     return false;
 }
 
-AActor *AHeroPawn::CollideFirst(float x, float y) {
+AActor *AHeroPawn::CollideFirst(float x, float z) {
     AActor *res = NULL;
     FVector originalLocation = GetActorLocation();
     FVector newLocation = GetActorLocation();
     newLocation.X = x;
-    newLocation.Y = y;
+    newLocation.Z = z;
     SetActorLocation(newLocation);
 
     TArray<AActor *> actors;
