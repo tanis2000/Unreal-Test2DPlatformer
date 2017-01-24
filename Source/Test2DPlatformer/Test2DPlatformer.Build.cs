@@ -10,6 +10,11 @@ public class Test2DPlatformer : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
+		// tanis - start faster compile time for small projects
+		MinFilesUsingPrecompiledHeaderOverride = 1;
+ 		bFasterWithoutUnity = true;
+ 		// tanis - end
+
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
 		
