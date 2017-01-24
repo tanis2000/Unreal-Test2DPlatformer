@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/ForksAndPorksGameMode.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/HeroPawn.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Mob.cpp.o"
+  "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformer.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TestCharacter.cpp.o"

@@ -16,7 +16,7 @@ class TEST2DPLATFORMER_API AHeroPawn : public APawn {
     /** Side view camera */
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 
-    class UCameraComponent *SideViewCameraComponent;
+    class UPixelPerfectCameraComponent *SideViewCameraComponent;
 
 private:
     /** The main skeletal mesh associated with this Character (optional sub-object). */

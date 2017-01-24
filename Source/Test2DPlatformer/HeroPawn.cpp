@@ -4,6 +4,7 @@
 #include "HeroPawn.h"
 #include "PaperFlipbookComponent.h"
 #include "BunnyManager.h"
+#include "PixelPerfectCameraComponent.h"
 
 FName AHeroPawn::SpriteComponentName(TEXT("Sprite0"));
 
@@ -53,7 +54,7 @@ AHeroPawn::AHeroPawn() {
     AutoPossessPlayer = EAutoReceiveInput::Player0;
 
     // Create an orthographic camera (no perspective) and attach it to the boom
-    SideViewCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("SideViewCamera"));
+    SideViewCameraComponent = CreateDefaultSubobject<UPixelPerfectCameraComponent>(TEXT("SideViewCamera"));
     SideViewCameraComponent->ProjectionMode = ECameraProjectionMode::Orthographic;
     SideViewCameraComponent->SetAspectRatio(1.333334f);
     SideViewCameraComponent->OrthoWidth = 320.0f;
@@ -84,6 +85,7 @@ AHeroPawn::AHeroPawn() {
     SideViewCameraComponent->SetAspectRatio(resolution.X/resolution.Y);
     SideViewCameraComponent->OrthoWidth = resolution.X;
 
+    SideViewCameraComponent->BestFit();
 
     bReplicates = true;
 

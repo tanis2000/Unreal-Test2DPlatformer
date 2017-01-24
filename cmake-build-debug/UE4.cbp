@@ -4747,6 +4747,12 @@
 		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/Mob.h">
 			<Option target="Test2DPlatformerEditorFake"/>
 		</Unit>
+		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp">
+			<Option target="Test2DPlatformerEditorFake"/>
+		</Unit>
+		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/PixelPerfectCameraComponent.h">
+			<Option target="Test2DPlatformerEditorFake"/>
+		</Unit>
 		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/Player/FAPCameraComponent.cpp">
 			<Option target="Test2DPlatformerEditorFake"/>
 		</Unit>
