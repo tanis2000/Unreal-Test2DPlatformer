@@ -52,9 +52,6 @@ AHeroPawn::AHeroPawn() {
     // Set this pawn to be controlled by the lowest-numbered player
     AutoPossessPlayer = EAutoReceiveInput::Player0;
 
-    // Read the viewport size
-    //const FVector2D viewportSize = FVector2D(GEngine->GameViewport->Viewport->GetSizeXY());
-
     // Create an orthographic camera (no perspective) and attach it to the boom
     SideViewCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("SideViewCamera"));
     SideViewCameraComponent->ProjectionMode = ECameraProjectionMode::Orthographic;
@@ -67,6 +64,25 @@ AHeroPawn::AHeroPawn() {
 
     // Prevent all automatic rotation behavior on the camera, character, and camera component
     SideViewCameraComponent->bUsePawnControlRotation = false;
+
+    // Read the viewport size
+    FVector2D viewportSize = FVector2D(1, 1);
+    if (GEngine && GEngine->GameViewport) {
+        GEngine->GameViewport->GetViewportSize(viewportSize);
+        UE_LOG(LogTemp, Warning, TEXT("VX: %f"), viewportSize.X);
+        UE_LOG(LogTemp, Warning, TEXT("VY: %f"), viewportSize.Y);
+        SideViewCameraComponent->SetAspectRatio(viewportSize.X/viewportSize.Y);
+        SideViewCameraComponent->OrthoWidth = viewportSize.X;
+    }
+
+    // Read the resolution
+    FVector2D resolution = FVector2D( 1, 1 );
+    resolution.X = GSystemResolution.ResX;
+    resolution.Y = GSystemResolution.ResY;
+    UE_LOG(LogTemp, Warning, TEXT("RX: %f"), resolution.X);
+    UE_LOG(LogTemp, Warning, TEXT("RY: %f"), resolution.Y);
+    SideViewCameraComponent->SetAspectRatio(resolution.X/resolution.Y);
+    SideViewCameraComponent->OrthoWidth = resolution.X;
 
 
     bReplicates = true;

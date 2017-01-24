@@ -2,31 +2,31 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
     <generated>
-      <config projectName="UE4" targetName="Test2DPlatformer-Mac-DebugGame-clean" />
+      <config projectName="UE4" targetName="UE4Game" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditorFake" />
+      <config projectName="UE4" targetName="UE4Editor" />
       <config projectName="UE4" targetName="Test2DPlatformer-Mac-DebugGame" />
-      <config projectName="UE4" targetName="Test2DPlatformer-Mac-Shipping-clean" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-Shipping" />
+      <config projectName="UE4" targetName="UE4Editor-clean" />
+      <config projectName="UE4" targetName="Test2DPlatformer-Mac-Shipping" />
+      <config projectName="UE4" targetName="Test2DPlatformer-clean" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-DebugGame-clean" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-DebugGame" />
       <config projectName="UE4" targetName="UE4Game-Mac-Shipping" />
       <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-Shipping-clean" />
-      <config projectName="UE4" targetName="UE4Editor-Mac-DebugGame-clean" />
-      <config projectName="UE4" targetName="UE4Game-clean" />
-      <config projectName="UE4" targetName="UE4Game-Mac-DebugGame-clean" />
-      <config projectName="UE4" targetName="UE4Editor-Mac-Shipping-clean" />
-      <config projectName="UE4" targetName="UE4Game-Mac-DebugGame" />
-      <config projectName="UE4" targetName="Test2DPlatformer-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformer" />
+      <config projectName="UE4" targetName="Test2DPlatformer-Mac-DebugGame-clean" />
       <config projectName="UE4" targetName="Test2DPlatformerEditor" />
-      <config projectName="UE4" targetName="UE4Game" />
-      <config projectName="UE4" targetName="UE4Editor-Mac-DebugGame" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditorFake" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-DebugGame" />
-      <config projectName="UE4" targetName="Test2DPlatformer-Mac-Shipping" />
-      <config projectName="UE4" targetName="UE4Editor-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-Shipping" />
+      <config projectName="UE4" targetName="UE4Editor-Mac-Shipping-clean" />
+      <config projectName="UE4" targetName="UE4Editor-Mac-DebugGame-clean" />
       <config projectName="UE4" targetName="Test2DPlatformerEditor-clean" />
-      <config projectName="UE4" targetName="UE4Editor-Mac-Shipping" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-DebugGame-clean" />
-      <config projectName="UE4" targetName="UE4Editor" />
+      <config projectName="UE4" targetName="UE4Editor-Mac-DebugGame" />
+      <config projectName="UE4" targetName="Test2DPlatformer-Mac-Shipping-clean" />
+      <config projectName="UE4" targetName="UE4Game-Mac-DebugGame-clean" />
       <config projectName="UE4" targetName="UE4Game-Mac-Shipping-clean" />
+      <config projectName="UE4" targetName="UE4Game-Mac-DebugGame" />
+      <config projectName="UE4" targetName="UE4Editor-Mac-Shipping" />
+      <config projectName="UE4" targetName="UE4Game-clean" />
+      <config projectName="UE4" targetName="Test2DPlatformer" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -37,8 +37,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2e06f1b8-fe76-4456-b783-8227452531aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,11 +67,9 @@
       <file leaf-file-name="HeroPawn.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-              <folding>
-                <element signature="e#80#109#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="345">
+              <caret line="84" column="52" lean-forward="false" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -170,8 +168,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="744" />
+    <option name="width" value="1920" />
+    <option name="height" value="1025" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -584,19 +582,20 @@
       <workItem from="1485013814547" duration="2116000" />
       <workItem from="1485029211788" duration="1616000" />
       <workItem from="1485037339294" duration="162000" />
+      <workItem from="1485278512725" duration="1583000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8041000" />
+    <option name="totallyTimeSpent" value="9624000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1920" height="1025" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24583334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30962962" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30962342" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30962962" sideWeight="0.503125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -633,6 +632,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="16" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -645,9 +660,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#80#109#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -711,9 +724,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#80#109#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -777,9 +788,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#80#109#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -850,9 +859,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#80#109#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -880,41 +887,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Intermediate/ProjectFiles/UE4Editor.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Intermediate/ProjectFiles/UE4Game.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Intermediate/ProjectFiles/Test2DPlatformer.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-850">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Intermediate/ProjectFiles/UE4Editor.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Intermediate/ProjectFiles/UE4Editor.cmake" />
+    <entry file="file://$PROJECT_DIR$/Intermediate/ProjectFiles/UE4Game.cmake" />
+    <entry file="file://$PROJECT_DIR$/Intermediate/ProjectFiles/Test2DPlatformer.cmake" />
+    <entry file="file://$PROJECT_DIR$/Intermediate/ProjectFiles/UE4Editor.cmake" />
     <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -1013,13 +989,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-          <folding>
-            <element signature="e#80#109#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="84" column="52" lean-forward="false" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
