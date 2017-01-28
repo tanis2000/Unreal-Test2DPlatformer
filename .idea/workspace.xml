@@ -35,13 +35,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e06f1b8-fe76-4456-b783-8227452531aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/Maps/Level.umap" afterPath="$PROJECT_DIR$/Content/Maps/Level.umap" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/Sprites/HeroSprite.uasset" afterPath="$PROJECT_DIR$/Content/Sprites/HeroSprite.uasset" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h" />
-    </list>
+    <list default="true" id="2e06f1b8-fe76-4456-b783-8227452531aa" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,8 +53,8 @@
       <file leaf-file-name="HeroPawn.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state relative-caret-position="-3274">
+              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding>
                 <element signature="e#80#109#0" expanded="true" />
               </folding>
@@ -614,12 +608,12 @@
       <workItem from="1485278512725" duration="1583000" />
       <workItem from="1485294409142" duration="1853000" />
       <workItem from="1485601278009" duration="2548000" />
-      <workItem from="1485608968320" duration="6255000" />
+      <workItem from="1485608968320" duration="6527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20280000" />
+    <option name="totallyTimeSpent" value="20552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="747" extended-state="6" />
@@ -1021,8 +1015,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="-3274">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
             <element signature="e#80#109#0" expanded="true" />
           </folding>
