@@ -41,12 +41,35 @@ AHeroPawn::AHeroPawn() {
         Sprite->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
         static FName CollisionProfileName(TEXT("OverlapAllDynamic"));
         Sprite->SetCollisionProfileName(CollisionProfileName);
-        Sprite->bGenerateOverlapEvents = true;
+        Sprite->bGenerateOverlapEvents = false;
 
         Sprite->SetFlipbook(IdleAnimation);
 
         // Enable replication on the Sprite component so animations show up when networked
         Sprite->SetIsReplicated(true);
+
+        // Grab the socket
+        UPaperFlipbook *flipBook = Sprite->GetFlipbook();
+        UPaperSprite *sprite = flipBook->GetSpriteAtFrame(0); // this flipbook is only one frame long
+        FPaperSpriteSocket *hitboxSocket = sprite->FindSocket(TEXT("HitboxSocket"));
+
+        // World collision
+        WorldCollisionBoxComponent = CreateOptionalDefaultSubobject<UBoxComponent>(TEXT("WorldCollisionBoxComponent"));
+        WorldCollisionBoxComponent->SetRelativeTransform(hitboxSocket->LocalTransform);
+        WorldCollisionBoxComponent->SetCollisionProfileName(CollisionProfileName);
+        WorldCollisionBoxComponent->bGenerateOverlapEvents = true;
+        FVector boxExtent = FVector(7.8f, 7.8f, 7.8f); // 0.2f is a skin around the sprite
+        WorldCollisionBoxComponent->InitBoxExtent(boxExtent);
+        WorldCollisionBoxComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+
+        // Hitbox
+        HitBoxComponent = CreateOptionalDefaultSubobject<UBoxComponent>(TEXT("HitBoxComponent"));
+        HitBoxComponent->SetRelativeTransform(hitboxSocket->LocalTransform);
+        HitBoxComponent->SetCollisionProfileName(CollisionProfileName);
+        HitBoxComponent->bGenerateOverlapEvents = true;
+        FVector hitboxExtent = FVector(3.8f, 3.8f, 3.8f); // 0.2f is a skin around the sprite
+        HitBoxComponent->InitBoxExtent(hitboxExtent);
+        HitBoxComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 
     }
 
@@ -275,7 +298,12 @@ AActor *AHeroPawn::CollideFirst(float x, float z) {
     SetActorLocation(newLocation);
 
     TArray<AActor *> actors;
-    Sprite->GetOverlappingActors(actors, NULL);
+    UPaperFlipbook *flipBook = Sprite->GetFlipbook();
+    UPaperSprite *sprite = flipBook->GetSpriteAtTime(Sprite->GetPlaybackPosition(), false);
+    FPaperSpriteSocket *hitboxSocket = sprite->FindSocket(TEXT("HitboxSocket"));
+    // TODO: we should have set up a child component attached to the socket of every sprite making up the flipbook
+    // and now we could decide to query using that one instead of the main collision.
+    WorldCollisionBoxComponent->GetOverlappingActors(actors, NULL);
     for (auto CompIt = actors.CreateIterator(); CompIt; ++CompIt) {
         UE_LOG(LogTemp, Warning, TEXT("Overlapping actor."));
         AActor *OverlappingActor = *CompIt;

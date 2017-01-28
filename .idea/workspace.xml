@@ -2,31 +2,31 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
     <generated>
-      <config projectName="UE4" targetName="UE4Game" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditorFake" />
-      <config projectName="UE4" targetName="UE4Editor" />
       <config projectName="UE4" targetName="Test2DPlatformer-Mac-DebugGame" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-Shipping" />
-      <config projectName="UE4" targetName="UE4Editor-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformer-Mac-Shipping" />
-      <config projectName="UE4" targetName="Test2DPlatformer-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-DebugGame-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-DebugGame" />
-      <config projectName="UE4" targetName="UE4Game-Mac-Shipping" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-Shipping-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformer-Mac-DebugGame-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor" />
-      <config projectName="UE4" targetName="UE4Editor-Mac-Shipping-clean" />
-      <config projectName="UE4" targetName="UE4Editor-Mac-DebugGame-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor-clean" />
-      <config projectName="UE4" targetName="UE4Editor-Mac-DebugGame" />
       <config projectName="UE4" targetName="Test2DPlatformer-Mac-Shipping-clean" />
-      <config projectName="UE4" targetName="UE4Game-Mac-DebugGame-clean" />
-      <config projectName="UE4" targetName="UE4Game-Mac-Shipping-clean" />
-      <config projectName="UE4" targetName="UE4Game-Mac-DebugGame" />
-      <config projectName="UE4" targetName="UE4Editor-Mac-Shipping" />
+      <config projectName="UE4" targetName="UE4Game-Mac-Shipping" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-DebugGame" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-Shipping-clean" />
+      <config projectName="UE4" targetName="UE4Editor-Mac-DebugGame-clean" />
       <config projectName="UE4" targetName="UE4Game-clean" />
+      <config projectName="UE4" targetName="UE4Game-Mac-DebugGame" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-Shipping" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditorFake" />
       <config projectName="UE4" targetName="Test2DPlatformer" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor" />
+      <config projectName="UE4" targetName="UE4Game" />
+      <config projectName="UE4" targetName="UE4Editor-Mac-DebugGame" />
+      <config projectName="UE4" targetName="Test2DPlatformer-clean" />
+      <config projectName="UE4" targetName="Test2DPlatformer-Mac-DebugGame-clean" />
+      <config projectName="UE4" targetName="UE4Editor" />
+      <config projectName="UE4" targetName="Test2DPlatformer-Mac-Shipping" />
+      <config projectName="UE4" targetName="UE4Editor-clean" />
+      <config projectName="UE4" targetName="UE4Game-Mac-DebugGame-clean" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor-clean" />
+      <config projectName="UE4" targetName="UE4Editor-Mac-Shipping" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-DebugGame-clean" />
+      <config projectName="UE4" targetName="UE4Editor-Mac-Shipping-clean" />
+      <config projectName="UE4" targetName="UE4Game-Mac-Shipping-clean" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -36,21 +36,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e06f1b8-fe76-4456-b783-8227452531aa" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/Maps/Level.umap" afterPath="$PROJECT_DIR$/Content/Maps/Level.umap" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/Sprites/HeroSprite.uasset" afterPath="$PROJECT_DIR$/Content/Sprites/HeroSprite.uasset" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Player/FAPCameraComponent.h" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Player/FAPCameraComponent.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/UE4.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/UE4.cbp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,11 +56,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HeroPawn.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HeroPawn.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="87" column="39" lean-forward="false" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
+            <state relative-caret-position="146">
+              <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding>
                 <element signature="e#80#109#0" expanded="true" />
               </folding>
@@ -78,41 +68,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PixelPerfectCameraComponent.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.h">
+      <file leaf-file-name="PrimitiveComponent.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+            <state relative-caret-position="142">
+              <caret line="160" column="11" lean-forward="false" selection-start-line="160" selection-start-column="11" selection-end-line="160" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PixelPerfectCameraComponent.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp">
+      <file leaf-file-name="SceneComponent.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/Components/SceneComponent.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+            <state relative-caret-position="217">
+              <caret line="324" column="9" lean-forward="false" selection-start-line="324" selection-start-column="9" selection-end-line="324" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test2DPlatformer.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.h">
+      <file leaf-file-name="BoxComponent.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/Components/BoxComponent.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="142">
+              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test2DPlatformer.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.cpp">
+      <file leaf-file-name="PaperSprite.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Plugins/2D/Paper2D/Source/Paper2D/Classes/PaperSprite.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="142">
+              <caret line="306" column="22" lean-forward="false" selection-start-line="306" selection-start-column="4" selection-end-line="306" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PaperFlipbookComponent.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Plugins/2D/Paper2D/Source/Paper2D/Classes/PaperFlipbookComponent.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2910">
+              <caret line="195" column="24" lean-forward="false" selection-start-line="195" selection-start-column="24" selection-end-line="195" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PaperFlipbookActor.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Plugins/2D/Paper2D/Source/Paper2D/Classes/PaperFlipbookActor.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-67">
+              <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PaperFlipbookActor.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Plugins/2D/Paper2D/Source/Paper2D/Private/PaperFlipbookActor.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -121,48 +141,18 @@
       <file leaf-file-name="HeroPawn.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            <state relative-caret-position="285">
+              <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForksAndPorksGameMode.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/ForksAndPorksGameMode.cpp">
+      <file leaf-file-name="PaperCharacter.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Plugins/2D/Paper2D/Source/Paper2D/Classes/PaperCharacter.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ForksAndPorksGameMode.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/ForksAndPorksGameMode.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FAPPlayerController.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/FAPPlayerController.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FAPPlayerController.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/FAPPlayerController.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -174,6 +164,7 @@
     <findStrings>
       <find>GetDeb</find>
       <find>genera</find>
+      <find>FVector</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,10 +181,10 @@
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.h" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.h" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/Player/FAPCameraComponent.h" />
-        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.h" />
-        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" />
       </list>
     </option>
   </component>
@@ -203,10 +194,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="743" />
+    <option name="height" value="747" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -621,19 +613,21 @@
       <workItem from="1485037339294" duration="162000" />
       <workItem from="1485278512725" duration="1583000" />
       <workItem from="1485294409142" duration="1853000" />
+      <workItem from="1485601278009" duration="2548000" />
+      <workItem from="1485608968320" duration="6255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11477000" />
+    <option name="totallyTimeSpent" value="20280000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="743" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1280" height="747" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2453125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30814815" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30678466" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30962962" sideWeight="0.503125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -670,63 +664,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Mob.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="43" lean-forward="false" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="33" lean-forward="false" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#80#109#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Core/Public/Logging/LogMacros.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2235">
-          <caret line="149" column="12" lean-forward="false" selection-start-line="149" selection-start-column="12" selection-end-line="149" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -763,7 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,13 +749,6 @@
     <entry file="file://$PROJECT_DIR$/Intermediate/ProjectFiles/UE4Game.cmake" />
     <entry file="file://$PROJECT_DIR$/Intermediate/ProjectFiles/Test2DPlatformer.cmake" />
     <entry file="file://$PROJECT_DIR$/Intermediate/ProjectFiles/UE4Editor.cmake" />
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="261" column="11" lean-forward="false" selection-start-line="261" selection-start-column="11" selection-end-line="261" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Core/Public/Containers/UnrealString.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -842,19 +771,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -869,14 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="149" column="12" lean-forward="false" selection-start-line="149" selection-start-column="12" selection-end-line="149" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -906,15 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-116">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/TestCharacter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -922,7 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,7 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -942,19 +843,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Mob.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Player/FAPCameraComponent.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -962,6 +854,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/ForksAndPorksGameMode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/FAPPlayerController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="14" lean-forward="false" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -974,39 +915,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/FAPPlayerController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/ForksAndPorksGameMode.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="135">
+          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/ForksAndPorksGameMode.h">
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Mob.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1014,37 +939,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.h">
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/TestCharacter.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        <state relative-caret-position="915">
+          <caret line="61" column="9" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Plugins/2D/Paper2D/Source/Paper2D/Classes/PaperCharacter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Plugins/2D/Paper2D/Source/Paper2D/Classes/PaperFlipbookComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2910">
+          <caret line="195" column="24" lean-forward="false" selection-start-line="195" selection-start-column="24" selection-end-line="195" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Plugins/2D/Paper2D/Source/Paper2D/Classes/PaperFlipbookActor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Plugins/2D/Paper2D/Source/Paper2D/Private/PaperFlipbookActor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Plugins/2D/Paper2D/Source/Paper2D/Classes/PaperSprite.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="306" column="22" lean-forward="false" selection-start-line="306" selection-start-column="4" selection-end-line="306" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/Components/BoxComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="160" column="11" lean-forward="false" selection-start-line="160" selection-start-column="11" selection-end-line="160" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/Components/SceneComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="324" column="9" lean-forward="false" selection-start-line="324" selection-start-column="9" selection-end-line="324" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        <state relative-caret-position="285">
+          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="87" column="39" lean-forward="false" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
+        <state relative-caret-position="146">
+          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
             <element signature="e#80#109#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>

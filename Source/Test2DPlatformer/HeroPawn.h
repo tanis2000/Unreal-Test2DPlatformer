@@ -24,6 +24,12 @@ private:
 
     class UPaperFlipbookComponent *Sprite;
 
+    UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+    class UBoxComponent *HitBoxComponent;
+
+    UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+    class UBoxComponent *WorldCollisionBoxComponent;
+
     bool IgnoreJumpThrus;
 
 protected:
