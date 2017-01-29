@@ -110,6 +110,9 @@ AHeroPawn::AHeroPawn() {
 
     SideViewCameraComponent->BestFit();
 
+    Velocity = FVector(0, 0, 0);
+    Scale = FVector(1, 1, 1);
+
     bReplicates = true;
 
 
@@ -125,6 +128,217 @@ void AHeroPawn::BeginPlay() {
 void AHeroPawn::Tick(float DeltaTime) {
     Super::Tick(DeltaTime);
 
+    // Init the controls
+    float side = InputComponent->GetAxisValue("MoveSide");
+    float vert = InputComponent->GetAxisValue("MoveVertical");
+    float jump = InputComponent->GetAxisValue("Jump");
+    InputWasLeft = InputLeft;
+    InputWasRight = InputRight;
+    InputWasDown = InputDown;
+    InputWasJump = InputJump;
+    InputWasFire = InputFire;
+    InputLeft = side < 0 ? true : false;
+    InputRight = side > 0 ? true : false;
+    InputDown = vert < 0 ? true : false;
+    InputJump = jump > 0 ? true : false;
+
+    bool kLeft = InputLeft;
+    bool kRight = InputRight;
+    if (kRight) kLeft = false;
+    bool kDown = InputDown;
+    bool kJump = InputJump && !InputWasJump; // check that jump has just been pressed
+    bool kJumpRelease = !InputJump && InputWasJump; // check that jump has just been released
+    bool kFire = InputFire && !InputWasFire;
+
+    // Temporary vars
+    float tempAccel, tempFric;
+
+    if (Dead) {
+        kLeft = false;
+        kRight = false;
+        kDown = false;
+        kJump = false;
+        kFire = false;
+    }
+
+    if (BottomCollided && !OnGroundPrev) {
+        // Squash + stretch
+        Scale.X = 1.5f;
+        Scale.Z = 0.5f;
+        /*
+        var pos = transform.position;
+        pos.y -= coll.bounds.size.y/2;
+        EntityFactory.CreatePuff(pos);
+         */
+    }
+
+    // Apply the correct form of acceleration and friction
+    if (BottomCollided) {
+        tempAccel = groundAccel;
+        tempFric  = groundFric;
+    } else {
+        tempAccel = airAccel;
+        tempFric  = airFric;
+    }
+
+    // Wall cling to avoid accidental push-off
+    if ((!RightCollided && !LeftCollided) || BottomCollided) {
+        canStick = true;
+        sticking = false;
+    } else if (((kRight && LeftCollided) || (kLeft && RightCollided)) && canStick && !BottomCollided) {
+        sticking = true;
+        canStick = false;
+    }
+
+    if ((kRight || kLeft) && sticking) {
+        canStick = true;
+        sticking = false;
+    }
+
+    // Handle gravity
+    if (!BottomCollided) {
+        if ((LeftCollided || RightCollided) && Velocity.Z <= 0) {
+            // Wall slide
+            if(OnLeftPrev) Velocity.Z = 0;
+            if(OnRightPrev) Velocity.Z = 0;
+
+            Velocity.Z = Approach(Velocity.Z, -vyMax, -gravSlide);
+        } else {
+            // Fall normally
+            Velocity.Z = Approach(Velocity.Z, -vyMax, -gravNorm);
+        }
+    }
+
+    // Left
+    if (kLeft && !kRight && !sticking)
+    {
+        Facing = -1;
+        Velocity.X = Approach(Velocity.X, -vxMax, tempAccel);
+        // Right
+    } else if (kRight && !kLeft && !sticking) {
+        Facing = 1;
+        Velocity.X = Approach(Velocity.X, vxMax, tempAccel);
+    }
+
+    // Friction
+    if (!kRight && !kLeft /*&& physicsComponent.vx != 0*/) {
+        Velocity.X = Approach(Velocity.X, 0, tempFric);
+    }
+
+    // Wall jump
+    float jumpHeightStickY = jumpHeight * 1.1f;
+    if (kJump && LeftCollided && !BottomCollided) {
+        Scale.X = 0.5f;
+        Scale.Z = 1.5f;
+        // Wall jump is different when pushing off/towards the wall
+        if (kLeft) {
+            Velocity.X = jumpHeight * 0.25f;
+            Velocity.Z = jumpHeightStickY;
+        } else {
+            Velocity.X = 0;//vxMax;
+            Velocity.Z = jumpHeightStickY;
+        }
+    } else if (kJump && RightCollided && !BottomCollided) {
+        Scale.X = 0.5f;
+        Scale.Z = 1.5f;
+        // Wall jump is different when pushing off/towards the wall
+        if (kRight) {
+            Velocity.X = -jumpHeight * 0.25f;
+            Velocity.Z = jumpHeightStickY;
+        } else {
+            Velocity.X = 0;//-vxMax;
+            Velocity.Z = jumpHeightStickY;
+        }
+    }
+    // Fire
+    if(kFire){
+        Velocity.Z = 0;
+        Scale.X = 0.5f;
+        Scale.Z = 1.5f;
+        //Ball.Shoot();
+    }
+
+    // Ladders
+    if (LadderCollided) {
+        Velocity.Z = 0;
+        if (InputJump) {
+            Velocity.Z = jumpHeight * 0.2f;
+        } else if (kDown) {
+            Velocity.Z = -jumpHeight * 0.2f;
+        }
+    } else if (OnLadderPrev && !LadderCollided) {
+        BottomCollided = true;
+        Velocity.Z = 0;
+        if (InputJump) kJump = true;
+    }
+
+    // Jump
+    if (kJump) {
+        if (LadderCollided) {
+        } else if (BottomCollided) {
+            doubleJumped = false;
+            Scale.X = 0.5f;
+            Scale.Z = 1.5f;
+            Velocity.Z = jumpHeight;
+        } else if (!doubleJumped && !LeftCollided && !RightCollided) {
+            Scale.X = 0.5f;
+            Scale.Z = 1.5f;
+            Velocity.Z = jumpHeight;
+            doubleJumped = true;
+        }
+        // Variable jumping
+    } /*else if (kDown && !physicsComponent.bottomCollided) {
+				physicsComponent.vy = -jumpHeight*2;
+			}*/
+    else if (kJumpRelease) {
+        if (Velocity.Z > 0)
+            Velocity.Z *= 0.25f;
+    }
+
+    // Jump state check
+    if (!BottomCollided) {
+        if (LeftCollided)
+            Facing = 1;
+        if (RightCollided)
+            Facing = -1;
+    }
+
+    Scale.X = Approach(Scale.X, 1.0f, 0.05f);
+    Scale.Y = Approach(Scale.Z, 1.0f, 0.05f);
+
+    MoveH(Velocity.X * DeltaTime * 50);
+    MoveV(Velocity.Z * DeltaTime * 50);
+
+    /*
+    scale.transform.localScale = scale.Scale;
+    */
+
+    /*
+    if (spriteRenderer != null) {
+        Vector2 s = new Vector2 (spriteRenderer.transform.localScale.x, spriteRenderer.transform.localScale.y);
+        s.x *= Facing;
+        spriteRenderer.transform.localScale = s;
+        if (spriteAnimator != null) {
+            spriteAnimator.FlipTo(Facing);
+        }
+    }
+     */
+
+
+    OnGroundPrev = BottomCollided;
+    OnTopPrev = TopCollided;
+    OnLeftPrev = LeftCollided;
+    OnRightPrev = RightCollided;
+    OnLadderPrev = LadderCollided;
+
+    BottomCollided = CollideFirst(GetActorLocation().X, GetActorLocation().Z-1) != nullptr;
+    LeftCollided = CollideFirst(GetActorLocation().X-1, GetActorLocation().Z) != nullptr;
+    TopCollided = CollideFirst(GetActorLocation().X, GetActorLocation().Z+1) != nullptr;
+    RightCollided = CollideFirst(GetActorLocation().X+1, GetActorLocation().Z) != nullptr;
+
+
+    /*
+     * Old movement code
     if (!CurrentVelocity.IsZero()) {
         FVector NewLocation = GetActorLocation() + (CurrentVelocity * DeltaTime);
         SetActorLocation(NewLocation);
@@ -141,7 +355,7 @@ void AHeroPawn::Tick(float DeltaTime) {
             //CurrentVelocity.Z = 100;
         }
     }
-
+    */
 }
 
 // Called to bind functionality to input
@@ -150,11 +364,12 @@ void AHeroPawn::SetupPlayerInputComponent(class UInputComponent *InputComponent)
 
     InputComponent->BindAxis("MoveSide", this, &AHeroPawn::MoveSide);
     InputComponent->BindAxis("MoveVertical", this, &AHeroPawn::MoveVertical);
+    InputComponent->BindAxis("Jump", this, &AHeroPawn::Jump);
     InputComponent->BindAction("SpawnBunny", EInputEvent::IE_Released, this, &AHeroPawn::SpawnBunnies);
 }
 
 void AHeroPawn::MoveSide(float Value) {
-    MoveH(Value);
+    //MoveH(Value);
 
 /*
     // Move at 100 units per second forward or backward
@@ -191,7 +406,10 @@ void AHeroPawn::MoveSide(float Value) {
 }
 
 void AHeroPawn::MoveVertical(float Value) {
-    MoveV(Value);
+    //MoveV(Value);
+}
+
+void AHeroPawn::Jump(float Value) {
 }
 
 void AHeroPawn::SpawnBunnies() {
@@ -315,4 +533,16 @@ AActor *AHeroPawn::CollideFirst(float x, float z) {
 
     SetActorLocation(originalLocation);
     return res;
+}
+
+float AHeroPawn::Approach(float start, float end, float shift)
+{
+    if (start < end)
+    {
+        return FMath::Min(start + shift, end);
+    }
+    else
+    {
+        return FMath::Max(start - shift, end);
+    }
 }
