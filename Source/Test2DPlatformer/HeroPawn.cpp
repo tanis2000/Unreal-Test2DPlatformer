@@ -304,26 +304,15 @@ void AHeroPawn::Tick(float DeltaTime) {
     }
 
     Scale.X = Approach(Scale.X, 1.0f, 0.05f);
-    Scale.Y = Approach(Scale.Z, 1.0f, 0.05f);
+    Scale.Z = Approach(Scale.Z, 1.0f, 0.05f);
 
     MoveH(Velocity.X * DeltaTime * 50);
     MoveV(Velocity.Z * DeltaTime * 50);
 
-    /*
-    scale.transform.localScale = scale.Scale;
-    */
-
-    /*
-    if (spriteRenderer != null) {
-        Vector2 s = new Vector2 (spriteRenderer.transform.localScale.x, spriteRenderer.transform.localScale.y);
-        s.x *= Facing;
-        spriteRenderer.transform.localScale = s;
-        if (spriteAnimator != null) {
-            spriteAnimator.FlipTo(Facing);
-        }
-    }
-     */
-
+    Sprite->SetRelativeScale3D(Scale);
+    FVector spriteScale = Sprite->GetComponentScale();
+    spriteScale.X *= Facing;
+    Sprite->SetRelativeScale3D(spriteScale);
 
     OnGroundPrev = BottomCollided;
     OnTopPrev = TopCollided;

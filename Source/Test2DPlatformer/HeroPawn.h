@@ -82,7 +82,9 @@ public:
 
     bool Dead;
 
+    UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     FVector Velocity;
+    UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     FVector Scale;
 
     int Facing = 1;
