@@ -36,8 +36,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e06f1b8-fe76-4456-b783-8227452531aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/Maps/Level.umap" afterPath="$PROJECT_DIR$/Content/Maps/Level.umap" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/Tilemaps/WorldTileMap.uasset" afterPath="$PROJECT_DIR$/Content/Tilemaps/WorldTileMap.uasset" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,8 +56,8 @@
       <file leaf-file-name="HeroPawn.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="313" column="16" lean-forward="false" selection-start-line="313" selection-start-column="16" selection-end-line="313" selection-end-column="16" />
+            <state relative-caret-position="410">
+              <caret line="462" column="0" lean-forward="false" selection-start-line="462" selection-start-column="0" selection-end-line="462" selection-end-column="0" />
               <folding>
                 <element signature="e#80#109#0" expanded="true" />
               </folding>
@@ -617,16 +617,16 @@
       <workItem from="1485294409142" duration="1853000" />
       <workItem from="1485601278009" duration="2548000" />
       <workItem from="1485608968320" duration="7126000" />
-      <workItem from="1485700884770" duration="5055000" />
+      <workItem from="1485700884770" duration="5598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26206000" />
+    <option name="totallyTimeSpent" value="26749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2453125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1018,8 +1018,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="313" column="16" lean-forward="false" selection-start-line="313" selection-start-column="16" selection-end-line="313" selection-end-column="16" />
+        <state relative-caret-position="410">
+          <caret line="462" column="0" lean-forward="false" selection-start-line="462" selection-start-column="0" selection-end-line="462" selection-end-column="0" />
           <folding>
             <element signature="e#80#109#0" expanded="true" />
           </folding>
