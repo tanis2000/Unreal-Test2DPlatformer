@@ -6,7 +6,7 @@ public class Test2DPlatformer : ModuleRules
 {
 	public Test2DPlatformer(TargetInfo Target)
 	{
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "Paper2D" });
+		PublicDependencyModuleNames.AddRange(new string[] { "AIModule", "Core", "CoreUObject", "Engine", "InputCore", "Paper2D" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 

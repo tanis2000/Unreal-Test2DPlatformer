@@ -4723,10 +4723,22 @@
 		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/BunnyManager.h">
 			<Option target="Test2DPlatformerEditorFake"/>
 		</Unit>
+		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp">
+			<Option target="Test2DPlatformerEditorFake"/>
+		</Unit>
+		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/ExtendedPathFollowingComponent.h">
+			<Option target="Test2DPlatformerEditorFake"/>
+		</Unit>
 		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/FAPPlayerController.cpp">
 			<Option target="Test2DPlatformerEditorFake"/>
 		</Unit>
 		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/FAPPlayerController.h">
+			<Option target="Test2DPlatformerEditorFake"/>
+		</Unit>
+		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/FollowerAIController.cpp">
+			<Option target="Test2DPlatformerEditorFake"/>
+		</Unit>
+		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/FollowerAIController.h">
 			<Option target="Test2DPlatformerEditorFake"/>
 		</Unit>
 		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/ForksAndPorksGameMode.cpp">
@@ -4745,6 +4757,12 @@
 			<Option target="Test2DPlatformerEditorFake"/>
 		</Unit>
 		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/Mob.h">
+			<Option target="Test2DPlatformerEditorFake"/>
+		</Unit>
+		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/NavArea_Jump.cpp">
+			<Option target="Test2DPlatformerEditorFake"/>
+		</Unit>
+		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/NavArea_Jump.h">
 			<Option target="Test2DPlatformerEditorFake"/>
 		</Unit>
 		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp">

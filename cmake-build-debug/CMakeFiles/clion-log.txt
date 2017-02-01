@@ -1,4 +1,43 @@
 /Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer"
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug
+CMake Error at CMakeLists.txt:5 (include):
+  include could not find load file:
+
+    /Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Intermediate/ProjectFiles/IncludeDirectories.cmake
+
+
+CMake Error at CMakeLists.txt:6 (include):
+  include could not find load file:
+
+    /Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Intermediate/ProjectFiles/Definitions.cmake
+
+
+CMake Error at CMakeLists.txt:7 (include):
+  include could not find load file:
+
+    /Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Intermediate/ProjectFiles/UE4Editor.cmake
+
+
+CMake Error at CMakeLists.txt:26 (include):
+  include could not find load file:
+
+    /Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Intermediate/ProjectFiles/UE4Game.cmake
+
+
+CMake Error at CMakeLists.txt:45 (include):
+  include could not find load file:
+
+    /Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Intermediate/ProjectFiles/Test2DPlatformer.cmake
+
+
+CMake Error at CMakeLists.txt:64 (include):
+  include could not find load file:
+
+    /Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Intermediate/ProjectFiles/Test2DPlatformerEditor.cmake
+
+
+CMake Error at CMakeLists.txt:86 (add_executable):
+  add_executable called with incorrect number of arguments
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles/CMakeOutput.log".

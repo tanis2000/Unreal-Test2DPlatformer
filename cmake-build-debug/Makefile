@@ -489,6 +489,33 @@ Source/Test2DPlatformer/BunnyManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/BunnyManager.cpp.s
 .PHONY : Source/Test2DPlatformer/BunnyManager.cpp.s
 
+Source/Test2DPlatformer/ExtendedPathFollowingComponent.o: Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.o
+
+.PHONY : Source/Test2DPlatformer/ExtendedPathFollowingComponent.o
+
+# target to build an object file
+Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.o
+.PHONY : Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.o
+
+Source/Test2DPlatformer/ExtendedPathFollowingComponent.i: Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.i
+
+.PHONY : Source/Test2DPlatformer/ExtendedPathFollowingComponent.i
+
+# target to preprocess a source file
+Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.i
+.PHONY : Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.i
+
+Source/Test2DPlatformer/ExtendedPathFollowingComponent.s: Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.s
+
+.PHONY : Source/Test2DPlatformer/ExtendedPathFollowingComponent.s
+
+# target to generate assembly for a file
+Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.s
+.PHONY : Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.s
+
 Source/Test2DPlatformer/FAPPlayerController.o: Source/Test2DPlatformer/FAPPlayerController.cpp.o
 
 .PHONY : Source/Test2DPlatformer/FAPPlayerController.o
@@ -515,6 +542,33 @@ Source/Test2DPlatformer/FAPPlayerController.s: Source/Test2DPlatformer/FAPPlayer
 Source/Test2DPlatformer/FAPPlayerController.cpp.s:
 	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/FAPPlayerController.cpp.s
 .PHONY : Source/Test2DPlatformer/FAPPlayerController.cpp.s
+
+Source/Test2DPlatformer/FollowerAIController.o: Source/Test2DPlatformer/FollowerAIController.cpp.o
+
+.PHONY : Source/Test2DPlatformer/FollowerAIController.o
+
+# target to build an object file
+Source/Test2DPlatformer/FollowerAIController.cpp.o:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/FollowerAIController.cpp.o
+.PHONY : Source/Test2DPlatformer/FollowerAIController.cpp.o
+
+Source/Test2DPlatformer/FollowerAIController.i: Source/Test2DPlatformer/FollowerAIController.cpp.i
+
+.PHONY : Source/Test2DPlatformer/FollowerAIController.i
+
+# target to preprocess a source file
+Source/Test2DPlatformer/FollowerAIController.cpp.i:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/FollowerAIController.cpp.i
+.PHONY : Source/Test2DPlatformer/FollowerAIController.cpp.i
+
+Source/Test2DPlatformer/FollowerAIController.s: Source/Test2DPlatformer/FollowerAIController.cpp.s
+
+.PHONY : Source/Test2DPlatformer/FollowerAIController.s
+
+# target to generate assembly for a file
+Source/Test2DPlatformer/FollowerAIController.cpp.s:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/FollowerAIController.cpp.s
+.PHONY : Source/Test2DPlatformer/FollowerAIController.cpp.s
 
 Source/Test2DPlatformer/ForksAndPorksGameMode.o: Source/Test2DPlatformer/ForksAndPorksGameMode.cpp.o
 
@@ -596,6 +650,33 @@ Source/Test2DPlatformer/Mob.s: Source/Test2DPlatformer/Mob.cpp.s
 Source/Test2DPlatformer/Mob.cpp.s:
 	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Mob.cpp.s
 .PHONY : Source/Test2DPlatformer/Mob.cpp.s
+
+Source/Test2DPlatformer/NavArea_Jump.o: Source/Test2DPlatformer/NavArea_Jump.cpp.o
+
+.PHONY : Source/Test2DPlatformer/NavArea_Jump.o
+
+# target to build an object file
+Source/Test2DPlatformer/NavArea_Jump.cpp.o:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/NavArea_Jump.cpp.o
+.PHONY : Source/Test2DPlatformer/NavArea_Jump.cpp.o
+
+Source/Test2DPlatformer/NavArea_Jump.i: Source/Test2DPlatformer/NavArea_Jump.cpp.i
+
+.PHONY : Source/Test2DPlatformer/NavArea_Jump.i
+
+# target to preprocess a source file
+Source/Test2DPlatformer/NavArea_Jump.cpp.i:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/NavArea_Jump.cpp.i
+.PHONY : Source/Test2DPlatformer/NavArea_Jump.cpp.i
+
+Source/Test2DPlatformer/NavArea_Jump.s: Source/Test2DPlatformer/NavArea_Jump.cpp.s
+
+.PHONY : Source/Test2DPlatformer/NavArea_Jump.s
+
+# target to generate assembly for a file
+Source/Test2DPlatformer/NavArea_Jump.cpp.s:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/NavArea_Jump.cpp.s
+.PHONY : Source/Test2DPlatformer/NavArea_Jump.cpp.s
 
 Source/Test2DPlatformer/PixelPerfectCameraComponent.o: Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp.o
 
@@ -798,9 +879,15 @@ help:
 	@echo "... Source/Test2DPlatformer/BunnyManager.o"
 	@echo "... Source/Test2DPlatformer/BunnyManager.i"
 	@echo "... Source/Test2DPlatformer/BunnyManager.s"
+	@echo "... Source/Test2DPlatformer/ExtendedPathFollowingComponent.o"
+	@echo "... Source/Test2DPlatformer/ExtendedPathFollowingComponent.i"
+	@echo "... Source/Test2DPlatformer/ExtendedPathFollowingComponent.s"
 	@echo "... Source/Test2DPlatformer/FAPPlayerController.o"
 	@echo "... Source/Test2DPlatformer/FAPPlayerController.i"
 	@echo "... Source/Test2DPlatformer/FAPPlayerController.s"
+	@echo "... Source/Test2DPlatformer/FollowerAIController.o"
+	@echo "... Source/Test2DPlatformer/FollowerAIController.i"
+	@echo "... Source/Test2DPlatformer/FollowerAIController.s"
 	@echo "... Source/Test2DPlatformer/ForksAndPorksGameMode.o"
 	@echo "... Source/Test2DPlatformer/ForksAndPorksGameMode.i"
 	@echo "... Source/Test2DPlatformer/ForksAndPorksGameMode.s"
@@ -810,6 +897,9 @@ help:
 	@echo "... Source/Test2DPlatformer/Mob.o"
 	@echo "... Source/Test2DPlatformer/Mob.i"
 	@echo "... Source/Test2DPlatformer/Mob.s"
+	@echo "... Source/Test2DPlatformer/NavArea_Jump.o"
+	@echo "... Source/Test2DPlatformer/NavArea_Jump.i"
+	@echo "... Source/Test2DPlatformer/NavArea_Jump.s"
 	@echo "... Source/Test2DPlatformer/PixelPerfectCameraComponent.o"
 	@echo "... Source/Test2DPlatformer/PixelPerfectCameraComponent.i"
 	@echo "... Source/Test2DPlatformer/PixelPerfectCameraComponent.s"

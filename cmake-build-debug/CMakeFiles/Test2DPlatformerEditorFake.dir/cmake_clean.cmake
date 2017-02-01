@@ -1,10 +1,13 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Bunny.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/BunnyManager.cpp.o"
+  "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/FAPPlayerController.cpp.o"
+  "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/FollowerAIController.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/ForksAndPorksGameMode.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/HeroPawn.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Mob.cpp.o"
+  "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/NavArea_Jump.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformer.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp.o"
