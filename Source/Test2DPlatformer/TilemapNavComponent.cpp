@@ -4,6 +4,7 @@
 #include "PaperTileMapComponent.h"
 #include "TilemapNavComponent.h"
 #include "AI/Navigation/NavLinkProxy.h"
+#include "NavArea_Jump.h"
 
 
 // Sets default values for this component's properties
@@ -51,8 +52,11 @@ void UTilemapNavComponent::BeginPlay()
                             wpCount++;
                              */
                             WayPoint wp = WayPoint();
-                            wp.Location = FVector(x * 16 + 4, 0, (MapHeight-y-1)*16 + 4 +(MapHeight*16 - actor->GetActorLocation().Z));
+                            wp.Location = FVector(x * 16,
+                                                  0,
+                                                  ((MapHeight-1)-y+1)*16 -((MapHeight-1)*16 - actor->GetActorLocation().Z));
                             WayPoints.Add(wp);
+                            UE_LOG(LogTemp, Warning, TEXT("WP %s"), *wp.Location.ToString());
                         }
                         if (upLeftTile.PackedTileIndex == INDEX_NONE
                             && leftTile.PackedTileIndex == INDEX_NONE
@@ -63,8 +67,11 @@ void UTilemapNavComponent::BeginPlay()
                             wpCount++;
                              */
                             WayPoint wp = WayPoint();
-                            wp.Location = FVector((x-1) * 16 + 4, 0, (MapHeight-y-1)*16 + 4 +(MapHeight*16 - actor->GetActorLocation().Z));
+                            wp.Location = FVector((x-1) * 16,
+                                                  0,
+                                                  ((MapHeight-1)-y+1)*16 -((MapHeight-1)*16 - actor->GetActorLocation().Z));
                             WayPoints.Add(wp);
+                            UE_LOG(LogTemp, Warning, TEXT("WP %s"), *wp.Location.ToString());
                         }
                         if (upRightTile.PackedTileIndex == INDEX_NONE
                             && rightTile .PackedTileIndex == INDEX_NONE
@@ -75,8 +82,11 @@ void UTilemapNavComponent::BeginPlay()
                             wpCount++;
                              */
                             WayPoint wp = WayPoint();
-                            wp.Location = FVector((x+1) * 16 + 4, 0, (MapHeight-y-1)*16 + 4 +(MapHeight*16 - actor->GetActorLocation().Z));
+                            wp.Location = FVector((x+1) * 16,
+                                                  0,
+                                                  ((MapHeight-1)-y+1)*16 -((MapHeight-1)*16 - actor->GetActorLocation().Z));
                             WayPoints.Add(wp);
+                            UE_LOG(LogTemp, Warning, TEXT("WP %s"), *wp.Location.ToString());
                         }
 
 
@@ -89,19 +99,24 @@ void UTilemapNavComponent::BeginPlay()
                 for (auto& wp2 : WayPoints) {
                     if (wp1 != wp2) {
                         //trace(wp1.x + ","+wp1.y+" - " + wp2.x+","+wp2.y);
-                        if (FVector::Dist(wp1.Location, wp2.Location) < 16*4) {
+                        if (FVector::Dist(wp1.Location, wp2.Location) < 16*5) {
                             Link link = Link();
                             link.Start = &wp1;
                             link.End = &wp2;
                             Links.Add(link);
 
-                            FVector spawnLocation = FVector(link.Start->Location.X, 0, link.Start->Location.Z);
+                            //FVector spawnLocation = FVector(link.Start->Location.X, 0, link.Start->Location.Z);
+                            FVector spawnLocation = FVector(0, 0, 0);
                             FRotator spawnRotation(0.0f, -90.0f, 0.0f);
                             FActorSpawnParameters spawnParameters;
                             ANavLinkProxy *navLinkProxy = GetWorld()->SpawnActor<ANavLinkProxy>(spawnLocation, spawnRotation, spawnParameters);
                             //FNavigationLink point = navLinkProxy->PointLinks[0];
                             navLinkProxy->PointLinks[0].Left = FVector(0, link.Start->Location.X, link.Start->Location.Z);
                             navLinkProxy->PointLinks[0].Right = FVector(0, link.End->Location.X, link.End->Location.Z);
+                            navLinkProxy->PointLinks[0].SnapRadius = 8.0f;
+                            navLinkProxy->PointLinks[0].SnapHeight = 8.0f;
+                            navLinkProxy->PointLinks[0].bUseSnapHeight = true;
+                            navLinkProxy->PointLinks[0].SetAreaClass(UNavArea_Jump::StaticClass());
                         }
                     }
                 }
