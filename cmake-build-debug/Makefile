@@ -489,33 +489,6 @@ Source/Test2DPlatformer/BunnyManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/BunnyManager.cpp.s
 .PHONY : Source/Test2DPlatformer/BunnyManager.cpp.s
 
-Source/Test2DPlatformer/ExtendedPathFollowingComponent.o: Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.o
-
-.PHONY : Source/Test2DPlatformer/ExtendedPathFollowingComponent.o
-
-# target to build an object file
-Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.o:
-	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.o
-.PHONY : Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.o
-
-Source/Test2DPlatformer/ExtendedPathFollowingComponent.i: Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.i
-
-.PHONY : Source/Test2DPlatformer/ExtendedPathFollowingComponent.i
-
-# target to preprocess a source file
-Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.i:
-	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.i
-.PHONY : Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.i
-
-Source/Test2DPlatformer/ExtendedPathFollowingComponent.s: Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.s
-
-.PHONY : Source/Test2DPlatformer/ExtendedPathFollowingComponent.s
-
-# target to generate assembly for a file
-Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.s:
-	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.s
-.PHONY : Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp.s
-
 Source/Test2DPlatformer/FAPPlayerController.o: Source/Test2DPlatformer/FAPPlayerController.cpp.o
 
 .PHONY : Source/Test2DPlatformer/FAPPlayerController.o
@@ -623,6 +596,33 @@ Source/Test2DPlatformer/HeroPawn.s: Source/Test2DPlatformer/HeroPawn.cpp.s
 Source/Test2DPlatformer/HeroPawn.cpp.s:
 	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/HeroPawn.cpp.s
 .PHONY : Source/Test2DPlatformer/HeroPawn.cpp.s
+
+Source/Test2DPlatformer/JumpingPathFollowingComponent.o: Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp.o
+
+.PHONY : Source/Test2DPlatformer/JumpingPathFollowingComponent.o
+
+# target to build an object file
+Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp.o
+.PHONY : Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp.o
+
+Source/Test2DPlatformer/JumpingPathFollowingComponent.i: Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp.i
+
+.PHONY : Source/Test2DPlatformer/JumpingPathFollowingComponent.i
+
+# target to preprocess a source file
+Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp.i
+.PHONY : Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp.i
+
+Source/Test2DPlatformer/JumpingPathFollowingComponent.s: Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp.s
+
+.PHONY : Source/Test2DPlatformer/JumpingPathFollowingComponent.s
+
+# target to generate assembly for a file
+Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp.s
+.PHONY : Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp.s
 
 Source/Test2DPlatformer/Mob.o: Source/Test2DPlatformer/Mob.cpp.o
 
@@ -840,6 +840,33 @@ Source/Test2DPlatformer/TestCharacter.cpp.s:
 	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TestCharacter.cpp.s
 .PHONY : Source/Test2DPlatformer/TestCharacter.cpp.s
 
+Source/Test2DPlatformer/TilemapNavComponent.o: Source/Test2DPlatformer/TilemapNavComponent.cpp.o
+
+.PHONY : Source/Test2DPlatformer/TilemapNavComponent.o
+
+# target to build an object file
+Source/Test2DPlatformer/TilemapNavComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TilemapNavComponent.cpp.o
+.PHONY : Source/Test2DPlatformer/TilemapNavComponent.cpp.o
+
+Source/Test2DPlatformer/TilemapNavComponent.i: Source/Test2DPlatformer/TilemapNavComponent.cpp.i
+
+.PHONY : Source/Test2DPlatformer/TilemapNavComponent.i
+
+# target to preprocess a source file
+Source/Test2DPlatformer/TilemapNavComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TilemapNavComponent.cpp.i
+.PHONY : Source/Test2DPlatformer/TilemapNavComponent.cpp.i
+
+Source/Test2DPlatformer/TilemapNavComponent.s: Source/Test2DPlatformer/TilemapNavComponent.cpp.s
+
+.PHONY : Source/Test2DPlatformer/TilemapNavComponent.s
+
+# target to generate assembly for a file
+Source/Test2DPlatformer/TilemapNavComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TilemapNavComponent.cpp.s
+.PHONY : Source/Test2DPlatformer/TilemapNavComponent.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -879,9 +906,6 @@ help:
 	@echo "... Source/Test2DPlatformer/BunnyManager.o"
 	@echo "... Source/Test2DPlatformer/BunnyManager.i"
 	@echo "... Source/Test2DPlatformer/BunnyManager.s"
-	@echo "... Source/Test2DPlatformer/ExtendedPathFollowingComponent.o"
-	@echo "... Source/Test2DPlatformer/ExtendedPathFollowingComponent.i"
-	@echo "... Source/Test2DPlatformer/ExtendedPathFollowingComponent.s"
 	@echo "... Source/Test2DPlatformer/FAPPlayerController.o"
 	@echo "... Source/Test2DPlatformer/FAPPlayerController.i"
 	@echo "... Source/Test2DPlatformer/FAPPlayerController.s"
@@ -894,6 +918,9 @@ help:
 	@echo "... Source/Test2DPlatformer/HeroPawn.o"
 	@echo "... Source/Test2DPlatformer/HeroPawn.i"
 	@echo "... Source/Test2DPlatformer/HeroPawn.s"
+	@echo "... Source/Test2DPlatformer/JumpingPathFollowingComponent.o"
+	@echo "... Source/Test2DPlatformer/JumpingPathFollowingComponent.i"
+	@echo "... Source/Test2DPlatformer/JumpingPathFollowingComponent.s"
 	@echo "... Source/Test2DPlatformer/Mob.o"
 	@echo "... Source/Test2DPlatformer/Mob.i"
 	@echo "... Source/Test2DPlatformer/Mob.s"
@@ -918,6 +945,9 @@ help:
 	@echo "... Source/Test2DPlatformer/TestCharacter.o"
 	@echo "... Source/Test2DPlatformer/TestCharacter.i"
 	@echo "... Source/Test2DPlatformer/TestCharacter.s"
+	@echo "... Source/Test2DPlatformer/TilemapNavComponent.o"
+	@echo "... Source/Test2DPlatformer/TilemapNavComponent.i"
+	@echo "... Source/Test2DPlatformer/TilemapNavComponent.s"
 .PHONY : help
 
 
