@@ -3,11 +3,12 @@
 #pragma once
 
 #include "GameFramework/Pawn.h"
+#include "BasePawn.h"
 #include "HeroPawn.generated.h"
 
 UCLASS()
 
-class TEST2DPLATFORMER_API AHeroPawn : public APawn {
+class TEST2DPLATFORMER_API AHeroPawn : public ABasePawn {
     GENERATED_BODY()
 
     // Name of the Sprite component
@@ -27,11 +28,6 @@ private:
     UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     class UBoxComponent *HitBoxComponent;
 
-    UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-    class UBoxComponent *WorldCollisionBoxComponent;
-
-    bool IgnoreJumpThrus;
-
     float groundAccel = 1.00f;
     float groundFric  = 3.00f;
     float airAccel    = 0.75f;
@@ -45,8 +41,6 @@ private:
     bool canStick = false;
     bool doubleJumped = false;
 
-    static float Approach(float start, float end, float shift);
-
 protected:
     // The animation to play while idle (standing still)
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
@@ -54,7 +48,6 @@ protected:
     class UPaperFlipbook *IdleAnimation;
 
     FVector CurrentVelocity;
-    FVector SubPixelCounter;
 
 public:
     bool InputLeft;
@@ -111,11 +104,5 @@ public:
     void SpawnBunnies();
 
     void NotifyActorBeginOverlap(AActor *OtherActor) override;
-
-    bool MoveH(float moveH);
-
-    bool MoveV(float moveV);
-
-    AActor *CollideFirst(float x, float y);
 
 };

@@ -28,7 +28,7 @@ void ABunnyManager::BeginPlay() {
 void ABunnyManager::Tick(float DeltaTime) {
     Super::Tick(DeltaTime);
 
-    while (bunniesCount < 10) {
+    while (bunniesCount < NumberOfBunniesToSpawn) {
         FVector Location = FVector(20, 0, 40);
         ABunny *bunny = (ABunny *) GetWorld()->SpawnActor(ABunny::StaticClass(), &Location);
         //group->AddInstance(bunny->GetTransform(), bunny->IdleSprite);

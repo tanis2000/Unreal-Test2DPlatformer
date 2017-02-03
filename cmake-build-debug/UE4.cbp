@@ -4711,6 +4711,18 @@
 		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer.Target.cs">
 			<Option target="Test2DPlatformerEditorFake"/>
 		</Unit>
+		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp">
+			<Option target="Test2DPlatformerEditorFake"/>
+		</Unit>
+		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/BTTask_PlatformerMoveTo.h">
+			<Option target="Test2DPlatformerEditorFake"/>
+		</Unit>
+		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/BasePawn.cpp">
+			<Option target="Test2DPlatformerEditorFake"/>
+		</Unit>
+		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/BasePawn.h">
+			<Option target="Test2DPlatformerEditorFake"/>
+		</Unit>
 		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/Bunny.cpp">
 			<Option target="Test2DPlatformerEditorFake"/>
 		</Unit>
@@ -4721,6 +4733,12 @@
 			<Option target="Test2DPlatformerEditorFake"/>
 		</Unit>
 		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/BunnyManager.h">
+			<Option target="Test2DPlatformerEditorFake"/>
+		</Unit>
+		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/EnemyPawn.cpp">
+			<Option target="Test2DPlatformerEditorFake"/>
+		</Unit>
+		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/EnemyPawn.h">
 			<Option target="Test2DPlatformerEditorFake"/>
 		</Unit>
 		<Unit filename="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/FAPPlayerController.cpp">

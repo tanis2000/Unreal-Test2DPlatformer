@@ -4,6 +4,7 @@
 #include "PaperTileMapComponent.h"
 #include "TilemapNavComponent.h"
 #include "AI/Navigation/NavLinkProxy.h"
+#include "AI/Navigation/NavLinkCustomComponent.h"
 #include "NavArea_Jump.h"
 
 
@@ -58,14 +59,10 @@ void UTilemapNavComponent::BeginPlay()
                             WayPoints.Add(wp);
                             UE_LOG(LogTemp, Warning, TEXT("WP %s"), *wp.Location.ToString());
                         }
+                        /*
                         if (upLeftTile.PackedTileIndex == INDEX_NONE
                             && leftTile.PackedTileIndex == INDEX_NONE
                             && upTile.PackedTileIndex == INDEX_NONE) {
-                            /*
-                            var wp:WayPoint = new WayPoint((x-1)*16+4, (y-1)*16+4, wpCount, "awp"+wpCount, state);
-                            waypoints.push(wp);
-                            wpCount++;
-                             */
                             WayPoint wp = WayPoint();
                             wp.Location = FVector((x-1) * 16,
                                                   0,
@@ -76,11 +73,6 @@ void UTilemapNavComponent::BeginPlay()
                         if (upRightTile.PackedTileIndex == INDEX_NONE
                             && rightTile .PackedTileIndex == INDEX_NONE
                             && upTile .PackedTileIndex == INDEX_NONE) {
-                            /*
-                            var wp:WayPoint = new WayPoint((x+1)*16+4, (y-1)*16+4, wpCount, "awp"+wpCount, state);
-                            waypoints.push(wp);
-                            wpCount++;
-                             */
                             WayPoint wp = WayPoint();
                             wp.Location = FVector((x+1) * 16,
                                                   0,
@@ -88,7 +80,7 @@ void UTilemapNavComponent::BeginPlay()
                             WayPoints.Add(wp);
                             UE_LOG(LogTemp, Warning, TEXT("WP %s"), *wp.Location.ToString());
                         }
-
+                        */
 
                     }
                 }
@@ -99,7 +91,9 @@ void UTilemapNavComponent::BeginPlay()
                 for (auto& wp2 : WayPoints) {
                     if (wp1 != wp2) {
                         //trace(wp1.x + ","+wp1.y+" - " + wp2.x+","+wp2.y);
-                        if (FVector::Dist(wp1.Location, wp2.Location) < 16*5) {
+                        FHitResult hit;
+                        bool traceRes = GetWorld()->LineTraceSingleByChannel(hit, wp1.Location, wp2.Location, ECC_WorldStatic);
+                        if (FVector::Dist(wp1.Location, wp2.Location) < 16*5 /* && !traceRes */) {
                             Link link = Link();
                             link.Start = &wp1;
                             link.End = &wp2;
@@ -117,6 +111,8 @@ void UTilemapNavComponent::BeginPlay()
                             navLinkProxy->PointLinks[0].SnapHeight = 8.0f;
                             navLinkProxy->PointLinks[0].bUseSnapHeight = true;
                             navLinkProxy->PointLinks[0].SetAreaClass(UNavArea_Jump::StaticClass());
+                            UNavLinkCustomComponent* smartLink = navLinkProxy->GetSmartLinkComp();
+                            smartLink->SetEnabled(false);
                         }
                     }
                 }

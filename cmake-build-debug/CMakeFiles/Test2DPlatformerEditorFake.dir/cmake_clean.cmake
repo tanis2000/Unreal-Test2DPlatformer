@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp.o"
+  "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/BasePawn.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Bunny.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/BunnyManager.cpp.o"
+  "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/EnemyPawn.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/FAPPlayerController.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/FollowerAIController.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/ForksAndPorksGameMode.cpp.o"

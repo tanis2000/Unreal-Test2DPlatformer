@@ -11,6 +11,10 @@ class TEST2DPLATFORMER_API ABunnyManager : public AActor {
     GENERATED_BODY()
 
 public:
+
+    UPROPERTY(Category = Manager, EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+    int32 NumberOfBunniesToSpawn = 0;
+
     // Sets default values for this actor's properties
     ABunnyManager();
 

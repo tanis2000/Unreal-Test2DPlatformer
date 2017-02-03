@@ -435,6 +435,60 @@ UE4Editor-Mac-Shipping/fast:
 	$(MAKE) -f CMakeFiles/UE4Editor-Mac-Shipping.dir/build.make CMakeFiles/UE4Editor-Mac-Shipping.dir/build
 .PHONY : UE4Editor-Mac-Shipping/fast
 
+Source/Test2DPlatformer/BTTask_PlatformerMoveTo.o: Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp.o
+
+.PHONY : Source/Test2DPlatformer/BTTask_PlatformerMoveTo.o
+
+# target to build an object file
+Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp.o:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp.o
+.PHONY : Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp.o
+
+Source/Test2DPlatformer/BTTask_PlatformerMoveTo.i: Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp.i
+
+.PHONY : Source/Test2DPlatformer/BTTask_PlatformerMoveTo.i
+
+# target to preprocess a source file
+Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp.i:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp.i
+.PHONY : Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp.i
+
+Source/Test2DPlatformer/BTTask_PlatformerMoveTo.s: Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp.s
+
+.PHONY : Source/Test2DPlatformer/BTTask_PlatformerMoveTo.s
+
+# target to generate assembly for a file
+Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp.s:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp.s
+.PHONY : Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp.s
+
+Source/Test2DPlatformer/BasePawn.o: Source/Test2DPlatformer/BasePawn.cpp.o
+
+.PHONY : Source/Test2DPlatformer/BasePawn.o
+
+# target to build an object file
+Source/Test2DPlatformer/BasePawn.cpp.o:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/BasePawn.cpp.o
+.PHONY : Source/Test2DPlatformer/BasePawn.cpp.o
+
+Source/Test2DPlatformer/BasePawn.i: Source/Test2DPlatformer/BasePawn.cpp.i
+
+.PHONY : Source/Test2DPlatformer/BasePawn.i
+
+# target to preprocess a source file
+Source/Test2DPlatformer/BasePawn.cpp.i:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/BasePawn.cpp.i
+.PHONY : Source/Test2DPlatformer/BasePawn.cpp.i
+
+Source/Test2DPlatformer/BasePawn.s: Source/Test2DPlatformer/BasePawn.cpp.s
+
+.PHONY : Source/Test2DPlatformer/BasePawn.s
+
+# target to generate assembly for a file
+Source/Test2DPlatformer/BasePawn.cpp.s:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/BasePawn.cpp.s
+.PHONY : Source/Test2DPlatformer/BasePawn.cpp.s
+
 Source/Test2DPlatformer/Bunny.o: Source/Test2DPlatformer/Bunny.cpp.o
 
 .PHONY : Source/Test2DPlatformer/Bunny.o
@@ -488,6 +542,33 @@ Source/Test2DPlatformer/BunnyManager.s: Source/Test2DPlatformer/BunnyManager.cpp
 Source/Test2DPlatformer/BunnyManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/BunnyManager.cpp.s
 .PHONY : Source/Test2DPlatformer/BunnyManager.cpp.s
+
+Source/Test2DPlatformer/EnemyPawn.o: Source/Test2DPlatformer/EnemyPawn.cpp.o
+
+.PHONY : Source/Test2DPlatformer/EnemyPawn.o
+
+# target to build an object file
+Source/Test2DPlatformer/EnemyPawn.cpp.o:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/EnemyPawn.cpp.o
+.PHONY : Source/Test2DPlatformer/EnemyPawn.cpp.o
+
+Source/Test2DPlatformer/EnemyPawn.i: Source/Test2DPlatformer/EnemyPawn.cpp.i
+
+.PHONY : Source/Test2DPlatformer/EnemyPawn.i
+
+# target to preprocess a source file
+Source/Test2DPlatformer/EnemyPawn.cpp.i:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/EnemyPawn.cpp.i
+.PHONY : Source/Test2DPlatformer/EnemyPawn.cpp.i
+
+Source/Test2DPlatformer/EnemyPawn.s: Source/Test2DPlatformer/EnemyPawn.cpp.s
+
+.PHONY : Source/Test2DPlatformer/EnemyPawn.s
+
+# target to generate assembly for a file
+Source/Test2DPlatformer/EnemyPawn.cpp.s:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/EnemyPawn.cpp.s
+.PHONY : Source/Test2DPlatformer/EnemyPawn.cpp.s
 
 Source/Test2DPlatformer/FAPPlayerController.o: Source/Test2DPlatformer/FAPPlayerController.cpp.o
 
@@ -900,12 +981,21 @@ help:
 	@echo "... UE4Editor-clean"
 	@echo "... UE4Editor-Mac-DebugGame-clean"
 	@echo "... UE4Editor-Mac-Shipping"
+	@echo "... Source/Test2DPlatformer/BTTask_PlatformerMoveTo.o"
+	@echo "... Source/Test2DPlatformer/BTTask_PlatformerMoveTo.i"
+	@echo "... Source/Test2DPlatformer/BTTask_PlatformerMoveTo.s"
+	@echo "... Source/Test2DPlatformer/BasePawn.o"
+	@echo "... Source/Test2DPlatformer/BasePawn.i"
+	@echo "... Source/Test2DPlatformer/BasePawn.s"
 	@echo "... Source/Test2DPlatformer/Bunny.o"
 	@echo "... Source/Test2DPlatformer/Bunny.i"
 	@echo "... Source/Test2DPlatformer/Bunny.s"
 	@echo "... Source/Test2DPlatformer/BunnyManager.o"
 	@echo "... Source/Test2DPlatformer/BunnyManager.i"
 	@echo "... Source/Test2DPlatformer/BunnyManager.s"
+	@echo "... Source/Test2DPlatformer/EnemyPawn.o"
+	@echo "... Source/Test2DPlatformer/EnemyPawn.i"
+	@echo "... Source/Test2DPlatformer/EnemyPawn.s"
 	@echo "... Source/Test2DPlatformer/FAPPlayerController.o"
 	@echo "... Source/Test2DPlatformer/FAPPlayerController.i"
 	@echo "... Source/Test2DPlatformer/FAPPlayerController.s"
