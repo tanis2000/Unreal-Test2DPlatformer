@@ -786,6 +786,33 @@ Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp.s:
 	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp.s
 .PHONY : Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp.s
 
+Source/Test2DPlatformer/PlatformerPawnMovementComponent.o: Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.o
+
+.PHONY : Source/Test2DPlatformer/PlatformerPawnMovementComponent.o
+
+# target to build an object file
+Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.o
+.PHONY : Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.o
+
+Source/Test2DPlatformer/PlatformerPawnMovementComponent.i: Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.i
+
+.PHONY : Source/Test2DPlatformer/PlatformerPawnMovementComponent.i
+
+# target to preprocess a source file
+Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.i
+.PHONY : Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.i
+
+Source/Test2DPlatformer/PlatformerPawnMovementComponent.s: Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.s
+
+.PHONY : Source/Test2DPlatformer/PlatformerPawnMovementComponent.s
+
+# target to generate assembly for a file
+Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.s
+.PHONY : Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.s
+
 Source/Test2DPlatformer/Player/FAPCameraComponent.o: Source/Test2DPlatformer/Player/FAPCameraComponent.cpp.o
 
 .PHONY : Source/Test2DPlatformer/Player/FAPCameraComponent.o
@@ -1020,6 +1047,9 @@ help:
 	@echo "... Source/Test2DPlatformer/PixelPerfectCameraComponent.o"
 	@echo "... Source/Test2DPlatformer/PixelPerfectCameraComponent.i"
 	@echo "... Source/Test2DPlatformer/PixelPerfectCameraComponent.s"
+	@echo "... Source/Test2DPlatformer/PlatformerPawnMovementComponent.o"
+	@echo "... Source/Test2DPlatformer/PlatformerPawnMovementComponent.i"
+	@echo "... Source/Test2DPlatformer/PlatformerPawnMovementComponent.s"
 	@echo "... Source/Test2DPlatformer/Player/FAPCameraComponent.o"
 	@echo "... Source/Test2DPlatformer/Player/FAPCameraComponent.i"
 	@echo "... Source/Test2DPlatformer/Player/FAPCameraComponent.s"

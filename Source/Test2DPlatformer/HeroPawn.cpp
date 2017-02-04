@@ -5,6 +5,7 @@
 #include "PaperFlipbookComponent.h"
 #include "BunnyManager.h"
 #include "PixelPerfectCameraComponent.h"
+#include "Particles/ParticleSystem.h"
 
 FName AHeroPawn::SpriteComponentName(TEXT("Sprite0"));
 
@@ -70,6 +71,11 @@ AHeroPawn::AHeroPawn() {
         FVector hitboxExtent = FVector(3.8f, 3.8f, 3.8f); // 0.2f is a skin around the sprite
         HitBoxComponent->InitBoxExtent(hitboxExtent);
         HitBoxComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+
+        ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName(TEXT("ParticleSystem'/Game/Particles/PuffEmitter.PuffEmitter'"));
+        if (ArbitraryParticleName.Succeeded()) {
+            PuffEmitter = ArbitraryParticleName.Object;
+        }
 
     }
 
@@ -165,6 +171,9 @@ void AHeroPawn::Tick(float DeltaTime) {
         // Squash + stretch
         Scale.X = 1.5f;
         Scale.Z = 0.5f;
+        if (PuffEmitter != nullptr) {
+            UGameplayStatics::SpawnEmitterAttached(PuffEmitter, Sprite);
+        }
         /*
         var pos = transform.position;
         pos.y -= coll.bounds.size.y/2;
@@ -306,8 +315,8 @@ void AHeroPawn::Tick(float DeltaTime) {
     Scale.X = Approach(Scale.X, 1.0f, 0.05f);
     Scale.Z = Approach(Scale.Z, 1.0f, 0.05f);
 
-    MoveH(Velocity.X * DeltaTime * 50);
-    MoveV(Velocity.Z * DeltaTime * 50);
+    MoveH(Velocity.X * TimeMult /*DeltaTime * 50*/);
+    MoveV(Velocity.Z * TimeMult /*DeltaTime * 50*/);
 
     Sprite->SetRelativeScale3D(Scale);
     FVector spriteScale = Sprite->GetComponentScale();

@@ -4,7 +4,7 @@
 #include "EnemyPawn.h"
 #include "PaperFlipbookComponent.h"
 #include "AITypes.h"
-
+#include "PlatformerPawnMovementComponent.h"
 
 
 FName AEnemyPawn::SpriteComponentName(TEXT("Sprite0"));
@@ -62,6 +62,9 @@ AEnemyPawn::AEnemyPawn() {
         FVector boxExtent = FVector(7.8f, 7.8f, 7.8f); // 0.2f is a skin around the sprite
         WorldCollisionBoxComponent->InitBoxExtent(boxExtent);
         WorldCollisionBoxComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+
+        // AI Movement Component
+        MovementComponent = CreateOptionalDefaultSubobject<UPlatformerPawnMovementComponent>(TEXT("PlatformerPawnMovementComponent"));
     }
 
     bReplicates = true;
@@ -70,7 +73,30 @@ AEnemyPawn::AEnemyPawn() {
 // Called every frame
 void AEnemyPawn::Tick(float DeltaTime) {
     Super::Tick(DeltaTime);
+    /*
     if (TargetLocation != FAISystem::InvalidLocation) {
         MoveTowards(TargetLocation, 8.0f * DeltaTime);
+    }
+     */
+
+
+    // Handle gravity
+    if (!BottomCollided) {
+        // Fall normally
+        Velocity.Z = Approach(Velocity.Z, -vyMax, -gravNorm);
+    }
+
+    MoveV(Velocity.Z * DeltaTime * 50);
+
+    BottomCollided = CollideFirst(GetActorLocation().X, GetActorLocation().Z-1) != nullptr;
+
+}
+
+void AEnemyPawn::Jump(FVector amount)
+{
+    Velocity.X = amount.X;
+    MoveH(Velocity.X);
+    if (BottomCollided) {
+        Velocity.Z = jumpHeight;
     }
 }

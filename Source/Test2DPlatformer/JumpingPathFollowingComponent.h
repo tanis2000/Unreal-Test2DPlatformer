@@ -21,6 +21,10 @@ protected:
 	UPROPERTY(transient)
 	UCharacterMovementComponent* CharacterMoveComp;
 
+	/** cached UPlatformerPawnMovementComponent */
+	UPROPERTY(transient)
+	class UPlatformerPawnMovementComponent *PlatformerMovementComponent;
+
 public:
 	// used to detect properties of a path's segment a character is about to follow
 	virtual void SetMoveSegment(int32 SegmentStartIndex) override;

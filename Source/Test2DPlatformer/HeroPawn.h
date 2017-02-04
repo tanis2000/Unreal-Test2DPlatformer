@@ -80,6 +80,9 @@ public:
     UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     FVector Scale;
 
+    UPROPERTY(EditDefaultsOnly, Category=Pawn)
+    class UParticleSystem *PuffEmitter;
+
     int Facing = 1;
 
     // Sets default values for this pawn's properties

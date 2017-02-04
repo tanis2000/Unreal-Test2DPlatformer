@@ -25,14 +25,29 @@ protected:
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
     class UPaperFlipbook *IdleAnimation;
 
+    UPROPERTY(Category = Movement, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+    class UPlatformerPawnMovementComponent *MovementComponent;
+
+
 public:
-    // Sets default values for this pawn's properties
-    AEnemyPawn();
+    float vyMax       = 7.0f;
+    float jumpHeight  = 8.0f;
+    float gravNorm    = -0.76f;
+
+    bool BottomCollided;
+
+    UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+    FVector Velocity;
 
     FVector TargetLocation;
 
+    // Sets default values for this pawn's properties
+    AEnemyPawn();
+
     // Called every frame
     virtual void Tick(float DeltaSeconds) override;
+
+    void Jump(FVector amount);
 
 
 };

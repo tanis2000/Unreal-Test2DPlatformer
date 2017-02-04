@@ -19,6 +19,12 @@ protected:
     bool IgnoreJumpThrus;
 
 public:
+    float TimeRate = 1.0f;
+    float LastTimeMult = 0.0f;
+    float ActualDeltaTime = 0.0f;
+    float TimeMult = 0.0f;
+    float ComputedDeltaTime = 0.0f;
+
 	// Sets default values for this pawn's properties
 	ABasePawn();
 

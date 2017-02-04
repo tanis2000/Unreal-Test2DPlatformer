@@ -3,6 +3,7 @@
 #include "Test2DPlatformer.h"
 #include "JumpingPathFollowingComponent.h"
 #include "NavArea_Jump.h"
+#include "PlatformerPawnMovementComponent.h"
 
 void UJumpingPathFollowingComponent::SetMoveSegment(int32 SegmentStartIndex)
 {
@@ -25,6 +26,25 @@ void UJumpingPathFollowingComponent::SetMoveSegment(int32 SegmentStartIndex)
             CharacterMoveComp->SetMovementMode(MOVE_Walking);
         }
     }
+
+    if (PlatformerMovementComponent != NULL)
+    {
+        const FNavPathPoint& SegmentStart = Path->GetPathPoints()[MoveSegmentStartIndex];
+
+        if (FNavAreaHelper::HasJumpFlag(SegmentStart))
+        {
+            UE_LOG(LogTemp, Warning, TEXT("Has Jump flag."));
+            // jump! well... fly-in-straight-line!
+            PlatformerMovementComponent->SetMovementMode(MOVE_Flying);
+        }
+        else
+        {
+            UE_LOG(LogTemp, Warning, TEXT("Missing Jump flag."));
+            // regular move
+            PlatformerMovementComponent->SetMovementMode(MOVE_Walking);
+        }
+    }
+
 }
 
 void UJumpingPathFollowingComponent::SetMovementComponent(UNavMovementComponent* MoveComp)
@@ -32,6 +52,7 @@ void UJumpingPathFollowingComponent::SetMovementComponent(UNavMovementComponent*
     Super::SetMovementComponent(MoveComp);
 
     CharacterMoveComp = Cast<UCharacterMovementComponent>(MovementComp);
+    PlatformerMovementComponent = Cast<UPlatformerPawnMovementComponent>(MovementComp);
 }
 
 
