@@ -38,7 +38,7 @@ void ABasePawn::SetupPlayerInputComponent(class UInputComponent* InputComponent)
 
 }
 
-bool ABasePawn::MoveH(float moveH) {
+bool ABasePawn::MoveH(float moveH, OnCollidePtr onCollide) {
 	SubPixelCounter.X += moveH;
 	int32 dx = FMath::RoundToInt(SubPixelCounter.X);
 	if (dx != 0) {
@@ -46,13 +46,13 @@ bool ABasePawn::MoveH(float moveH) {
 		SubPixelCounter.X -= sign;
 		while (dx != 0) {
 			AActor *entity = CollideFirst(/*GameTags.Solid, */GetActorLocation().X + sign, GetActorLocation().Z);
-			if (entity != NULL)
+			if (entity != nullptr)
 			{
 				SubPixelCounter.X = 0.0f;
-				/*if (onCollide != null)
+				if (onCollide != nullptr)
                 {
-                    onCollide(entity as Platform);
-                }*/
+                    onCollide(entity);
+                }
 				return true;
 			}
 			FVector location = GetActorLocation();
@@ -64,7 +64,7 @@ bool ABasePawn::MoveH(float moveH) {
 	return false;
 }
 
-bool ABasePawn::MoveV(float moveV) {
+bool ABasePawn::MoveV(float moveV, OnCollidePtr onCollide = nullptr) {
 	AActor *entity;
 	SubPixelCounter.Z += moveV;
 	int32 dy = FMath::RoundToInt(SubPixelCounter.Z);
@@ -77,10 +77,10 @@ bool ABasePawn::MoveV(float moveV) {
 			if (entity != nullptr)
 			{
 				SubPixelCounter.Z = 0.0f;
-				/*if (onCollide != null)
+				if (onCollide != nullptr)
                 {
-                    onCollide(entity as Platform);
-                }*/
+                    onCollide(entity);
+                }
 				return true;
 			}
 			FVector location = GetActorLocation();
@@ -98,19 +98,19 @@ bool ABasePawn::MoveV(float moveV) {
 			if (entity != nullptr)
 			{
 				SubPixelCounter.Z = 0.0f;
-				/*if (onCollide != null)
+				if (onCollide != nullptr)
                 {
-                    onCollide(entity as Platform);
-                }*/
+                    onCollide(entity);
+                }
 				return true;
 			}
 			if (!IgnoreJumpThrus && ((entity = CollideFirst(/*GameTags.JumpThru, */GetActorLocation().X, GetActorLocation().Z + 1.0f)) != nullptr))
 			{
 				SubPixelCounter.Z = 0.0f;
-				/*if (onCollide != null)
+				if (onCollide != nullptr)
                 {
-                    onCollide(entity as Platform);
-                }*/
+                    onCollide(entity);
+                }
 				return true;
 			}
 			FVector location = GetActorLocation();
@@ -133,16 +133,39 @@ AActor *ABasePawn::CollideFirst(float x, float z) {
 	TArray<AActor *> actors;
 	WorldCollisionBoxComponent->GetOverlappingActors(actors, NULL);
 	for (auto CompIt = actors.CreateIterator(); CompIt; ++CompIt) {
-		UE_LOG(LogTemp, Warning, TEXT("Overlapping actor."));
+		//UE_LOG(LogTemp, Warning, TEXT("Overlapping actor."));
 		AActor *OverlappingActor = *CompIt;
 		if (OverlappingActor != this) {
-			UE_LOG(LogTemp, Warning, TEXT("Actor: %s"), *AActor::GetDebugName(OverlappingActor));
+			UE_LOG(LogTemp, Warning, TEXT("CollideFirst: Actor: %s"), *AActor::GetDebugName(OverlappingActor));
 			res = OverlappingActor;
 		}
 	}
 
 	SetActorLocation(originalLocation);
 	return res;
+}
+
+bool ABasePawn::CollideCheck(AActor *other, float x, float z) {
+    AActor *res = nullptr;
+    FVector originalLocation = GetActorLocation();
+    FVector newLocation = GetActorLocation();
+    newLocation.X = x;
+    newLocation.Z = z;
+    SetActorLocation(newLocation);
+
+    TArray<AActor *> actors;
+    WorldCollisionBoxComponent->GetOverlappingActors(actors, NULL);
+    for (auto CompIt = actors.CreateIterator(); CompIt; ++CompIt) {
+        //UE_LOG(LogTemp, Warning, TEXT("Overlapping actor."));
+        AActor *OverlappingActor = *CompIt;
+        if (OverlappingActor == other) {
+            UE_LOG(LogTemp, Warning, TEXT("CollideCheck: Actor: %s"), *AActor::GetDebugName(OverlappingActor));
+            res = OverlappingActor;
+        }
+    }
+
+    SetActorLocation(originalLocation);
+    return res != nullptr;
 }
 
 float ABasePawn::Approach(float start, float end, float shift)
@@ -173,7 +196,7 @@ FVector ABasePawn::Approach(FVector val, FVector target, float maxMove)
 }
 
 
-void ABasePawn::Move(FVector amount/*, Action<Solid> onCollideH = null, Action<Solid> onCollideV = null*/)
+void ABasePawn::Move(FVector amount, OnCollidePtr onCollideH, OnCollidePtr onCollideV)
 {
     MoveH(amount.X/*, onCollideH*/);
     MoveV(amount.Z/*, onCollideV*/);

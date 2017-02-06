@@ -19,6 +19,9 @@ protected:
     bool IgnoreJumpThrus;
 
 public:
+
+    typedef void (ABasePawn::*OnCollidePtr)(AActor *);
+
     float TimeRate = 1.0f;
     float LastTimeMult = 0.0f;
     float ActualDeltaTime = 0.0f;
@@ -37,17 +40,19 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 
-	bool MoveH(float moveH);
+	bool MoveH(float moveH, OnCollidePtr onCollide = nullptr);
 
-	bool MoveV(float moveV);
+	bool MoveV(float moveV, OnCollidePtr onCollide = nullptr);
 
 	AActor *CollideFirst(float x, float z);
+
+    bool CollideCheck(AActor *other, float x, float z);
 
     static float Approach(float start, float end, float shift);
 
     static FVector Approach(FVector val, FVector target, float maxMove);
 
-    void Move(FVector amount/*, Action<Solid> onCollideH = null, Action<Solid> onCollideV = null*/);
+    void Move(FVector amount, OnCollidePtr onCollideH = nullptr, OnCollidePtr onCollideV = nullptr);
 
     void MoveTowards(FVector target, float maxAmount/*, Action<Solid> onCollideH = null, Action<Solid> onCollideV = null*/);
 
