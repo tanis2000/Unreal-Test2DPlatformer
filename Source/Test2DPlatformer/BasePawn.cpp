@@ -38,7 +38,7 @@ void ABasePawn::SetupPlayerInputComponent(class UInputComponent* InputComponent)
 
 }
 
-bool ABasePawn::MoveH(float moveH, OnCollidePtr onCollide) {
+bool ABasePawn::MoveH(float moveH) {
 	SubPixelCounter.X += moveH;
 	int32 dx = FMath::RoundToInt(SubPixelCounter.X);
 	if (dx != 0) {
@@ -49,10 +49,12 @@ bool ABasePawn::MoveH(float moveH, OnCollidePtr onCollide) {
 			if (entity != nullptr)
 			{
 				SubPixelCounter.X = 0.0f;
+                /*
 				if (onCollide != nullptr)
                 {
-                    onCollide(entity);
+                    onCollide->ExecuteIfBound(entity);
                 }
+                 */
 				return true;
 			}
 			FVector location = GetActorLocation();
@@ -64,7 +66,7 @@ bool ABasePawn::MoveH(float moveH, OnCollidePtr onCollide) {
 	return false;
 }
 
-bool ABasePawn::MoveV(float moveV, OnCollidePtr onCollide = nullptr) {
+bool ABasePawn::MoveV(float moveV) {
 	AActor *entity;
 	SubPixelCounter.Z += moveV;
 	int32 dy = FMath::RoundToInt(SubPixelCounter.Z);
@@ -77,10 +79,12 @@ bool ABasePawn::MoveV(float moveV, OnCollidePtr onCollide = nullptr) {
 			if (entity != nullptr)
 			{
 				SubPixelCounter.Z = 0.0f;
+                /*
 				if (onCollide != nullptr)
                 {
-                    onCollide(entity);
+                    onCollide->ExecuteIfBound(entity);
                 }
+                 */
 				return true;
 			}
 			FVector location = GetActorLocation();
@@ -98,19 +102,23 @@ bool ABasePawn::MoveV(float moveV, OnCollidePtr onCollide = nullptr) {
 			if (entity != nullptr)
 			{
 				SubPixelCounter.Z = 0.0f;
+                /*
 				if (onCollide != nullptr)
                 {
-                    onCollide(entity);
+                    onCollide->ExecuteIfBound(entity);
                 }
+                 */
 				return true;
 			}
 			if (!IgnoreJumpThrus && ((entity = CollideFirst(/*GameTags.JumpThru, */GetActorLocation().X, GetActorLocation().Z + 1.0f)) != nullptr))
 			{
 				SubPixelCounter.Z = 0.0f;
+                /*
 				if (onCollide != nullptr)
                 {
-                    onCollide(entity);
+                    onCollide->ExecuteIfBound(entity);
                 }
+                 */
 				return true;
 			}
 			FVector location = GetActorLocation();
@@ -196,13 +204,13 @@ FVector ABasePawn::Approach(FVector val, FVector target, float maxMove)
 }
 
 
-void ABasePawn::Move(FVector amount, OnCollidePtr onCollideH, OnCollidePtr onCollideV)
+void ABasePawn::Move(FVector amount)
 {
     MoveH(amount.X/*, onCollideH*/);
     MoveV(amount.Z/*, onCollideV*/);
 }
 
-void ABasePawn::MoveTowards(FVector target, float maxAmount/*, Action<Solid> onCollideH = null, Action<Solid> onCollideV = null*/)
+void ABasePawn::MoveTowards(FVector target, float maxAmount)
 {
     FVector vector = Approach(ActualPosition(), target, maxAmount);
     Move(vector - ActualPosition()/*, null, null*/);

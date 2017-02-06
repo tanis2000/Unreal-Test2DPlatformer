@@ -66,16 +66,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParticleSystem.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/Particles/ParticleSystem.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5993">
-              <caret line="104" column="6" lean-forward="false" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Test2DPlatformerGameMode.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformerGameMode.h">
           <provider selected="true" editor-type-id="text-editor">
@@ -109,8 +99,28 @@
       <file leaf-file-name="BasePawn.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DelegateCombinations.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Core/Public/Delegates/DelegateCombinations.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="11" column="73" lean-forward="false" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Delegate.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Core/Public/Delegates/Delegate.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="170" column="8" lean-forward="false" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -132,21 +142,9 @@
       <file leaf-file-name="BasePawn.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="111" column="36" lean-forward="false" selection-start-line="111" selection-start-column="36" selection-end-line="111" selection-end-column="36" />
+            <state relative-caret-position="202">
+              <caret line="212" column="59" lean-forward="false" selection-start-line="212" selection-start-column="59" selection-end-line="212" selection-end-column="59" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnemyPawn.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/EnemyPawn.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="97" column="20" lean-forward="false" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
-              <folding>
-                <element signature="e#80#109#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -225,9 +223,9 @@
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.h" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp" />
-        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp" />
       </list>
     </option>
   </component>
@@ -667,12 +665,12 @@
       <workItem from="1485943274265" duration="2115000" />
       <workItem from="1485946167165" duration="52000" />
       <workItem from="1485946230304" duration="223000" />
-      <workItem from="1485946481661" duration="37049000" />
+      <workItem from="1485946481661" duration="38559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67852000" />
+    <option name="totallyTimeSpent" value="69362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-17" y="23" width="1280" height="744" extended-state="0" />
@@ -717,14 +715,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="14" lean-forward="false" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/ExtendedPathFollowingComponent.h" />
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Mob.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1092,14 +1082,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformerGameMode.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1134,10 +1116,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Core/Public/Delegates/DelegateCombinations.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="11" column="73" lean-forward="false" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Core/Public/Delegates/Delegate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="170" column="8" lean-forward="false" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="111" column="36" lean-forward="false" selection-start-line="111" selection-start-column="36" selection-end-line="111" selection-end-column="36" />
+        <state relative-caret-position="202">
+          <caret line="212" column="59" lean-forward="false" selection-start-line="212" selection-start-column="59" selection-end-line="212" selection-end-column="59" />
           <folding />
         </state>
       </provider>

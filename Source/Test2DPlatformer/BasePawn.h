@@ -20,8 +20,6 @@ protected:
 
 public:
 
-    typedef void (ABasePawn::*OnCollidePtr)(AActor *);
-
     float TimeRate = 1.0f;
     float LastTimeMult = 0.0f;
     float ActualDeltaTime = 0.0f;
@@ -40,9 +38,9 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 
-	bool MoveH(float moveH, OnCollidePtr onCollide = nullptr);
+	bool MoveH(float moveH);
 
-	bool MoveV(float moveV, OnCollidePtr onCollide = nullptr);
+	bool MoveV(float moveV);
 
 	AActor *CollideFirst(float x, float z);
 
@@ -52,9 +50,9 @@ public:
 
     static FVector Approach(FVector val, FVector target, float maxMove);
 
-    void Move(FVector amount, OnCollidePtr onCollideH = nullptr, OnCollidePtr onCollideV = nullptr);
+    void Move(FVector amount);
 
-    void MoveTowards(FVector target, float maxAmount/*, Action<Solid> onCollideH = null, Action<Solid> onCollideV = null*/);
+    void MoveTowards(FVector target, float maxAmount);
 
     FVector ActualPosition();
 
