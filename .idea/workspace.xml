@@ -36,9 +36,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e06f1b8-fe76-4456-b783-8227452531aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.h" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/Maps/Level.umap" afterPath="$PROJECT_DIR$/Content/Maps/Level.umap" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/Maps/Level_BuiltData.uasset" afterPath="$PROJECT_DIR$/Content/Maps/Level_BuiltData.uasset" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -665,12 +664,12 @@
       <workItem from="1485943274265" duration="2115000" />
       <workItem from="1485946167165" duration="52000" />
       <workItem from="1485946230304" duration="223000" />
-      <workItem from="1485946481661" duration="38559000" />
+      <workItem from="1485946481661" duration="38863000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69362000" />
+    <option name="totallyTimeSpent" value="69666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-17" y="23" width="1280" height="744" extended-state="0" />
