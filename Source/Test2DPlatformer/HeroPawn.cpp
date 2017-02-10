@@ -84,17 +84,18 @@ AHeroPawn::AHeroPawn() {
 
     // Create an orthographic camera (no perspective) and attach it to the boom
     SideViewCameraComponent = CreateDefaultSubobject<UPixelPerfectCameraComponent>(TEXT("SideViewCamera"));
-    SideViewCameraComponent->ProjectionMode = ECameraProjectionMode::Orthographic;
-    SideViewCameraComponent->SetAspectRatio(1.333334f);
-    SideViewCameraComponent->OrthoWidth = 320.0f;
+    //SideViewCameraComponent->ProjectionMode = ECameraProjectionMode::Orthographic;
+    //SideViewCameraComponent->SetAspectRatio(1.333334f);
+    //SideViewCameraComponent->OrthoWidth = 320.0f;
     SideViewCameraComponent->bConstrainAspectRatio = true;
     SideViewCameraComponent->RelativeRotation = FRotator(0.0f, -90.0f, 0.0f);
     SideViewCameraComponent->RelativeLocation = FVector(0.0f, 0.0f, 0.0f);
     SideViewCameraComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 
     // Prevent all automatic rotation behavior on the camera, character, and camera component
-    SideViewCameraComponent->bUsePawnControlRotation = false;
+    //SideViewCameraComponent->bUsePawnControlRotation = false;
 
+    /*
     // Read the viewport size
     FVector2D viewportSize = FVector2D(1, 1);
     if (GEngine && GEngine->GameViewport) {
@@ -113,7 +114,10 @@ AHeroPawn::AHeroPawn() {
     UE_LOG(LogTemp, Warning, TEXT("RY: %f"), resolution.Y);
     SideViewCameraComponent->SetAspectRatio(resolution.X/resolution.Y);
     SideViewCameraComponent->OrthoWidth = resolution.X;
+    */
 
+    SideViewCameraComponent->DesignWidth = 40 * 16;
+    SideViewCameraComponent->DesignHeight = 30 * 16;
     SideViewCameraComponent->BestFit();
 
     Velocity = FVector(0, 0, 0);

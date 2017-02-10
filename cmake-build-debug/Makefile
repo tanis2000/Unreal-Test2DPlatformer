@@ -813,6 +813,33 @@ Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.s:
 	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.s
 .PHONY : Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.s
 
+Source/Test2DPlatformer/PlatformerSpectatorPawn.o: Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.o
+
+.PHONY : Source/Test2DPlatformer/PlatformerSpectatorPawn.o
+
+# target to build an object file
+Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.o:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.o
+.PHONY : Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.o
+
+Source/Test2DPlatformer/PlatformerSpectatorPawn.i: Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.i
+
+.PHONY : Source/Test2DPlatformer/PlatformerSpectatorPawn.i
+
+# target to preprocess a source file
+Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.i:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.i
+.PHONY : Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.i
+
+Source/Test2DPlatformer/PlatformerSpectatorPawn.s: Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.s
+
+.PHONY : Source/Test2DPlatformer/PlatformerSpectatorPawn.s
+
+# target to generate assembly for a file
+Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.s:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.s
+.PHONY : Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.s
+
 Source/Test2DPlatformer/Player/FAPCameraComponent.o: Source/Test2DPlatformer/Player/FAPCameraComponent.cpp.o
 
 .PHONY : Source/Test2DPlatformer/Player/FAPCameraComponent.o
@@ -1050,6 +1077,9 @@ help:
 	@echo "... Source/Test2DPlatformer/PlatformerPawnMovementComponent.o"
 	@echo "... Source/Test2DPlatformer/PlatformerPawnMovementComponent.i"
 	@echo "... Source/Test2DPlatformer/PlatformerPawnMovementComponent.s"
+	@echo "... Source/Test2DPlatformer/PlatformerSpectatorPawn.o"
+	@echo "... Source/Test2DPlatformer/PlatformerSpectatorPawn.i"
+	@echo "... Source/Test2DPlatformer/PlatformerSpectatorPawn.s"
 	@echo "... Source/Test2DPlatformer/Player/FAPCameraComponent.o"
 	@echo "... Source/Test2DPlatformer/Player/FAPCameraComponent.i"
 	@echo "... Source/Test2DPlatformer/Player/FAPCameraComponent.s"
