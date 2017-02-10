@@ -369,9 +369,33 @@ CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PixelPerfectCa
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp.o.provides.build: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp.o
 
 
+CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o: CMakeFiles/Test2DPlatformerEditorFake.dir/flags.make
+CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o: ../Source/Test2DPlatformer/PlatformerCameraActor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o"
+	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o -c "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/PlatformerCameraActor.cpp"
+
+CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.i"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/PlatformerCameraActor.cpp" > CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.i
+
+CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.s"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/PlatformerCameraActor.cpp" -o CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.s
+
+CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o.requires:
+
+.PHONY : CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o.requires
+
+CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o.provides: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o.provides.build
+.PHONY : CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o.provides
+
+CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o.provides.build: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o
+
+
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.o: CMakeFiles/Test2DPlatformerEditorFake.dir/flags.make
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.o: ../Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.o"
 	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.o -c "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp"
 
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.i: cmake_force
@@ -395,7 +419,7 @@ CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerPawn
 
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.o: CMakeFiles/Test2DPlatformerEditorFake.dir/flags.make
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.o: ../Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.o"
 	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.o -c "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp"
 
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.i: cmake_force
@@ -419,7 +443,7 @@ CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerSpec
 
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformer.cpp.o: CMakeFiles/Test2DPlatformerEditorFake.dir/flags.make
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformer.cpp.o: ../Source/Test2DPlatformer/Test2DPlatformer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformer.cpp.o"
 	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformer.cpp.o -c "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/Test2DPlatformer.cpp"
 
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformer.cpp.i: cmake_force
@@ -443,7 +467,7 @@ CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatform
 
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp.o: CMakeFiles/Test2DPlatformerEditorFake.dir/flags.make
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp.o: ../Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp.o"
 	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp.o -c "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp"
 
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp.i: cmake_force
@@ -467,7 +491,7 @@ CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatform
 
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TestCharacter.cpp.o: CMakeFiles/Test2DPlatformerEditorFake.dir/flags.make
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TestCharacter.cpp.o: ../Source/Test2DPlatformer/TestCharacter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TestCharacter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TestCharacter.cpp.o"
 	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TestCharacter.cpp.o -c "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/TestCharacter.cpp"
 
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TestCharacter.cpp.i: cmake_force
@@ -491,7 +515,7 @@ CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TestCharacter.
 
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TilemapNavComponent.cpp.o: CMakeFiles/Test2DPlatformerEditorFake.dir/flags.make
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TilemapNavComponent.cpp.o: ../Source/Test2DPlatformer/TilemapNavComponent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TilemapNavComponent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TilemapNavComponent.cpp.o"
 	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TilemapNavComponent.cpp.o -c "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/TilemapNavComponent.cpp"
 
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TilemapNavComponent.cpp.i: cmake_force
@@ -515,7 +539,7 @@ CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/TilemapNavComp
 
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Player/FAPCameraComponent.cpp.o: CMakeFiles/Test2DPlatformerEditorFake.dir/flags.make
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Player/FAPCameraComponent.cpp.o: ../Source/Test2DPlatformer/Player/FAPCameraComponent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Player/FAPCameraComponent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Player/FAPCameraComponent.cpp.o"
 	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Player/FAPCameraComponent.cpp.o -c "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/Player/FAPCameraComponent.cpp"
 
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Player/FAPCameraComponent.cpp.i: cmake_force
@@ -539,7 +563,7 @@ CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Player/FAPCame
 
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Player/FAPSpectatorPawn.cpp.o: CMakeFiles/Test2DPlatformerEditorFake.dir/flags.make
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Player/FAPSpectatorPawn.cpp.o: ../Source/Test2DPlatformer/Player/FAPSpectatorPawn.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Player/FAPSpectatorPawn.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Player/FAPSpectatorPawn.cpp.o"
 	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Player/FAPSpectatorPawn.cpp.o -c "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Source/Test2DPlatformer/Player/FAPSpectatorPawn.cpp"
 
 CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Player/FAPSpectatorPawn.cpp.i: cmake_force
@@ -576,6 +600,7 @@ Test2DPlatformerEditorFake_OBJECTS = \
 "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Mob.cpp.o" \
 "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/NavArea_Jump.cpp.o" \
 "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp.o" \
+"CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o" \
 "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.o" \
 "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.o" \
 "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformer.cpp.o" \
@@ -601,6 +626,7 @@ Test2DPlatformerEditorFake: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Tes
 Test2DPlatformerEditorFake: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Mob.cpp.o
 Test2DPlatformerEditorFake: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/NavArea_Jump.cpp.o
 Test2DPlatformerEditorFake: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp.o
+Test2DPlatformerEditorFake: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o
 Test2DPlatformerEditorFake: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.o
 Test2DPlatformerEditorFake: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.o
 Test2DPlatformerEditorFake: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformer.cpp.o
@@ -611,7 +637,7 @@ Test2DPlatformerEditorFake: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Tes
 Test2DPlatformerEditorFake: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Player/FAPSpectatorPawn.cpp.o
 Test2DPlatformerEditorFake: CMakeFiles/Test2DPlatformerEditorFake.dir/build.make
 Test2DPlatformerEditorFake: CMakeFiles/Test2DPlatformerEditorFake.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable Test2DPlatformerEditorFake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable Test2DPlatformerEditorFake"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Test2DPlatformerEditorFake.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -632,6 +658,7 @@ CMakeFiles/Test2DPlatformerEditorFake.dir/requires: CMakeFiles/Test2DPlatformerE
 CMakeFiles/Test2DPlatformerEditorFake.dir/requires: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Mob.cpp.o.requires
 CMakeFiles/Test2DPlatformerEditorFake.dir/requires: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/NavArea_Jump.cpp.o.requires
 CMakeFiles/Test2DPlatformerEditorFake.dir/requires: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp.o.requires
+CMakeFiles/Test2DPlatformerEditorFake.dir/requires: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o.requires
 CMakeFiles/Test2DPlatformerEditorFake.dir/requires: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.o.requires
 CMakeFiles/Test2DPlatformerEditorFake.dir/requires: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.o.requires
 CMakeFiles/Test2DPlatformerEditorFake.dir/requires: CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformer.cpp.o.requires

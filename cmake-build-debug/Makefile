@@ -786,6 +786,33 @@ Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp.s:
 	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp.s
 .PHONY : Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp.s
 
+Source/Test2DPlatformer/PlatformerCameraActor.o: Source/Test2DPlatformer/PlatformerCameraActor.cpp.o
+
+.PHONY : Source/Test2DPlatformer/PlatformerCameraActor.o
+
+# target to build an object file
+Source/Test2DPlatformer/PlatformerCameraActor.cpp.o:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o
+.PHONY : Source/Test2DPlatformer/PlatformerCameraActor.cpp.o
+
+Source/Test2DPlatformer/PlatformerCameraActor.i: Source/Test2DPlatformer/PlatformerCameraActor.cpp.i
+
+.PHONY : Source/Test2DPlatformer/PlatformerCameraActor.i
+
+# target to preprocess a source file
+Source/Test2DPlatformer/PlatformerCameraActor.cpp.i:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.i
+.PHONY : Source/Test2DPlatformer/PlatformerCameraActor.cpp.i
+
+Source/Test2DPlatformer/PlatformerCameraActor.s: Source/Test2DPlatformer/PlatformerCameraActor.cpp.s
+
+.PHONY : Source/Test2DPlatformer/PlatformerCameraActor.s
+
+# target to generate assembly for a file
+Source/Test2DPlatformer/PlatformerCameraActor.cpp.s:
+	$(MAKE) -f CMakeFiles/Test2DPlatformerEditorFake.dir/build.make CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.s
+.PHONY : Source/Test2DPlatformer/PlatformerCameraActor.cpp.s
+
 Source/Test2DPlatformer/PlatformerPawnMovementComponent.o: Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.o
 
 .PHONY : Source/Test2DPlatformer/PlatformerPawnMovementComponent.o
@@ -1074,6 +1101,9 @@ help:
 	@echo "... Source/Test2DPlatformer/PixelPerfectCameraComponent.o"
 	@echo "... Source/Test2DPlatformer/PixelPerfectCameraComponent.i"
 	@echo "... Source/Test2DPlatformer/PixelPerfectCameraComponent.s"
+	@echo "... Source/Test2DPlatformer/PlatformerCameraActor.o"
+	@echo "... Source/Test2DPlatformer/PlatformerCameraActor.i"
+	@echo "... Source/Test2DPlatformer/PlatformerCameraActor.s"
 	@echo "... Source/Test2DPlatformer/PlatformerPawnMovementComponent.o"
 	@echo "... Source/Test2DPlatformer/PlatformerPawnMovementComponent.i"
 	@echo "... Source/Test2DPlatformer/PlatformerPawnMovementComponent.s"

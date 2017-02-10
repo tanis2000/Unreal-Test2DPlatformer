@@ -28,14 +28,23 @@ private:
     UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     class UBoxComponent *HitBoxComponent;
 
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     float groundAccel = 1.00f;
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     float groundFric  = 3.00f;
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     float airAccel    = 0.75f;
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     float airFric     = 0.53f;
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     float vxMax       = 3.0f;
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     float vyMax       = 7.0f;
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     float jumpHeight  = 8.0f;
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     float gravNorm    = -0.76f;
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     float gravSlide   = -0.55f;
     bool sticking = false;
     bool canStick = false;
@@ -75,7 +84,7 @@ public:
 
     bool Dead;
 
-    UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     FVector Velocity;
     UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     FVector Scale;
@@ -84,6 +93,8 @@ public:
     class UParticleSystem *PuffEmitter;
 
     int Facing = 1;
+
+    bool UseOwnCamera = false;
 
     // Sets default values for this pawn's properties
     AHeroPawn();
@@ -107,5 +118,16 @@ public:
     void SpawnBunnies();
 
     void NotifyActorBeginOverlap(AActor *OtherActor) override;
+
+    void MoveLeft();
+
+    void MoveRight();
+
+    void StopLeft();
+
+    void StopRight();
+
+    bool LeftPressed;
+    bool RightPressed;
 
 };

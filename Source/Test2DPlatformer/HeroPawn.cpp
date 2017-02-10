@@ -82,43 +82,46 @@ AHeroPawn::AHeroPawn() {
     // Set this pawn to be controlled by the lowest-numbered player
     AutoPossessPlayer = EAutoReceiveInput::Player0;
 
-    // Create an orthographic camera (no perspective) and attach it to the boom
-    SideViewCameraComponent = CreateDefaultSubobject<UPixelPerfectCameraComponent>(TEXT("SideViewCamera"));
-    //SideViewCameraComponent->ProjectionMode = ECameraProjectionMode::Orthographic;
-    //SideViewCameraComponent->SetAspectRatio(1.333334f);
-    //SideViewCameraComponent->OrthoWidth = 320.0f;
-    SideViewCameraComponent->bConstrainAspectRatio = true;
-    SideViewCameraComponent->RelativeRotation = FRotator(0.0f, -90.0f, 0.0f);
-    SideViewCameraComponent->RelativeLocation = FVector(0.0f, 0.0f, 0.0f);
-    SideViewCameraComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+    if (UseOwnCamera) {
+        // Create an orthographic camera (no perspective) and attach it to the boom
+        SideViewCameraComponent = CreateDefaultSubobject<UPixelPerfectCameraComponent>(TEXT("SideViewCamera"));
+        //SideViewCameraComponent->ProjectionMode = ECameraProjectionMode::Orthographic;
+        //SideViewCameraComponent->SetAspectRatio(1.333334f);
+        //SideViewCameraComponent->OrthoWidth = 320.0f;
+        SideViewCameraComponent->bConstrainAspectRatio = true;
+        SideViewCameraComponent->RelativeRotation = FRotator(0.0f, -90.0f, 0.0f);
+        SideViewCameraComponent->RelativeLocation = FVector(0.0f, 0.0f, 0.0f);
+        SideViewCameraComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 
-    // Prevent all automatic rotation behavior on the camera, character, and camera component
-    //SideViewCameraComponent->bUsePawnControlRotation = false;
+        // Prevent all automatic rotation behavior on the camera, character, and camera component
+        //SideViewCameraComponent->bUsePawnControlRotation = false;
 
-    /*
-    // Read the viewport size
-    FVector2D viewportSize = FVector2D(1, 1);
-    if (GEngine && GEngine->GameViewport) {
-        GEngine->GameViewport->GetViewportSize(viewportSize);
-        UE_LOG(LogTemp, Warning, TEXT("VX: %f"), viewportSize.X);
-        UE_LOG(LogTemp, Warning, TEXT("VY: %f"), viewportSize.Y);
-        SideViewCameraComponent->SetAspectRatio(viewportSize.X/viewportSize.Y);
-        SideViewCameraComponent->OrthoWidth = viewportSize.X;
+        /*
+        // Read the viewport size
+        FVector2D viewportSize = FVector2D(1, 1);
+        if (GEngine && GEngine->GameViewport) {
+            GEngine->GameViewport->GetViewportSize(viewportSize);
+            UE_LOG(LogTemp, Warning, TEXT("VX: %f"), viewportSize.X);
+            UE_LOG(LogTemp, Warning, TEXT("VY: %f"), viewportSize.Y);
+            SideViewCameraComponent->SetAspectRatio(viewportSize.X/viewportSize.Y);
+            SideViewCameraComponent->OrthoWidth = viewportSize.X;
+        }
+
+        // Read the resolution
+        FVector2D resolution = FVector2D( 1, 1 );
+        resolution.X = GSystemResolution.ResX;
+        resolution.Y = GSystemResolution.ResY;
+        UE_LOG(LogTemp, Warning, TEXT("RX: %f"), resolution.X);
+        UE_LOG(LogTemp, Warning, TEXT("RY: %f"), resolution.Y);
+        SideViewCameraComponent->SetAspectRatio(resolution.X/resolution.Y);
+        SideViewCameraComponent->OrthoWidth = resolution.X;
+        */
+
+        SideViewCameraComponent->DesignWidth = 40 * 16;
+        SideViewCameraComponent->DesignHeight = 30 * 16;
+        SideViewCameraComponent->BestFit();
     }
 
-    // Read the resolution
-    FVector2D resolution = FVector2D( 1, 1 );
-    resolution.X = GSystemResolution.ResX;
-    resolution.Y = GSystemResolution.ResY;
-    UE_LOG(LogTemp, Warning, TEXT("RX: %f"), resolution.X);
-    UE_LOG(LogTemp, Warning, TEXT("RY: %f"), resolution.Y);
-    SideViewCameraComponent->SetAspectRatio(resolution.X/resolution.Y);
-    SideViewCameraComponent->OrthoWidth = resolution.X;
-    */
-
-    SideViewCameraComponent->DesignWidth = 40 * 16;
-    SideViewCameraComponent->DesignHeight = 30 * 16;
-    SideViewCameraComponent->BestFit();
 
     Velocity = FVector(0, 0, 0);
     Scale = FVector(1, 1, 1);
@@ -147,8 +150,8 @@ void AHeroPawn::Tick(float DeltaTime) {
     InputWasDown = InputDown;
     InputWasJump = InputJump;
     InputWasFire = InputFire;
-    InputLeft = side < 0 ? true : false;
-    InputRight = side > 0 ? true : false;
+    InputLeft = LeftPressed; //side < 0 ? true : false;
+    InputRight = RightPressed; //side > 0 ? true : false;
     InputDown = vert < 0 ? true : false;
     InputJump = jump > 0 ? true : false;
 
@@ -319,8 +322,10 @@ void AHeroPawn::Tick(float DeltaTime) {
     Scale.X = Approach(Scale.X, 1.0f, 0.05f);
     Scale.Z = Approach(Scale.Z, 1.0f, 0.05f);
 
-    MoveH(Velocity.X * TimeMult /*DeltaTime * 50*/);
-    MoveV(Velocity.Z * TimeMult /*DeltaTime * 50*/);
+    //MoveH(Velocity.X * TimeMult /*DeltaTime * 50*/);
+    //MoveV(Velocity.Z * TimeMult /*DeltaTime * 50*/);
+    MoveH(Velocity.X * DeltaTime * 50);
+    MoveV(Velocity.Z * DeltaTime * 50);
 
     Sprite->SetRelativeScale3D(Scale);
     FVector spriteScale = Sprite->GetComponentScale();
@@ -368,6 +373,10 @@ void AHeroPawn::SetupPlayerInputComponent(class UInputComponent *InputComponent)
     InputComponent->BindAxis("MoveVertical", this, &AHeroPawn::MoveVertical);
     InputComponent->BindAxis("Jump", this, &AHeroPawn::Jump);
     InputComponent->BindAction("SpawnBunny", EInputEvent::IE_Released, this, &AHeroPawn::SpawnBunnies);
+    InputComponent->BindAction("MoveRight", EInputEvent::IE_Pressed, this, &AHeroPawn::MoveRight);
+    InputComponent->BindAction("MoveLeft", EInputEvent::IE_Pressed, this, &AHeroPawn::MoveLeft);
+    InputComponent->BindAction("MoveRight", EInputEvent::IE_Released, this, &AHeroPawn::StopRight);
+    InputComponent->BindAction("MoveLeft", EInputEvent::IE_Released, this, &AHeroPawn::StopLeft);
 }
 
 void AHeroPawn::MoveSide(float Value) {
@@ -418,6 +427,22 @@ void AHeroPawn::SpawnBunnies() {
     for (TActorIterator<ABunnyManager> ActorItr(GetWorld()); ActorItr; ++ActorItr) {
         ActorItr->AddBunnies(1000);
     }
+}
+
+void AHeroPawn::MoveLeft() {
+    LeftPressed = true;
+}
+
+void AHeroPawn::MoveRight() {
+    RightPressed = true;
+}
+
+void AHeroPawn::StopLeft() {
+    LeftPressed = false;
+}
+
+void AHeroPawn::StopRight() {
+    RightPressed = false;
 }
 
 void AHeroPawn::NotifyActorBeginOverlap(AActor *OtherActor) {

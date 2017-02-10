@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Mob.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/NavArea_Jump.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp.o"
+  "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerCameraActor.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp.o"
   "CMakeFiles/Test2DPlatformerEditorFake.dir/Source/Test2DPlatformer/Test2DPlatformer.cpp.o"

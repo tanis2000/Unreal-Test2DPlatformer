@@ -4,6 +4,8 @@
 #include "Test2DPlatformerGameMode.h"
 #include "TestCharacter.h"
 #include "HeroPawn.h"
+#include "PlatformerSpectatorPawn.h"
+#include "FAPPlayerController.h"
 
 ATest2DPlatformerGameMode::ATest2DPlatformerGameMode(const FObjectInitializer& ObjectInitializer)
 : Super(ObjectInitializer)
@@ -11,6 +13,8 @@ ATest2DPlatformerGameMode::ATest2DPlatformerGameMode(const FObjectInitializer& O
     // set default pawn class to our character
     //DefaultPawnClass = ATestCharacter::StaticClass();
     DefaultPawnClass = AHeroPawn::StaticClass();
+    SpectatorClass = APlatformerSpectatorPawn::StaticClass();
+    PlayerControllerClass = AFAPPlayerController::StaticClass();
 }
 
 

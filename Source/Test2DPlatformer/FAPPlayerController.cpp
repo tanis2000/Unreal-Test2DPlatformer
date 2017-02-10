@@ -8,6 +8,7 @@
 AFAPPlayerController::AFAPPlayerController(const FObjectInitializer& ObjectInitializer)
 : Super(ObjectInitializer)
 {
-    bShowMouseCursor = true;
-    DefaultMouseCursor = EMouseCursor::Crosshairs;
+    //bShowMouseCursor = true;
+    //DefaultMouseCursor = EMouseCursor::Crosshairs;
+    bAutoManageActiveCameraTarget = false;
 }
