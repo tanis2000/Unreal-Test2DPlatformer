@@ -344,7 +344,7 @@ void AHeroPawn::Tick(float DeltaTime) {
     LeftCollided = CollideFirst(GetActorLocation().X-1, GetActorLocation().Z) != nullptr;
     TopCollided = CollideFirst(GetActorLocation().X, GetActorLocation().Z+1) != nullptr;
     RightCollided = CollideFirst(GetActorLocation().X+1, GetActorLocation().Z) != nullptr;
-    
+
 
     /*
      * Old movement code
