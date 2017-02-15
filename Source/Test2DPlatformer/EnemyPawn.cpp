@@ -5,6 +5,8 @@
 #include "PaperFlipbookComponent.h"
 #include "AITypes.h"
 #include "PlatformerPawnMovementComponent.h"
+#include "PaperFlipbook.h"
+#include "PaperSprite.h"
 
 
 FName AEnemyPawn::SpriteComponentName(TEXT("Sprite0"));

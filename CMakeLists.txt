@@ -7,7 +7,7 @@ include("/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Intermediate/Pr
 include("/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Intermediate/ProjectFiles/UE4Editor.cmake")
 
 # Custom target for UE4Editor project, DebugGame configuration
-set(MONO_ROOT_PATH "/Users/Shared/UnrealEngine/4.14/Engine/Binaries/DotNET")
+set(MONO_ROOT_PATH "/Users/Shared/Epic Games/UE_4.15/Engine/Binaries/DotNET")
 set(BUILD cd "${MONO_ROOT_PATH}")
 
 add_custom_target(UE4Editor-Mac-DebugGame ${BUILD} && mono UnrealBuildTool.exe UE4Editor Mac DebugGame -project="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject" -game)
@@ -26,7 +26,7 @@ add_custom_target(UE4Editor-Mac-Shipping-clean ${BUILD} && mono UnrealBuildTool.
 include("/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Intermediate/ProjectFiles/UE4Game.cmake")
 
 # Custom target for UE4Game project, DebugGame configuration
-set(MONO_ROOT_PATH "/Users/Shared/UnrealEngine/4.14/Engine/Binaries/DotNET")
+set(MONO_ROOT_PATH "/Users/Shared/Epic Games/UE_4.15/Engine/Binaries/DotNET")
 set(BUILD cd "${MONO_ROOT_PATH}")
 
 add_custom_target(UE4Game-Mac-DebugGame ${BUILD} && mono UnrealBuildTool.exe UE4Game Mac DebugGame -project="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject" -game)
@@ -45,7 +45,7 @@ add_custom_target(UE4Game-Mac-Shipping-clean ${BUILD} && mono UnrealBuildTool.ex
 include("/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Intermediate/ProjectFiles/Test2DPlatformer.cmake")
 
 # Custom target for Test2DPlatformer project, DebugGame configuration
-set(MONO_ROOT_PATH "/Users/Shared/UnrealEngine/4.14/Engine/Binaries/DotNET")
+set(MONO_ROOT_PATH "/Users/Shared/Epic Games/UE_4.15/Engine/Binaries/DotNET")
 set(BUILD cd "${MONO_ROOT_PATH}")
 
 add_custom_target(Test2DPlatformer-Mac-DebugGame ${BUILD} && mono UnrealBuildTool.exe Test2DPlatformer Mac DebugGame -project="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject" -game)
@@ -64,7 +64,7 @@ add_custom_target(Test2DPlatformer-Mac-Shipping-clean ${BUILD} && mono UnrealBui
 include("/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Intermediate/ProjectFiles/Test2DPlatformerEditor.cmake")
 
 # Custom target for Test2DPlatformerEditor project, DebugGame configuration
-set(MONO_ROOT_PATH "/Users/Shared/UnrealEngine/4.14/Engine/Binaries/DotNET")
+set(MONO_ROOT_PATH "/Users/Shared/Epic Games/UE_4.15/Engine/Binaries/DotNET")
 set(BUILD cd "${MONO_ROOT_PATH}")
 
 add_custom_target(Test2DPlatformerEditor-Mac-DebugGame ${BUILD} && mono UnrealBuildTool.exe Test2DPlatformerEditor Mac DebugGame -project="/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject" -game)

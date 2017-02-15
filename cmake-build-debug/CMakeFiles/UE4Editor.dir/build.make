@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmak
 include CMakeFiles/UE4Editor.dir/progress.make
 
 CMakeFiles/UE4Editor:
-	cd /Users/Shared/UnrealEngine/4.14/Engine/Binaries/DotNET && mono UnrealBuildTool.exe UE4Editor Mac Development -project="/Users/tanis/Documents/Unreal\ Projects/Test2DPlatformer/Test2DPlatformer.uproject" -game
+	cd /Users/Shared/Epic\ Games/UE_4.15/Engine/Binaries/DotNET && mono UnrealBuildTool.exe UE4Editor Mac Development -project="/Users/tanis/Documents/Unreal\ Projects/Test2DPlatformer/Test2DPlatformer.uproject" -game
 
 UE4Editor: CMakeFiles/UE4Editor
 UE4Editor: CMakeFiles/UE4Editor.dir/build.make

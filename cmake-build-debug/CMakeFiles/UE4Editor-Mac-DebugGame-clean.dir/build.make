@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmak
 include CMakeFiles/UE4Editor-Mac-DebugGame-clean.dir/progress.make
 
 CMakeFiles/UE4Editor-Mac-DebugGame-clean:
-	cd /Users/Shared/UnrealEngine/4.14/Engine/Binaries/DotNET && mono UnrealBuildTool.exe UE4Editor Mac DebugGame -project="/Users/tanis/Documents/Unreal\ Projects/Test2DPlatformer/Test2DPlatformer.uproject" -clean
+	cd /Users/Shared/Epic\ Games/UE_4.15/Engine/Binaries/DotNET && mono UnrealBuildTool.exe UE4Editor Mac DebugGame -project="/Users/tanis/Documents/Unreal\ Projects/Test2DPlatformer/Test2DPlatformer.uproject" -clean
 
 UE4Editor-Mac-DebugGame-clean: CMakeFiles/UE4Editor-Mac-DebugGame-clean
 UE4Editor-Mac-DebugGame-clean: CMakeFiles/UE4Editor-Mac-DebugGame-clean.dir/build.make

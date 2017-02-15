@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmak
 include CMakeFiles/UE4Game-Mac-Shipping-clean.dir/progress.make
 
 CMakeFiles/UE4Game-Mac-Shipping-clean:
-	cd /Users/Shared/UnrealEngine/4.14/Engine/Binaries/DotNET && mono UnrealBuildTool.exe UE4Game Mac Shipping -project="/Users/tanis/Documents/Unreal\ Projects/Test2DPlatformer/Test2DPlatformer.uproject" -clean
+	cd /Users/Shared/Epic\ Games/UE_4.15/Engine/Binaries/DotNET && mono UnrealBuildTool.exe UE4Game Mac Shipping -project="/Users/tanis/Documents/Unreal\ Projects/Test2DPlatformer/Test2DPlatformer.uproject" -clean
 
 UE4Game-Mac-Shipping-clean: CMakeFiles/UE4Game-Mac-Shipping-clean
 UE4Game-Mac-Shipping-clean: CMakeFiles/UE4Game-Mac-Shipping-clean.dir/build.make

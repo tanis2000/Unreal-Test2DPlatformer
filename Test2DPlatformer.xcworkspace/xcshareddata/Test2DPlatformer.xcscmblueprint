@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "96654A9884E4F6C457637FDBE221D6327C087A64",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "12F4ED6CD9A06907C926584AD97E21986A7B1434" : 9223372036854775807,
+    "96654A9884E4F6C457637FDBE221D6327C087A64" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8D1921A4-170F-4613-B10A-52F2E4579306",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "12F4ED6CD9A06907C926584AD97E21986A7B1434" : "Test2DPlatformer\/Plugins\/CLionSourceCodeAccess\/",
+    "96654A9884E4F6C457637FDBE221D6327C087A64" : "Test2DPlatformer\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Test2DPlatformer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Test2DPlatformer.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tanis2000\/CLionSourceCodeAccess.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "12F4ED6CD9A06907C926584AD97E21986A7B1434"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tanis2000\/Unreal-Test2DPlatformer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "96654A9884E4F6C457637FDBE221D6327C087A64"
+    }
+  ]
+}

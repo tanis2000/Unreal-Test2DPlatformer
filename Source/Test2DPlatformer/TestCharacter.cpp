@@ -3,6 +3,8 @@
 #include "Test2DPlatformer.h"
 #include "TestCharacter.h"
 #include "PaperFlipbookComponent.h"
+#include "PaperFlipbook.h"
+#include "PaperSprite.h"
 
 // Sets default values
 ATestCharacter::ATestCharacter()
