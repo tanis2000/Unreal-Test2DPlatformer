@@ -2,31 +2,31 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
     <generated>
-      <config projectName="UE4" targetName="UE4Game" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditorFake" />
-      <config projectName="UE4" targetName="UE4Editor" />
+      <config projectName="UE4" targetName="Test2DPlatformer-Mac-DebugGame-clean" />
       <config projectName="UE4" targetName="Test2DPlatformer-Mac-DebugGame" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-Shipping" />
-      <config projectName="UE4" targetName="UE4Editor-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformer-Mac-Shipping" />
-      <config projectName="UE4" targetName="Test2DPlatformer-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-DebugGame-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-DebugGame" />
+      <config projectName="UE4" targetName="Test2DPlatformer-Mac-Shipping-clean" />
       <config projectName="UE4" targetName="UE4Game-Mac-Shipping" />
       <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-Shipping-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformer-Mac-DebugGame-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor" />
-      <config projectName="UE4" targetName="UE4Editor-Mac-Shipping-clean" />
       <config projectName="UE4" targetName="UE4Editor-Mac-DebugGame-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor-clean" />
       <config projectName="UE4" targetName="UE4Editor-Mac-DebugGame" />
-      <config projectName="UE4" targetName="Test2DPlatformer-Mac-Shipping-clean" />
       <config projectName="UE4" targetName="UE4Game-Mac-DebugGame-clean" />
-      <config projectName="UE4" targetName="UE4Game-Mac-Shipping-clean" />
+      <config projectName="UE4" targetName="UE4Editor-Mac-Shipping-clean" />
       <config projectName="UE4" targetName="UE4Game-Mac-DebugGame" />
-      <config projectName="UE4" targetName="UE4Editor-Mac-Shipping" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor" />
       <config projectName="UE4" targetName="UE4Game-clean" />
+      <config projectName="UE4" targetName="Test2DPlatformer-clean" />
       <config projectName="UE4" targetName="Test2DPlatformer" />
+      <config projectName="UE4" targetName="UE4Editor-clean" />
+      <config projectName="UE4" targetName="UE4Game" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditorFake" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-DebugGame" />
+      <config projectName="UE4" targetName="Test2DPlatformer-Mac-Shipping" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-Shipping" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor-clean" />
+      <config projectName="UE4" targetName="UE4Editor-Mac-Shipping" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-DebugGame-clean" />
+      <config projectName="UE4" targetName="UE4Editor" />
+      <config projectName="UE4" targetName="UE4Game-Mac-Shipping-clean" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -36,24 +36,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e06f1b8-fe76-4456-b783-8227452531aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/Maps/Level.umap" afterPath="$PROJECT_DIR$/Content/Maps/Level.umap" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/Maps/Level_BuiltData.uasset" afterPath="$PROJECT_DIR$/Content/Maps/Level_BuiltData.uasset" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/FAPPlayerController.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/FAPPlayerController.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test2DPlatformerEditorFake.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/UE4.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/UE4.cbp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,11 +52,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HeroPawn.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HeroPawn.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="444" column="25" lean-forward="false" selection-start-line="444" selection-start-column="25" selection-end-line="444" selection-end-column="25" />
+            <state relative-caret-position="410">
+              <caret line="328" column="0" lean-forward="true" selection-start-line="326" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
               <folding>
                 <element signature="e#80#109#0" expanded="true" />
               </folding>
@@ -84,7 +67,7 @@
       <file leaf-file-name="BasePawn.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
+            <state relative-caret-position="3105">
               <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
               <folding />
             </state>
@@ -94,17 +77,17 @@
       <file leaf-file-name="BasePawn.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+            <state relative-caret-position="720">
+              <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HeroPawn.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HeroPawn.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
+            <state relative-caret-position="1950">
               <caret line="130" column="22" lean-forward="false" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
               <folding />
             </state>
@@ -201,7 +184,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="744" />
+    <option name="height" value="747" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -627,15 +610,16 @@
       <workItem from="1485946167165" duration="52000" />
       <workItem from="1485946230304" duration="223000" />
       <workItem from="1485946481661" duration="39052000" />
-      <workItem from="1486727758854" duration="7451000" />
+      <workItem from="1486727758854" duration="7771000" />
+      <workItem from="1486815585712" duration="425000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77306000" />
+    <option name="totallyTimeSpent" value="78051000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="744" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="747" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2453125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -643,7 +627,6 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3037037" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30962962" sideWeight="0.503125" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -655,6 +638,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -688,7 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="70" column="89" lean-forward="false" selection-start-line="70" selection-start-column="81" selection-end-line="70" selection-end-column="89" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,7 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="1485" column="26" lean-forward="false" selection-start-line="1485" selection-start-column="26" selection-end-line="1485" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,7 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,7 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5702">
           <caret line="585" column="8" lean-forward="false" selection-start-line="585" selection-start-column="8" selection-end-line="585" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,9 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-          <folding>
-            <element signature="e#94#115#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -814,9 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="e#80#109#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -831,9 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
           <caret line="97" column="20" lean-forward="false" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
-          <folding>
-            <element signature="e#80#109#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -848,10 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="40" />
-          <folding>
-            <element signature="e#80#109#0" expanded="true" />
-            <element signature="e#223#261#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -859,7 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,7 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="73" lean-forward="false" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -875,7 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2550">
           <caret line="170" column="8" lean-forward="false" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,7 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,7 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,7 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -907,7 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -915,7 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,7 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="0" column="22243" lean-forward="false" selection-start-line="0" selection-start-column="22243" selection-end-line="0" selection-end-column="22243" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,7 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="95" column="17" lean-forward="false" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,9 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#94#126#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -957,9 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="e#80#109#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -967,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1041">
           <caret line="440" column="21" lean-forward="false" selection-start-line="440" selection-start-column="21" selection-end-line="440" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -975,7 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,9 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-          <folding>
-            <element signature="e#80#109#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -993,7 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="221" column="9" lean-forward="false" selection-start-line="221" selection-start-column="9" selection-end-line="221" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,7 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,14 +952,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="541" column="35" lean-forward="false" selection-start-line="541" selection-start-column="35" selection-end-line="541" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+        <state relative-caret-position="720">
+          <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1025,9 +967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#94#134#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1035,9 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="e#80#109#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1045,7 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,13 +988,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="835" column="13" lean-forward="false" selection-start-line="835" selection-start-column="13" selection-end-line="835" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
+        <state relative-caret-position="3105">
           <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
           <folding />
         </state>
@@ -1069,25 +1003,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1950">
+          <caret line="130" column="22" lean-forward="false" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="444" column="25" lean-forward="false" selection-start-line="444" selection-start-column="25" selection-end-line="444" selection-end-column="25" />
+        <state relative-caret-position="410">
+          <caret line="328" column="0" lean-forward="true" selection-start-line="326" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
           <folding>
             <element signature="e#80#109#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="130" column="22" lean-forward="false" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
