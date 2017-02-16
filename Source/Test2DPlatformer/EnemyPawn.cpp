@@ -7,6 +7,8 @@
 #include "PlatformerPawnMovementComponent.h"
 #include "PaperFlipbook.h"
 #include "PaperSprite.h"
+#include "Engine.h"
+#include "Components/BoxComponent.h"
 
 
 FName AEnemyPawn::SpriteComponentName(TEXT("Sprite0"));

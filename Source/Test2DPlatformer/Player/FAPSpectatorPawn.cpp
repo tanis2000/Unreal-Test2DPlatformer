@@ -3,7 +3,8 @@
 #include "Test2DPlatformer.h"
 #include "FAPSpectatorPawn.h"
 #include "FAPCameraComponent.h"
-
+#include "Engine/CollisionProfile.h"
+#include "Components/SphereComponent.h"
 
 AFAPSpectatorPawn::AFAPSpectatorPawn(const FObjectInitializer& ObjectInitializer)
 : Super(ObjectInitializer/*.SetDefaultSubobjectClass<UStrategySpectatorPawnMovement>(Super::MovementComponentName)*/)

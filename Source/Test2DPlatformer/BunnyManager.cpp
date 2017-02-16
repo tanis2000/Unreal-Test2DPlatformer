@@ -6,6 +6,8 @@
 #include "Bunny.h"
 #include "PaperGroupedSpriteComponent.h"
 #include "PaperSpriteComponent.h"
+#include "Engine/World.h"
+#include "Engine.h"
 
 FName ABunnyManager::GroupComponentName(TEXT("BunnyGroup"));
 

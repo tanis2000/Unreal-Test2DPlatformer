@@ -2,30 +2,30 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
     <generated>
-      <config projectName="UE4" targetName="Test2DPlatformer-Mac-DebugGame-clean" />
       <config projectName="UE4" targetName="Test2DPlatformer-Mac-DebugGame" />
       <config projectName="UE4" targetName="Test2DPlatformer-Mac-Shipping-clean" />
       <config projectName="UE4" targetName="UE4Game-Mac-Shipping" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-DebugGame" />
       <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-Shipping-clean" />
       <config projectName="UE4" targetName="UE4Editor-Mac-DebugGame-clean" />
-      <config projectName="UE4" targetName="UE4Editor-Mac-DebugGame" />
-      <config projectName="UE4" targetName="UE4Game-Mac-DebugGame-clean" />
-      <config projectName="UE4" targetName="UE4Editor-Mac-Shipping-clean" />
-      <config projectName="UE4" targetName="UE4Game-Mac-DebugGame" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor" />
       <config projectName="UE4" targetName="UE4Game-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformer-clean" />
-      <config projectName="UE4" targetName="Test2DPlatformer" />
-      <config projectName="UE4" targetName="UE4Editor-clean" />
-      <config projectName="UE4" targetName="UE4Game" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditorFake" />
-      <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-DebugGame" />
-      <config projectName="UE4" targetName="Test2DPlatformer-Mac-Shipping" />
+      <config projectName="UE4" targetName="UE4Game-Mac-DebugGame" />
       <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-Shipping" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditorFake" />
+      <config projectName="UE4" targetName="Test2DPlatformer" />
+      <config projectName="UE4" targetName="Test2DPlatformerEditor" />
+      <config projectName="UE4" targetName="UE4Game" />
+      <config projectName="UE4" targetName="UE4Editor-Mac-DebugGame" />
+      <config projectName="UE4" targetName="Test2DPlatformer-clean" />
+      <config projectName="UE4" targetName="Test2DPlatformer-Mac-DebugGame-clean" />
+      <config projectName="UE4" targetName="UE4Editor" />
+      <config projectName="UE4" targetName="Test2DPlatformer-Mac-Shipping" />
+      <config projectName="UE4" targetName="UE4Editor-clean" />
+      <config projectName="UE4" targetName="UE4Game-Mac-DebugGame-clean" />
       <config projectName="UE4" targetName="Test2DPlatformerEditor-clean" />
       <config projectName="UE4" targetName="UE4Editor-Mac-Shipping" />
       <config projectName="UE4" targetName="Test2DPlatformerEditor-Mac-DebugGame-clean" />
-      <config projectName="UE4" targetName="UE4Editor" />
+      <config projectName="UE4" targetName="UE4Editor-Mac-Shipping-clean" />
       <config projectName="UE4" targetName="UE4Game-Mac-Shipping-clean" />
     </generated>
   </component>
@@ -35,7 +35,24 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e06f1b8-fe76-4456-b783-8227452531aa" name="Default" comment="" />
+    <list default="true" id="2e06f1b8-fe76-4456-b783-8227452531aa" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/EnemyPawn.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/EnemyPawn.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/ForksAndPorksGameMode.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/ForksAndPorksGameMode.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Mob.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Mob.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Player/FAPSpectatorPawn.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Player/FAPSpectatorPawn.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.h" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/TestCharacter.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/TestCharacter.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/TilemapNavComponent.cpp" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/TilemapNavComponent.cpp" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,8 +70,8 @@
       <file leaf-file-name="HeroPawn.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="346" column="0" lean-forward="false" selection-start-line="346" selection-start-column="0" selection-end-line="346" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
               <folding>
                 <element signature="e#80#109#0" expanded="true" />
               </folding>
@@ -62,12 +79,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Actor.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="331" column="15" lean-forward="false" selection-start-line="331" selection-start-column="15" selection-end-line="331" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConstructorHelpers.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="94" column="23" lean-forward="false" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BasePawn.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3105">
-              <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="59">
+              <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+              <folding>
+                <element signature="e#80#109#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,18 +114,54 @@
       <file leaf-file-name="BasePawn.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+            <state relative-caret-position="216">
+              <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HeroPawn.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h">
+      <file leaf-file-name="PixelPerfectCameraComponent.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1950">
-              <caret line="130" column="22" lean-forward="false" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
+            <state relative-caret-position="300">
+              <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+              <folding>
+                <element signature="e#80#109#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BunnyManager.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+              <folding>
+                <element signature="e#80#109#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test2DPlatformer.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding>
+                <element signature="e#80#109#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModuleManager.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Core/Public/Modules/ModuleManager.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="843" column="12" lean-forward="false" selection-start-line="843" selection-start-column="12" selection-end-line="843" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -96,7 +171,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>GetDeb</find>
       <find>genera</find>
       <find>FVector</find>
       <find>SpriteComponentName</find>
@@ -124,6 +198,9 @@
       <find>BestFit</find>
       <find>groundFric</find>
       <find>tempFric</find>
+      <find>GEngine</find>
+      <find>Gengine</find>
+      <find>Gameplays</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -135,11 +212,9 @@
         <option value="$PROJECT_DIR$/Intermediate/ProjectFiles/UE4Game.cmake" />
         <option value="$PROJECT_DIR$/Intermediate/ProjectFiles/Test2DPlatformer.cmake" />
         <option value="$PROJECT_DIR$/Intermediate/ProjectFiles/UE4Editor.cmake" />
-        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.h" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/Player/FAPCameraComponent.h" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.h" />
-        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/NavArea_Jump.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/NavArea_Jump.h" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/ExtendedPathFollowingComponent.cpp" />
@@ -148,26 +223,34 @@
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/FollowerAIController.h" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/FollowerAIController.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/TilemapNavComponent.h" />
-        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/TilemapNavComponent.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/BTTask_PlatformerMoveTo.h" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp" />
-        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.h" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/JumpingPathFollowingComponent.h" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerPawnMovementComponent.h" />
-        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/EnemyPawn.h" />
-        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/EnemyPawn.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.h" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerSpectatorPawn.h" />
-        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerCameraActor.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerCameraActor.h" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/FAPPlayerController.cpp" />
-        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.h" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.cpp" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/EnemyPawn.cpp" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/TestCharacter.cpp" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/Mob.cpp" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/ForksAndPorksGameMode.cpp" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/TilemapNavComponent.cpp" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/Player/FAPSpectatorPawn.cpp" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.cpp" />
+        <option value="$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.cpp" />
         <option value="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" />
       </list>
     </option>
@@ -612,11 +695,12 @@
       <workItem from="1486815585712" duration="425000" />
       <workItem from="1487190275701" duration="233000" />
       <workItem from="1487190532344" duration="1203000" />
+      <workItem from="1487242283319" duration="2771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79487000" />
+    <option name="totallyTimeSpent" value="82258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="747" extended-state="6" />
@@ -624,7 +708,6 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2453125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32743362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3037037" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30962962" sideWeight="0.503125" order="7" side_tool="true" content_ui="tabs" />
@@ -633,6 +716,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32743362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -656,271 +740,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/FollowerAIController.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/TilemapNavComponent.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="70" column="89" lean-forward="false" selection-start-line="70" selection-start-column="81" selection-end-line="70" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Core/Public/Math/Vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="1485" column="26" lean-forward="false" selection-start-line="1485" selection-start-column="26" selection-end-line="1485" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BTTask_PlatformerMoveTo.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/AIModule/Classes/AITypes.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5702">
-          <caret line="585" column="8" lean-forward="false" selection-start-line="585" selection-start-column="8" selection-end-line="585" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Private/Components/MovementComponent.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="343" column="36" lean-forward="false" selection-start-line="343" selection-start-column="25" selection-end-line="343" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/GameFramework/MovementComponent.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4020">
-          <caret line="270" column="0" lean-forward="true" selection-start-line="269" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/GameFramework/NavMovementComponent.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="109" column="37" lean-forward="false" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/GameFramework/PawnMovementComponent.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/JumpingPathFollowingComponent.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="978" column="17" lean-forward="false" selection-start-line="978" selection-start-column="17" selection-end-line="978" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Private/Components/CharacterMovementComponent.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="804" column="0" lean-forward="false" selection-start-line="803" selection-start-column="0" selection-end-line="804" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerPawnMovementComponent.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/EnemyPawn.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="33" column="54" lean-forward="false" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/EnemyPawn.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="97" column="20" lean-forward="false" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/Particles/ParticleSystem.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5993">
-          <caret line="104" column="6" lean-forward="false" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BTTask_PlatformerMoveTo.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Core/Public/Delegates/DelegateCombinations.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="73" lean-forward="false" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Core/Public/Delegates/Delegate.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="170" column="8" lean-forward="false" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformerGameMode.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Intermediate/Build/Mac/Test2DPlatformer/Development/Test2DPlatformer.uhtmanifest" />
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/Camera/CameraActor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/Components/SceneComponent.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="95" column="17" lean-forward="false" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerCameraActor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerCameraActor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1041">
-          <caret line="440" column="21" lean-forward="false" selection-start-line="440" selection-start-column="21" selection-end-line="440" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/FAPPlayerController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -949,25 +773,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerSpectatorPawn.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -985,18 +794,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3105">
-          <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../Shared/UnrealEngine/4.14/Engine/Source/Runtime/Engine/Classes/Engine/EngineBaseTypes.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Player/FAPCameraComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Player/FAPCameraComponent.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1008,10 +833,348 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Classes/Components/BoxComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding>
+            <element signature="e#77#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Classes/Components/SceneComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="332" column="9" lean-forward="false" selection-start-line="332" selection-start-column="9" selection-end-line="332" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#80#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/EnemyPawn.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#80#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="152" column="17" lean-forward="false" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/TestCharacter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+          <folding>
+            <element signature="e#80#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Mob.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Mob.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#80#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Public/EngineGlobals.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Public/Engine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <element signature="e#745#784#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Core/Public/Core.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Core/Public/CoreMinimal.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#461#481#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/ForksAndPorksGameMode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#94#129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/TilemapNavComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-280">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#94#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Classes/Components/ActorComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="281" column="15" lean-forward="false" selection-start-line="281" selection-start-column="15" selection-end-line="281" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/CoreUObject/Public/UObject/Object.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="451" column="10" lean-forward="false" selection-start-line="451" selection-start-column="10" selection-end-line="451" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Classes/GameFramework/GameUserSettings.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="37" column="17" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/ForksAndPorksGameMode.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding>
+            <element signature="e#80#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/JumpingPathFollowingComponent.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#80#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Classes/Engine/World.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="1346" column="9" lean-forward="false" selection-start-line="1346" selection-start-column="9" selection-end-line="1346" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/TilemapNavComponent.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#80#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Classes/Engine/CollisionProfile.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="151" column="6" lean-forward="false" selection-start-line="151" selection-start-column="6" selection-end-line="151" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerSpectatorPawn.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Classes/GameFramework/DefaultPawn.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="124" column="22" lean-forward="false" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Player/FAPSpectatorPawn.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding>
+            <element signature="e#80#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Public/UnrealEngine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="462" column="36" lean-forward="false" selection-start-line="462" selection-start-column="36" selection-end-line="462" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/PixelPerfectCameraComponent.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="e#80#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding>
+            <element signature="e#80#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Classes/Engine/Engine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="3019" column="44" lean-forward="false" selection-start-line="3019" selection-start-column="44" selection-end-line="3019" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/BunnyManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+          <folding>
+            <element signature="e#80#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Core/Public/Modules/ModuleManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="843" column="12" lean-forward="false" selection-start-line="843" selection-start-column="12" selection-end-line="843" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="e#80#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="94" column="23" lean-forward="false" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="331" column="15" lean-forward="false" selection-start-line="331" selection-start-column="15" selection-end-line="331" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Classes/Kismet/GameplayStatics.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="37" column="17" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Shared/Epic Games/UE_4.15/Engine/Source/Runtime/Engine/Public/EngineUtils.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="456" column="6" lean-forward="false" selection-start-line="456" selection-start-column="6" selection-end-line="456" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="346" column="0" lean-forward="false" selection-start-line="346" selection-start-column="0" selection-end-line="346" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
           <folding>
             <element signature="e#80#109#0" expanded="true" />
           </folding>

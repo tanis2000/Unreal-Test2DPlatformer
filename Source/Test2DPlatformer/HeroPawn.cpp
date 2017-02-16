@@ -8,6 +8,11 @@
 #include "Particles/ParticleSystem.h"
 #include "PaperFlipbook.h"
 #include "PaperSprite.h"
+#include "UObject/ConstructorHelpers.h"
+#include "Components/BoxComponent.h"
+#include "Components/InputComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "EngineUtils.h"
 
 FName AHeroPawn::SpriteComponentName(TEXT("Sprite0"));
 
@@ -94,6 +99,7 @@ AHeroPawn::AHeroPawn() {
         SideViewCameraComponent->RelativeRotation = FRotator(0.0f, -90.0f, 0.0f);
         SideViewCameraComponent->RelativeLocation = FVector(0.0f, 0.0f, 0.0f);
         SideViewCameraComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+
 
         // Prevent all automatic rotation behavior on the camera, character, and camera component
         //SideViewCameraComponent->bUsePawnControlRotation = false;
@@ -383,6 +389,7 @@ void AHeroPawn::SetupPlayerInputComponent(class UInputComponent *InputComponent)
 
 void AHeroPawn::MoveSide(float Value) {
     //MoveH(Value);
+
 
 /*
     // Move at 100 units per second forward or backward

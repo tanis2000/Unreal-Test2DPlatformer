@@ -3,7 +3,8 @@
 #include "Test2DPlatformer.h"
 #include "PlatformerSpectatorPawn.h"
 #include "PixelPerfectCameraComponent.h"
-
+#include "Components/SphereComponent.h"
+#include "Engine/CollisionProfile.h"
 
 APlatformerSpectatorPawn::APlatformerSpectatorPawn(const FObjectInitializer &ObjectInitializer)
 : Super(ObjectInitializer)

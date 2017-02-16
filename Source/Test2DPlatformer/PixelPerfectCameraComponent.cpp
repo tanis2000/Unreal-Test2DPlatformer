@@ -2,6 +2,7 @@
 
 #include "Test2DPlatformer.h"
 #include "PixelPerfectCameraComponent.h"
+#include "UnrealEngine.h"
 
 UPixelPerfectCameraComponent::UPixelPerfectCameraComponent(const FObjectInitializer &ObjectInitializer) : Super(ObjectInitializer) {
     ProjectionMode = ECameraProjectionMode::Orthographic;

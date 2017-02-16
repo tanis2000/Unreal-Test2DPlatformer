@@ -4,6 +4,7 @@
 #include "JumpingPathFollowingComponent.h"
 #include "NavArea_Jump.h"
 #include "PlatformerPawnMovementComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 void UJumpingPathFollowingComponent::SetMoveSegment(int32 SegmentStartIndex)
 {

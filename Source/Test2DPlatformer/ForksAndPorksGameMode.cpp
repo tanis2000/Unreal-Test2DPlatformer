@@ -4,7 +4,8 @@
 #include "ForksAndPorksGameMode.h"
 #include "FAPPlayerController.h"
 #include "Player/FAPSpectatorPawn.h"
-
+#include "Engine.h"
+#include "GameFramework/GameUserSettings.h"
 
 AForksAndPorksGameMode::AForksAndPorksGameMode(const FObjectInitializer& ObjectInitializer)
 : Super(ObjectInitializer)

@@ -4,6 +4,8 @@
 #include "Mob.h"
 #include "PaperSpriteComponent.h"
 #include "PaperSprite.h"
+#include "Engine.h"
+#include "Components/BoxComponent.h"
 
 FName AMob::SpriteComponentName(TEXT("MainSprite"));
 

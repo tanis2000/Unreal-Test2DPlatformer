@@ -5,6 +5,9 @@
 #include "PaperFlipbookComponent.h"
 #include "PaperFlipbook.h"
 #include "PaperSprite.h"
+#include "Engine.h"
+#include "Components/BoxComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 // Sets default values
 ATestCharacter::ATestCharacter()

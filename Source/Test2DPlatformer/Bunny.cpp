@@ -4,6 +4,7 @@
 #include "Bunny.h"
 #include "PaperSpriteComponent.h"
 #include "PaperSpriteAtlas.h"
+#include "Engine.h"
 
 FName ABunny::SpriteComponentName(TEXT("Sprite0"));
 

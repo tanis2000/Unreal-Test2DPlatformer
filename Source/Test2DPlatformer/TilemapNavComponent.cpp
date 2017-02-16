@@ -6,6 +6,7 @@
 #include "AI/Navigation/NavLinkProxy.h"
 #include "AI/Navigation/NavLinkCustomComponent.h"
 #include "NavArea_Jump.h"
+#include "Engine/World.h"
 
 
 // Sets default values for this component's properties

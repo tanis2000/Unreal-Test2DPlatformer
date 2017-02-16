@@ -2,7 +2,7 @@
 
 #include "Test2DPlatformer.h"
 #include "BasePawn.h"
-
+#include "Components/BoxComponent.h"
 
 // Sets default values
 ABasePawn::ABasePawn()
