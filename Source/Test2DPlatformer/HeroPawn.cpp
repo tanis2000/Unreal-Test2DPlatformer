@@ -87,7 +87,7 @@ AHeroPawn::AHeroPawn() {
     }
 
     // Set this pawn to be controlled by the lowest-numbered player
-    AutoPossessPlayer = EAutoReceiveInput::Player0;
+    //AutoPossessPlayer = EAutoReceiveInput::Player0; // commented out as this was causing issues in multiplayer
 
     if (UseOwnCamera) {
         // Create an orthographic camera (no perspective) and attach it to the boom
@@ -158,8 +158,8 @@ void AHeroPawn::Tick(float DeltaTime) {
     InputWasDown = InputDown;
     InputWasJump = InputJump;
     InputWasFire = InputFire;
-    InputLeft = LeftPressed; //side < 0 ? true : false;
-    InputRight = RightPressed; //side > 0 ? true : false;
+    InputLeft = /*LeftPressed;*/ side < 0 ? true : false;
+    InputRight = /*RightPressed;*/ side > 0 ? true : false;
     InputDown = vert < 0 ? true : false;
     InputJump = jump > 0 ? true : false;
 
@@ -456,6 +456,6 @@ void AHeroPawn::StopRight() {
 
 void AHeroPawn::NotifyActorBeginOverlap(AActor *OtherActor) {
     AActor::NotifyActorBeginOverlap(OtherActor);
-    UE_LOG(LogTemp, Warning, TEXT("BEGIN OVERLAP"));
+    //UE_LOG(LogTemp, Warning, TEXT("BEGIN OVERLAP"));
 }
 

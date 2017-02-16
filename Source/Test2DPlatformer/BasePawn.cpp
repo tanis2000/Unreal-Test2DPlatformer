@@ -144,7 +144,7 @@ AActor *ABasePawn::CollideFirst(float x, float z) {
 		//UE_LOG(LogTemp, Warning, TEXT("Overlapping actor."));
 		AActor *OverlappingActor = *CompIt;
 		if (OverlappingActor != this) {
-			UE_LOG(LogTemp, Warning, TEXT("CollideFirst: Actor: %s"), *AActor::GetDebugName(OverlappingActor));
+			//UE_LOG(LogTemp, Warning, TEXT("CollideFirst: Actor: %s"), *AActor::GetDebugName(OverlappingActor));
 			res = OverlappingActor;
 		}
 	}
