@@ -1,0 +1,5 @@
+// Inserire le impostazioni in questo file per sovrascrivere quelle utente e predefinite.
+{
+    "cmake.buildDirectory": "${workspaceRoot}/Build",
+    "C_Cpp.autocomplete": "Disabled"
+}

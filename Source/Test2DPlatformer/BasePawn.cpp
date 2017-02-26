@@ -23,7 +23,6 @@ void ABasePawn::BeginPlay()
 void ABasePawn::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
-
 	LastTimeMult = TimeMult;
 	ActualDeltaTime = DeltaTime * TimeRate;
 	ComputedDeltaTime = FMath::Min(ActualDeltaTime, 0.01666667f * (TimeRate + 0.008333334f));
