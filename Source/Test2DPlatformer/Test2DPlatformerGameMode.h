@@ -3,6 +3,7 @@
 #pragma once
 
 #include "GameFramework/GameMode.h"
+#include "Engine.h"
 #include "Test2DPlatformerGameMode.generated.h"
 
 /**
@@ -15,6 +16,8 @@ class TEST2DPLATFORMER_API ATest2DPlatformerGameMode : public AGameMode
 	
 public:
     ATest2DPlatformerGameMode(const FObjectInitializer& ObjectInitializer);
+
+	virtual void StartPlay() override;
 
 	
 	

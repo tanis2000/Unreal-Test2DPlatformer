@@ -6,6 +6,7 @@
 #include "HeroPawn.h"
 #include "PlatformerSpectatorPawn.h"
 #include "FAPPlayerController.h"
+#include "Kismet/GameplayStatics.h"
 
 ATest2DPlatformerGameMode::ATest2DPlatformerGameMode(const FObjectInitializer& ObjectInitializer)
 : Super(ObjectInitializer)
@@ -17,4 +18,10 @@ ATest2DPlatformerGameMode::ATest2DPlatformerGameMode(const FObjectInitializer& O
     PlayerControllerClass = AFAPPlayerController::StaticClass();
 }
 
+void ATest2DPlatformerGameMode::StartPlay()
+{
+    Super::StartPlay();
 
+    // Spawn the second player
+    UGameplayStatics::CreatePlayer(GetWorld(), 1, true);
+}

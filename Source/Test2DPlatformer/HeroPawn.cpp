@@ -13,6 +13,10 @@
 #include "Components/InputComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "EngineUtils.h"
+#include "GameFramework/Controller.h"
+#include "GameFramework/PlayerController.h"
+#include "Engine/LocalPlayer.h"
+#include "FAPPlayerController.h"
 
 FName AHeroPawn::SpriteComponentName(TEXT("Sprite0"));
 
@@ -150,9 +154,26 @@ void AHeroPawn::Tick(float DeltaTime) {
     Super::Tick(DeltaTime);
 
     // Init the controls
-    float side = InputComponent->GetAxisValue("MoveSide");
-    float vert = InputComponent->GetAxisValue("MoveVertical");
-    float jump = InputComponent->GetAxisValue("Jump");
+    float side = 0;
+    float vert = 0;
+    float jump = 0;
+    
+    AFAPPlayerController *playerController = Cast<AFAPPlayerController>(GetController());
+    if (playerController != nullptr) {
+        int32 playerId = playerController->GetLocalPlayer()->GetControllerId();
+        if (playerId == 0) {
+            side = InputComponent->GetAxisValue("MoveSide_P1");
+            vert = InputComponent->GetAxisValue("MoveVertical_P1");
+            jump = InputComponent->GetAxisValue("Jump_P1");
+        } else {
+            UE_LOG(LogTemp, Warning, TEXT("Reading second player input"));
+            side = InputComponent->GetAxisValue("MoveSide_P2");
+            UE_LOG(LogTemp, Warning, TEXT("Side: %f"), side);
+            vert = InputComponent->GetAxisValue("MoveVertical_P2");
+            jump = InputComponent->GetAxisValue("Jump_P2");
+        }
+    }
+
     InputWasLeft = InputLeft;
     InputWasRight = InputRight;
     InputWasDown = InputDown;
@@ -377,14 +398,51 @@ void AHeroPawn::Tick(float DeltaTime) {
 void AHeroPawn::SetupPlayerInputComponent(class UInputComponent *InputComponent) {
     Super::SetupPlayerInputComponent(InputComponent);
 
-    InputComponent->BindAxis("MoveSide", this, &AHeroPawn::MoveSide);
-    InputComponent->BindAxis("MoveVertical", this, &AHeroPawn::MoveVertical);
-    InputComponent->BindAxis("Jump", this, &AHeroPawn::Jump);
+    AController *c = GetController();
+    if (c == nullptr) {
+        UE_LOG(LogTemp, Warning, TEXT("MISSING CONTROLLER"));
+    } else {
+        UE_LOG(LogTemp, Warning, TEXT("CONTROLLER: %s"), *AActor::GetDebugName(c));
+    }
+
+    AFAPPlayerController *playerController = Cast<AFAPPlayerController>(GetController());
+
+    if (playerController != nullptr) {
+        int32 playerId = playerController->GetLocalPlayer()->GetControllerId();
+        UE_LOG(LogTemp, Warning, TEXT("Player Controller Id: %d"), playerId);
+        if (playerId == 0) {
+            InputComponent->BindAxis("MoveSide_P1", this, &AHeroPawn::MoveSide);
+            InputComponent->BindAxis("MoveVertical_P1", this, &AHeroPawn::MoveVertical);
+            InputComponent->BindAxis("Jump_P1", this, &AHeroPawn::Jump);
+        } else {
+            InputComponent->BindAxis("MoveSide_P2", this, &AHeroPawn::MoveSide);
+            InputComponent->BindAxis("MoveVertical_P2", this, &AHeroPawn::MoveVertical);
+            InputComponent->BindAxis("Jump_P2", this, &AHeroPawn::Jump);
+        }
+    } else {
+        UE_LOG(LogTemp, Warning, TEXT("The pawn has no controller"));
+    }
+
+    // Local Player 1
+    //InputComponent->BindAxis("MoveSide", this, &AHeroPawn::MoveSide);
+    //InputComponent->BindAxis("MoveVertical", this, &AHeroPawn::MoveVertical);
+    //InputComponent->BindAxis("Jump", this, &AHeroPawn::Jump);
+
+    // Local Player 2
+    //InputComponent->BindAxis("MoveSide2", this, &AHeroPawn::MoveSide);
+    //InputComponent->BindAxis("MoveVertical2", this, &AHeroPawn::MoveVertical);
+    //InputComponent->BindAxis("Jump2", this, &AHeroPawn::Jump);
+    
+    /*
+    // Testing spawns
     InputComponent->BindAction("SpawnBunny", EInputEvent::IE_Released, this, &AHeroPawn::SpawnBunnies);
+
+    // Those are for testing only
     InputComponent->BindAction("MoveRight", EInputEvent::IE_Pressed, this, &AHeroPawn::MoveRight);
     InputComponent->BindAction("MoveLeft", EInputEvent::IE_Pressed, this, &AHeroPawn::MoveLeft);
     InputComponent->BindAction("MoveRight", EInputEvent::IE_Released, this, &AHeroPawn::StopRight);
     InputComponent->BindAction("MoveLeft", EInputEvent::IE_Released, this, &AHeroPawn::StopLeft);
+    */
 }
 
 void AHeroPawn::MoveSide(float Value) {

@@ -16,13 +16,13 @@ void UJumpingPathFollowingComponent::SetMoveSegment(int32 SegmentStartIndex)
 
         if (FNavAreaHelper::HasJumpFlag(SegmentStart))
         {
-            UE_LOG(LogTemp, Warning, TEXT("Has Jump flag."));
+            //UE_LOG(LogTemp, Warning, TEXT("Has Jump flag."));
             // jump! well... fly-in-straight-line!
             CharacterMoveComp->SetMovementMode(MOVE_Flying);
         }
         else
         {
-            UE_LOG(LogTemp, Warning, TEXT("Missing Jump flag."));
+            //UE_LOG(LogTemp, Warning, TEXT("Missing Jump flag."));
             // regular move
             CharacterMoveComp->SetMovementMode(MOVE_Walking);
         }
@@ -34,13 +34,13 @@ void UJumpingPathFollowingComponent::SetMoveSegment(int32 SegmentStartIndex)
 
         if (FNavAreaHelper::HasJumpFlag(SegmentStart))
         {
-            UE_LOG(LogTemp, Warning, TEXT("Has Jump flag."));
+            //UE_LOG(LogTemp, Warning, TEXT("Has Jump flag."));
             // jump! well... fly-in-straight-line!
             PlatformerMovementComponent->SetMovementMode(MOVE_Flying);
         }
         else
         {
-            UE_LOG(LogTemp, Warning, TEXT("Missing Jump flag."));
+            //UE_LOG(LogTemp, Warning, TEXT("Missing Jump flag."));
             // regular move
             PlatformerMovementComponent->SetMovementMode(MOVE_Walking);
         }
