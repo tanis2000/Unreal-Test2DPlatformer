@@ -42,7 +42,7 @@ bool ABasePawn::MoveH(float moveH) {
 	int32 dx = FMath::RoundToInt(SubPixelCounter.X);
 	if (dx != 0) {
 		int8 sign = FMath::Sign(dx);
-		SubPixelCounter.X -= sign;
+		SubPixelCounter.X -= dx;
 		while (dx != 0) {
 			AActor *entity = CollideFirst(/*GameTags.Solid, */GetActorLocation().X + sign, GetActorLocation().Z);
 			if (entity != nullptr)

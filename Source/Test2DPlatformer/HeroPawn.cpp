@@ -159,16 +159,17 @@ void AHeroPawn::Tick(float DeltaTime) {
     float jump = 0;
     
     AFAPPlayerController *playerController = Cast<AFAPPlayerController>(GetController());
+    int32 playerId = 0;
     if (playerController != nullptr) {
-        int32 playerId = playerController->GetLocalPlayer()->GetControllerId();
+        playerId = playerController->GetLocalPlayer()->GetControllerId();
         if (playerId == 0) {
             side = InputComponent->GetAxisValue("MoveSide_P1");
             vert = InputComponent->GetAxisValue("MoveVertical_P1");
             jump = InputComponent->GetAxisValue("Jump_P1");
         } else {
-            UE_LOG(LogTemp, Warning, TEXT("Reading second player input"));
+            //UE_LOG(LogTemp, Warning, TEXT("Reading second player input"));
             side = InputComponent->GetAxisValue("MoveSide_P2");
-            UE_LOG(LogTemp, Warning, TEXT("Side: %f"), side);
+            //UE_LOG(LogTemp, Warning, TEXT("Side: %f"), side);
             vert = InputComponent->GetAxisValue("MoveVertical_P2");
             jump = InputComponent->GetAxisValue("Jump_P2");
         }
@@ -351,10 +352,10 @@ void AHeroPawn::Tick(float DeltaTime) {
     Scale.X = Approach(Scale.X, 1.0f, 0.05f);
     Scale.Z = Approach(Scale.Z, 1.0f, 0.05f);
 
-    //MoveH(Velocity.X * TimeMult /*DeltaTime * 50*/);
-    //MoveV(Velocity.Z * TimeMult /*DeltaTime * 50*/);
-    MoveH(Velocity.X * DeltaTime * 50);
-    MoveV(Velocity.Z * DeltaTime * 50);
+    MoveH(Velocity.X * TimeMult /*DeltaTime * 50*/);
+    MoveV(Velocity.Z * TimeMult /*DeltaTime * 50*/);
+    //MoveH(Velocity.X * DeltaTime * 50);
+    //MoveV(Velocity.Z * DeltaTime * 50);
 
     Sprite->SetRelativeScale3D(Scale);
     FVector spriteScale = Sprite->GetComponentScale();
