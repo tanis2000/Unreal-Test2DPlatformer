@@ -130,4 +130,6 @@ public:
     bool LeftPressed;
     bool RightPressed;
 
+    int32 PlayerId;
+
 };

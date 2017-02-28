@@ -26,9 +26,13 @@ AHeroPawn::AHeroPawn() {
     // Setup the assets
     struct FConstructorStatics {
         ConstructorHelpers::FObjectFinderOptional<UPaperFlipbook> IdleAnimationAsset;
+        ConstructorHelpers::FObjectFinderOptional<UPaperFlipbook> Player2IdleAnimationAsset;
 
         FConstructorStatics()
-                : IdleAnimationAsset(TEXT("/Game/Animations/HeroIdle.HeroIdle")) {
+                : 
+                IdleAnimationAsset(TEXT("/Game/Animations/HeroIdle.HeroIdle")),
+                Player2IdleAnimationAsset(TEXT("/Game/Animations/HeroBlueIdle.HeroBlueIdle"))
+                 {
         }
     };
     static FConstructorStatics ConstructorStatics;
@@ -146,7 +150,6 @@ AHeroPawn::AHeroPawn() {
 // Called when the game starts or when spawned
 void AHeroPawn::BeginPlay() {
     Super::BeginPlay();
-
 }
 
 // Called every frame
@@ -406,23 +409,34 @@ void AHeroPawn::SetupPlayerInputComponent(class UInputComponent *InputComponent)
         UE_LOG(LogTemp, Warning, TEXT("CONTROLLER: %s"), *AActor::GetDebugName(c));
     }
 
+    // Find out which player we are
     AFAPPlayerController *playerController = Cast<AFAPPlayerController>(GetController());
-
+    PlayerId = 0;
     if (playerController != nullptr) {
-        int32 playerId = playerController->GetLocalPlayer()->GetControllerId();
-        UE_LOG(LogTemp, Warning, TEXT("Player Controller Id: %d"), playerId);
-        if (playerId == 0) {
-            InputComponent->BindAxis("MoveSide_P1", this, &AHeroPawn::MoveSide);
-            InputComponent->BindAxis("MoveVertical_P1", this, &AHeroPawn::MoveVertical);
-            InputComponent->BindAxis("Jump_P1", this, &AHeroPawn::Jump);
-        } else {
-            InputComponent->BindAxis("MoveSide_P2", this, &AHeroPawn::MoveSide);
-            InputComponent->BindAxis("MoveVertical_P2", this, &AHeroPawn::MoveVertical);
-            InputComponent->BindAxis("Jump_P2", this, &AHeroPawn::Jump);
-        }
+        PlayerId = playerController->GetLocalPlayer()->GetControllerId();
+        UE_LOG(LogTemp, Warning, TEXT("Player Controller Id: %d"), PlayerId);
     } else {
         UE_LOG(LogTemp, Warning, TEXT("The pawn has no controller"));
     }
+
+    UE_LOG(LogTemp, Warning, TEXT("SetupPlayerInputComponent says you are player %d"), PlayerId);
+
+    if (PlayerId == 0) {
+        InputComponent->BindAxis("MoveSide_P1", this, &AHeroPawn::MoveSide);
+        InputComponent->BindAxis("MoveVertical_P1", this, &AHeroPawn::MoveVertical);
+        InputComponent->BindAxis("Jump_P1", this, &AHeroPawn::Jump);
+    } else {
+        InputComponent->BindAxis("MoveSide_P2", this, &AHeroPawn::MoveSide);
+        InputComponent->BindAxis("MoveVertical_P2", this, &AHeroPawn::MoveVertical);
+        InputComponent->BindAxis("Jump_P2", this, &AHeroPawn::Jump);
+    }
+
+    // Reset the correct idle animation based on the player id
+    if (PlayerId == 1) {
+        IdleAnimation = LoadObject<UPaperFlipbook>(NULL, TEXT("/Game/Animations/HeroBlueIdle.HeroBlueIdle"), NULL, LOAD_None, NULL);
+        Sprite->SetFlipbook(IdleAnimation);
+    }
+
 
     // Local Player 1
     //InputComponent->BindAxis("MoveSide", this, &AHeroPawn::MoveSide);
