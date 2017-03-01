@@ -65,6 +65,8 @@ ABall::ABall()
         WorldCollisionBoxComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
     }
 
+    Tags.Add(TEXT("Ball"));
+
     bReplicates = true;    
 }
 

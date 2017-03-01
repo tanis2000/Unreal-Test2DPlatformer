@@ -138,6 +138,8 @@ AHeroPawn::AHeroPawn() {
         SideViewCameraComponent->BestFit();
     }
 
+    Tags.Add(TEXT("Hero"));
+    Tags.Add(TEXT("Solid"));
 
     Velocity = FVector(0, 0, 0);
     Scale = FVector(1, 1, 1);
