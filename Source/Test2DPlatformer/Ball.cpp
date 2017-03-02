@@ -82,7 +82,7 @@ void ABall::Tick(float DeltaTime) {
 
     MoveV(Velocity.Z * DeltaTime * 50);
 
-    BottomCollided = CollideFirst(GetActorLocation().X, GetActorLocation().Z-1) != nullptr;
+    BottomCollided = CollideFirst(TEXT("Solid"), GetActorLocation().X, GetActorLocation().Z-1) != nullptr;
 
     AHeroPawn *hero = HeroCollides(GetActorLocation().X, GetActorLocation().Z);
     if (hero != nullptr) {

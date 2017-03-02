@@ -44,7 +44,7 @@ bool ABasePawn::MoveH(float moveH) {
 		int8 sign = FMath::Sign(dx);
 		SubPixelCounter.X -= dx;
 		while (dx != 0) {
-			AActor *entity = CollideFirst(/*GameTags.Solid, */GetActorLocation().X + sign, GetActorLocation().Z);
+			AActor *entity = CollideFirst(TEXT("Solid"), GetActorLocation().X + sign, GetActorLocation().Z);
 			if (entity != nullptr)
 			{
 				SubPixelCounter.X = 0.0f;
@@ -74,7 +74,7 @@ bool ABasePawn::MoveV(float moveV) {
 		SubPixelCounter.Z -= dy;
 		while (dy != 0)
 		{
-			entity = CollideFirst(/*GameTags.Solid, */GetActorLocation().X, GetActorLocation().Z - 1.0f);
+			entity = CollideFirst(TEXT("Solid"), GetActorLocation().X, GetActorLocation().Z - 1.0f);
 			if (entity != nullptr)
 			{
 				SubPixelCounter.Z = 0.0f;
@@ -97,7 +97,7 @@ bool ABasePawn::MoveV(float moveV) {
 		SubPixelCounter.Z -= dy;
 		while (dy != 0)
 		{
-			entity = CollideFirst(/*GameTags.Solid, */GetActorLocation().X, GetActorLocation().Z + 1.0f);
+			entity = CollideFirst(TEXT("Solid"), GetActorLocation().X, GetActorLocation().Z + 1.0f);
 			if (entity != nullptr)
 			{
 				SubPixelCounter.Z = 0.0f;
@@ -109,7 +109,7 @@ bool ABasePawn::MoveV(float moveV) {
                  */
 				return true;
 			}
-			if (!IgnoreJumpThrus && ((entity = CollideFirst(/*GameTags.JumpThru, */GetActorLocation().X, GetActorLocation().Z + 1.0f)) != nullptr))
+			if (!IgnoreJumpThrus && ((entity = CollideFirst(TEXT("JumpThru"), GetActorLocation().X, GetActorLocation().Z + 1.0f)) != nullptr))
 			{
 				SubPixelCounter.Z = 0.0f;
                 /*
@@ -129,7 +129,7 @@ bool ABasePawn::MoveV(float moveV) {
 	return false;
 }
 
-AActor *ABasePawn::CollideFirst(float x, float z) {
+AActor *ABasePawn::CollideFirst(FName tag, float x, float z) {
 	AActor *res = NULL;
 	FVector originalLocation = GetActorLocation();
 	FVector newLocation = GetActorLocation();
@@ -142,7 +142,7 @@ AActor *ABasePawn::CollideFirst(float x, float z) {
 	for (auto CompIt = actors.CreateIterator(); CompIt; ++CompIt) {
 		//UE_LOG(LogTemp, Warning, TEXT("Overlapping actor."));
 		AActor *OverlappingActor = *CompIt;
-		if (OverlappingActor != this) {
+		if (OverlappingActor != this && OverlappingActor->ActorHasTag(tag)) {
 			//UE_LOG(LogTemp, Warning, TEXT("CollideFirst: Actor: %s"), *AActor::GetDebugName(OverlappingActor));
 			res = OverlappingActor;
 		}

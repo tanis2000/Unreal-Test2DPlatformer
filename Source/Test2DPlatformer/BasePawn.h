@@ -42,7 +42,7 @@ public:
 
 	bool MoveV(float moveV);
 
-	AActor *CollideFirst(float x, float z);
+	AActor *CollideFirst(FName tag, float x, float z);
 
     bool CollideCheck(AActor *other, float x, float z);
 

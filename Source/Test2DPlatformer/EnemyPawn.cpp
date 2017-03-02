@@ -92,7 +92,7 @@ void AEnemyPawn::Tick(float DeltaTime) {
 
     MoveV(Velocity.Z * DeltaTime * 50);
 
-    BottomCollided = CollideFirst(GetActorLocation().X, GetActorLocation().Z-1) != nullptr;
+    BottomCollided = CollideFirst(TEXT("Solid"), GetActorLocation().X, GetActorLocation().Z-1) != nullptr;
 
 }
 

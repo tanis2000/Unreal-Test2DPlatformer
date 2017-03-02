@@ -373,10 +373,10 @@ void AHeroPawn::Tick(float DeltaTime) {
     OnRightPrev = RightCollided;
     OnLadderPrev = LadderCollided;
 
-    BottomCollided = CollideFirst(GetActorLocation().X, GetActorLocation().Z-1) != nullptr;
-    LeftCollided = CollideFirst(GetActorLocation().X-1, GetActorLocation().Z) != nullptr;
-    TopCollided = CollideFirst(GetActorLocation().X, GetActorLocation().Z+1) != nullptr;
-    RightCollided = CollideFirst(GetActorLocation().X+1, GetActorLocation().Z) != nullptr;
+    BottomCollided = CollideFirst(TEXT("Solid"), GetActorLocation().X, GetActorLocation().Z-1) != nullptr;
+    LeftCollided = CollideFirst(TEXT("Solid"), GetActorLocation().X-1, GetActorLocation().Z) != nullptr;
+    TopCollided = CollideFirst(TEXT("Solid"), GetActorLocation().X, GetActorLocation().Z+1) != nullptr;
+    RightCollided = CollideFirst(TEXT("Solid"), GetActorLocation().X+1, GetActorLocation().Z) != nullptr;
 
 
     /*

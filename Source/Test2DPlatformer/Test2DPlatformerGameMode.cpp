@@ -23,5 +23,6 @@ void ATest2DPlatformerGameMode::StartPlay()
     Super::StartPlay();
 
     // Spawn the second player
+    // NOTE: uncomment to enable again the second player
     UGameplayStatics::CreatePlayer(GetWorld(), 1, true);
 }
