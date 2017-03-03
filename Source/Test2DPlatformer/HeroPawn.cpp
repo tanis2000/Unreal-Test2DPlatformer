@@ -17,6 +17,7 @@
 #include "GameFramework/PlayerController.h"
 #include "Engine/LocalPlayer.h"
 #include "FAPPlayerController.h"
+#include "Ball.h"
 
 FName AHeroPawn::SpriteComponentName(TEXT("Sprite0"));
 
@@ -162,6 +163,7 @@ void AHeroPawn::Tick(float DeltaTime) {
     float side = 0;
     float vert = 0;
     float jump = 0;
+    float fire = 0;
     
     AFAPPlayerController *playerController = Cast<AFAPPlayerController>(GetController());
     int32 playerId = 0;
@@ -171,12 +173,14 @@ void AHeroPawn::Tick(float DeltaTime) {
             side = InputComponent->GetAxisValue("MoveSide_P1");
             vert = InputComponent->GetAxisValue("MoveVertical_P1");
             jump = InputComponent->GetAxisValue("Jump_P1");
+            fire = InputComponent->GetAxisValue("Fire_P1");
         } else {
             //UE_LOG(LogTemp, Warning, TEXT("Reading second player input"));
             side = InputComponent->GetAxisValue("MoveSide_P2");
             //UE_LOG(LogTemp, Warning, TEXT("Side: %f"), side);
             vert = InputComponent->GetAxisValue("MoveVertical_P2");
             jump = InputComponent->GetAxisValue("Jump_P2");
+            fire = InputComponent->GetAxisValue("Fire_P2");
         }
     }
 
@@ -189,6 +193,7 @@ void AHeroPawn::Tick(float DeltaTime) {
     InputRight = /*RightPressed;*/ side > 0 ? true : false;
     InputDown = vert < 0 ? true : false;
     InputJump = jump > 0 ? true : false;
+    InputFire = fire > 0 ? true : false;
 
     bool kLeft = InputLeft;
     bool kRight = InputRight;
@@ -306,7 +311,11 @@ void AHeroPawn::Tick(float DeltaTime) {
         Velocity.Z = 0;
         Scale.X = 0.5f;
         Scale.Z = 1.5f;
-        //Ball.Shoot();
+        // Shoot the ball if we're carrying it, otherwise fire the gun
+        ABall *ball = FindBall();
+        if (ball != nullptr) {
+            ball->Shoot(Facing * 50);
+        }
     }
 
     // Ladders
@@ -427,10 +436,12 @@ void AHeroPawn::SetupPlayerInputComponent(class UInputComponent *InputComponent)
         InputComponent->BindAxis("MoveSide_P1", this, &AHeroPawn::MoveSide);
         InputComponent->BindAxis("MoveVertical_P1", this, &AHeroPawn::MoveVertical);
         InputComponent->BindAxis("Jump_P1", this, &AHeroPawn::Jump);
+        InputComponent->BindAxis("Fire_P1", this, &AHeroPawn::Fire);
     } else {
         InputComponent->BindAxis("MoveSide_P2", this, &AHeroPawn::MoveSide);
         InputComponent->BindAxis("MoveVertical_P2", this, &AHeroPawn::MoveVertical);
         InputComponent->BindAxis("Jump_P2", this, &AHeroPawn::Jump);
+        InputComponent->BindAxis("Fire_P2", this, &AHeroPawn::Fire);
     }
 
     // Reset the correct idle animation based on the player id
@@ -507,6 +518,9 @@ void AHeroPawn::MoveVertical(float Value) {
 void AHeroPawn::Jump(float Value) {
 }
 
+void AHeroPawn::Fire(float Value) {
+}
+
 void AHeroPawn::SpawnBunnies() {
     for (TActorIterator<ABunnyManager> ActorItr(GetWorld()); ActorItr; ++ActorItr) {
         ActorItr->AddBunnies(1000);
@@ -534,3 +548,10 @@ void AHeroPawn::NotifyActorBeginOverlap(AActor *OtherActor) {
     //UE_LOG(LogTemp, Warning, TEXT("BEGIN OVERLAP"));
 }
 
+ABall *AHeroPawn::FindBall() {
+    ABall *ball = nullptr;
+    for (TActorIterator<ABall> ActorItr(GetWorld()); ActorItr; ++ActorItr) {
+        ball =  Cast<ABall>(*ActorItr);
+    }
+    return ball;
+}

@@ -67,6 +67,8 @@ ABall::ABall()
 
     Tags.Add(TEXT("Ball"));
 
+    distanceFromCarrier = 16;
+
     bReplicates = true;    
 }
 
@@ -74,15 +76,40 @@ ABall::ABall()
 void ABall::Tick(float DeltaTime) {
     Super::Tick(DeltaTime);
 
-    // Handle gravity
-    if (!BottomCollided) {
-        // Fall normally
-        Velocity.Z = Approach(Velocity.Z, -vyMax, -gravNorm);
+    if (Carrier != nullptr) {
+        // If we have a carrier we move with him
+        FVector location = Carrier->GetActorLocation();
+        location.X += Carrier->Facing * distanceFromCarrier;
+        targetLocation = location;
+        SetActorLocation(Approach(GetActorLocation(), targetLocation, idleSpeed * TimeMult));
+    } else {
+        // Temporary vars
+        float tempAccel, tempFric;
+
+        // Apply the correct form of acceleration and friction
+        if (BottomCollided) {
+            tempAccel = groundAccel;
+            tempFric  = groundFric;
+        } else {
+            tempAccel = airAccel;
+            tempFric  = airFric;
+        }
+
+        // Handle gravity
+        if (!BottomCollided) {
+            // Fall normally
+            Velocity.Z = Approach(Velocity.Z, -vyMax, -gravNorm);
+        }
+
+        Velocity.X = Approach(Velocity.X, 0, tempFric);
+
+
+        MoveH(Velocity.X * DeltaTime * 50);
+        MoveV(Velocity.Z * DeltaTime * 50);
+
+        BottomCollided = CollideFirst(TEXT("Solid"), GetActorLocation().X, GetActorLocation().Z-1) != nullptr;
     }
 
-    MoveV(Velocity.Z * DeltaTime * 50);
-
-    BottomCollided = CollideFirst(TEXT("Solid"), GetActorLocation().X, GetActorLocation().Z-1) != nullptr;
 
     AHeroPawn *hero = HeroCollides(GetActorLocation().X, GetActorLocation().Z);
     if (hero != nullptr) {
@@ -112,6 +139,12 @@ AHeroPawn *ABall::HeroCollides(float x, float z) {
 
     SetActorLocation(originalLocation);
     return res;
+}
+
+void ABall::Shoot(float speed)
+{
+    Carrier = nullptr;
+    Velocity.X = speed;
 }
 
 

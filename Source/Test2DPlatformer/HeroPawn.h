@@ -115,6 +115,8 @@ public:
 
     void Jump(float Value);
 
+    void Fire(float Value);
+
     void SpawnBunnies();
 
     void NotifyActorBeginOverlap(AActor *OtherActor) override;
@@ -131,5 +133,7 @@ public:
     bool RightPressed;
 
     int32 PlayerId;
+
+    class ABall *FindBall();
 
 };

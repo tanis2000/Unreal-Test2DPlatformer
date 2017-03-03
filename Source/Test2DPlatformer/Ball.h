@@ -36,14 +36,36 @@ protected:
 	AHeroPawn *HeroCollides(float x, float z);
 
 public:
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     float vyMax       = 7.0f;
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     float gravNorm    = -0.76f;
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+    float idleSpeed = 6.0f;
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+    float vxMax       = 10.0f;
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+    float groundAccel = 1.00f;
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+    float groundFric  = 3.00f;
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+    float airAccel    = 0.75f;
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+    float airFric     = 0.53f;
 
     bool BottomCollided;
 
     UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     FVector Velocity;
 
+    UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	AHeroPawn *Carrier;
-	
+
+    UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+    FVector targetLocation;
+
+    UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+    float distanceFromCarrier;
+
+    void Shoot(float speed);
 };
