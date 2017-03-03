@@ -18,7 +18,7 @@ ABall::ABall()
         ConstructorHelpers::FObjectFinderOptional<UPaperFlipbook> IdleAnimationAsset;
 
         FConstructorStatics()
-                : IdleAnimationAsset(TEXT("/Game/Animations/HeroIdle.HeroIdle")) {
+                : IdleAnimationAsset(TEXT("/Game/Animations/BallIdle.BallIdle")) {
         }
     };
     static FConstructorStatics ConstructorStatics;
@@ -60,7 +60,7 @@ ABall::ABall()
         WorldCollisionBoxComponent->SetRelativeTransform(hitboxSocket->LocalTransform);
         WorldCollisionBoxComponent->SetCollisionProfileName(CollisionProfileName);
         WorldCollisionBoxComponent->bGenerateOverlapEvents = true;
-        FVector boxExtent = FVector(7.8f, 7.8f, 7.8f); // 0.2f is a skin around the sprite
+        FVector boxExtent = FVector(3.8f, 3.8f, 3.8f); // 0.2f is a skin around the sprite
         WorldCollisionBoxComponent->InitBoxExtent(boxExtent);
         WorldCollisionBoxComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
     }
