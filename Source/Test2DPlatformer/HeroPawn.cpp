@@ -313,7 +313,7 @@ void AHeroPawn::Tick(float DeltaTime) {
         Scale.Z = 1.5f;
         // Shoot the ball if we're carrying it, otherwise fire the gun
         ABall *ball = FindBall();
-        if (ball != nullptr) {
+        if (ball != nullptr && ball->Carrier == this) {
             ball->Shoot(Facing * 50);
         }
     }
