@@ -17,6 +17,8 @@ class TEST2DPLATFORMER_API AFAPPlayerController : public APlayerController
 		/** Allows the PlayerController to set up custom input bindings. */
 		virtual void SetupInputComponent() override;
 
+		virtual void BeginPlay() override;
+
 		void MoveSide(float value);
 		void MoveVertical(float value);
 		void Jump(float value);

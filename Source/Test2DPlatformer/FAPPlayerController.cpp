@@ -4,6 +4,7 @@
 #include "FAPPlayerController.h"
 #include "Engine/LocalPlayer.h"
 #include "Components/InputComponent.h"
+#include "PlatformerPlayerState.h"
 
 AFAPPlayerController::AFAPPlayerController(const FObjectInitializer& ObjectInitializer)
 : Super(ObjectInitializer)
@@ -29,6 +30,14 @@ void AFAPPlayerController::SetupInputComponent()
     }
     */
 }
+
+void AFAPPlayerController::BeginPlay() 
+{
+    Super::BeginPlay();
+    UE_LOG(LogTemp, Warning, TEXT("FAPPlayerController BeginPlay"));
+    UE_LOG(LogTemp, Warning, TEXT("PlayerState: %s"), *AActor::GetDebugName(PlayerState));
+}
+
 
 void AFAPPlayerController::MoveSide(float value)
 {    
