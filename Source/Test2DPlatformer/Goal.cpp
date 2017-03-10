@@ -8,6 +8,8 @@
 #include "UObject/ConstructorHelpers.h"
 #include "Components/BoxComponent.h"
 #include "Particles/ParticleSystem.h"
+#include "Kismet/GameplayStatics.h"
+#include "Particles/ParticleSystemComponent.h"
 
 
 // Sets default values
@@ -16,10 +18,12 @@ AGoal::AGoal()
     // Setup the assets
     struct FConstructorStatics {
         ConstructorHelpers::FObjectFinderOptional<UPaperFlipbook> IdleAnimationAsset;
+        ConstructorHelpers::FObjectFinderOptional<UParticleSystem> GoalParticleSystemAsset;
 
         FConstructorStatics()
                 : 
-                IdleAnimationAsset(TEXT("/Game/Animations/HeroIdle.HeroIdle"))
+                IdleAnimationAsset(TEXT("/Game/Animations/HeroIdle.HeroIdle")),
+                GoalParticleSystemAsset(TEXT("/Game/Particles/GoalEmitter.GoalEmitter"))
                  {}
     };
     static FConstructorStatics ConstructorStatics;
@@ -64,10 +68,20 @@ AGoal::AGoal()
         WorldCollisionBoxComponent->InitBoxExtent(boxExtent);
         WorldCollisionBoxComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 
-        ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName(TEXT("ParticleSystem'/Game/Particles/PuffEmitter.PuffEmitter'"));
+        GoalParticleSystem = ConstructorStatics.GoalParticleSystemAsset.Get();
+        GoalEmitter = CreateOptionalDefaultSubobject<UParticleSystemComponent>(TEXT("GoalEmitter"));
+        GoalEmitter->SetTemplate(GoalParticleSystem);
+        GoalEmitter->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+
+        /*
+        ConstructorHelpers::FObjectFinder<UParticleSystem> ArbitraryParticleName(TEXT("ParticleSystem'/Game/Particles/GoalEmitter.GoalEmitter'"));
         if (ArbitraryParticleName.Succeeded()) {
             PuffEmitter = ArbitraryParticleName.Object;
+            if (PuffEmitter != nullptr) {
+                UGameplayStatics::SpawnEmitterAttached(PuffEmitter, Sprite);
+            }
         }
+        */
 
     }
 

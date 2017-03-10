@@ -26,8 +26,11 @@ protected:
     UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     class UBoxComponent *WorldCollisionBoxComponent;
 
-    UPROPERTY(EditDefaultsOnly, Category=Pawn)
-    class UParticleSystem *PuffEmitter;
+    UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+    class UParticleSystem *GoalParticleSystem;
+
+    UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+    class UParticleSystemComponent *GoalEmitter;
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
