@@ -95,6 +95,13 @@ void ABall::Tick(float DeltaTime) {
             tempFric  = airFric;
         }
 
+        // Check collisions with walls and adjust velocity
+        if (LeftCollided || RightCollided && Velocity.X != 0) {
+            Velocity.X *= -1.0f;
+            Velocity.X *= bounceFric;
+            UE_LOG(LogTemp, Warning, TEXT("Ball bounce"));
+        }
+
         // Handle gravity
         if (!BottomCollided) {
             // Fall normally
@@ -108,6 +115,9 @@ void ABall::Tick(float DeltaTime) {
         MoveV(Velocity.Z * DeltaTime * 50);
 
         BottomCollided = CollideFirst(TEXT("Solid"), GetActorLocation().X, GetActorLocation().Z-1) != nullptr;
+        LeftCollided = CollideFirst(TEXT("Solid"), GetActorLocation().X-1, GetActorLocation().Z) != nullptr;
+        TopCollided = CollideFirst(TEXT("Solid"), GetActorLocation().X, GetActorLocation().Z+1) != nullptr;
+        RightCollided = CollideFirst(TEXT("Solid"), GetActorLocation().X+1, GetActorLocation().Z) != nullptr;
     }
 
 
