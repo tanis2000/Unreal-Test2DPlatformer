@@ -1,1 +1,2 @@
-CMake: 3.6.3@/Applications/CLion.app/Contents/bin/cmake/bin/cmake
+Options: 
+CMake: 3.7.2@/Applications/CLion.app/Contents/bin/cmake/bin/cmake
