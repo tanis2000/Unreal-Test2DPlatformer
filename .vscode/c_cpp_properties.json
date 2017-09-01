@@ -4321,7 +4321,8 @@
                     "/Users/Shared/Epic Games/UE_4.15/Engine/Plugins/2D/Paper2D/Intermediate/Build/Mac/UE4Editor/Inc/Paper2D",
                     "/Users/Shared/Epic Games/UE_4.15/Engine/Plugins/2D/Paper2D/Source/Paper2D"
                 ]
-            }
+            },
+            "intelliSenseMode": "clang-x64"
         },
         {
             "name": "Linux",
@@ -4336,7 +4337,8 @@
                     "/usr/include",
                     "/usr/local/include"
                 ]
-            }
+            },
+            "intelliSenseMode": "clang-x64"
         },
         {
             "name": "Win32",
@@ -4349,7 +4351,8 @@
                 "path": [
                     "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*"
                 ]
-            }
+            },
+            "intelliSenseMode": "msvc-x64"
         }
     ]
 }
