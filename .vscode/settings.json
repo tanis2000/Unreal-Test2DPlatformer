@@ -1,5 +1,15 @@
-// Inserire le impostazioni in questo file per sovrascrivere quelle utente e predefinite.
 {
-    "cmake.buildDirectory": "${workspaceRoot}/Build",
-    "C_Cpp.autocomplete": "Disabled"
+	"typescript.tsc.autoDetect": "off",
+	"files.exclude": {
+		"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/.git": true,
+		"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/.idea": true,
+		"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/.vscode": true,
+		"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Content": true,
+		"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Docs": true,
+		"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Intermediate": true,
+		"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/OriginalArt": true,
+		"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Saved": true,
+		"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.xcworkspace": true,
+		"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug": true
+	}
 }

@@ -1,0 +1,635 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"taskName": "Test2DPlatformer Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"Mac",
+				"Debug",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"Mac",
+				"Debug",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"Mac",
+				"DebugGame",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"Mac",
+				"DebugGame",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"Mac",
+				"Development",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"Mac",
+				"Development",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"Mac",
+				"Shipping",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"Mac",
+				"Shipping",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"Mac",
+				"Test",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"Mac",
+				"Test",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"IOS",
+				"Debug",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"IOS",
+				"Debug",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"IOS",
+				"DebugGame",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"IOS",
+				"DebugGame",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"IOS",
+				"Development",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"IOS",
+				"Development",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"IOS",
+				"Shipping",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"IOS",
+				"Shipping",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"IOS",
+				"Test",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"IOS",
+				"Test",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Debug",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Debug",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"DebugGame",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"DebugGame",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Development",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Development",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Shipping",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Shipping",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Test",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformer HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Test",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformerEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformerEditor",
+				"Mac",
+				"Debug",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformerEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformerEditor",
+				"Mac",
+				"Debug",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformerEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformerEditor",
+				"Mac",
+				"DebugGame",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformerEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformerEditor",
+				"Mac",
+				"DebugGame",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformerEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformerEditor",
+				"Mac",
+				"Development",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		},
+		{
+			"taskName": "Test2DPlatformerEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformerEditor",
+				"Mac",
+				"Development",
+				"'/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.18"
+			}
+		}
+	]
+}

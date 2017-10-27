@@ -4,7 +4,7 @@ using UnrealBuildTool;
 
 public class Test2DPlatformer : ModuleRules
 {
-	public Test2DPlatformer(TargetInfo Target)
+	public Test2DPlatformer(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PublicDependencyModuleNames.AddRange(new string[] { "AIModule", "Core", "CoreUObject", "Engine", "InputCore", "Paper2D" });
 
