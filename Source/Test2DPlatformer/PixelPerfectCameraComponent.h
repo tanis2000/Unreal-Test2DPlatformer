@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
 #include "Camera/CameraComponent.h"
 #include "PixelPerfectCameraComponent.generated.h"
 

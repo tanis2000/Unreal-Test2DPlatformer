@@ -58,3 +58,4 @@ Intermediate/*
 DerivedDataCache/*
 
 compile_commands.json
+.vs/

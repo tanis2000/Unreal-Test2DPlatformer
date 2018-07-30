@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
 #include "Navigation/PathFollowingComponent.h"
 #include "JumpingPathFollowingComponent.generated.h"
 

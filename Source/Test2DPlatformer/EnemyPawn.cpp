@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Test2DPlatformer.h"
 #include "EnemyPawn.h"
+#include "Test2DPlatformer.h"
 #include "PaperFlipbookComponent.h"
 #include "AITypes.h"
 #include "PlatformerPawnMovementComponent.h"
@@ -46,7 +46,7 @@ AEnemyPawn::AEnemyPawn() {
         Sprite->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
         static FName CollisionProfileName(TEXT("OverlapAllDynamic"));
         Sprite->SetCollisionProfileName(CollisionProfileName);
-        Sprite->bGenerateOverlapEvents = false;
+		Sprite->SetGenerateOverlapEvents(false);
 
         Sprite->SetFlipbook(IdleAnimation);
 
@@ -62,7 +62,7 @@ AEnemyPawn::AEnemyPawn() {
         WorldCollisionBoxComponent = CreateOptionalDefaultSubobject<UBoxComponent>(TEXT("WorldCollisionBoxComponent"));
         WorldCollisionBoxComponent->SetRelativeTransform(hitboxSocket->LocalTransform);
         WorldCollisionBoxComponent->SetCollisionProfileName(CollisionProfileName);
-        WorldCollisionBoxComponent->bGenerateOverlapEvents = true;
+		WorldCollisionBoxComponent->SetGenerateOverlapEvents(true);
         FVector boxExtent = FVector(7.8f, 7.8f, 7.8f); // 0.2f is a skin around the sprite
         WorldCollisionBoxComponent->InitBoxExtent(boxExtent);
         WorldCollisionBoxComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);

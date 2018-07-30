@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Test2DPlatformer.h"
 #include "Mob.h"
+#include "Test2DPlatformer.h"
 #include "PaperSpriteComponent.h"
 #include "PaperSprite.h"
 #include "Engine.h"
@@ -42,7 +42,7 @@ AMob::AMob()
         SpriteComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
         static FName CollisionProfileName(TEXT("OverlapAll"));
         SpriteComponent->SetCollisionProfileName(CollisionProfileName);
-        SpriteComponent->bGenerateOverlapEvents = true;
+		SpriteComponent->SetGenerateOverlapEvents(true);
         SpriteComponent->bAutoActivate = true;
       // TODO: maybe not needed
       //SpriteComponent->bCanEverAffectNavigation = false;

@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
 #include "Engine/GameViewportClient.h"
 #include "Engine.h"
 #include "PlatformerGameViewportClient.generated.h"

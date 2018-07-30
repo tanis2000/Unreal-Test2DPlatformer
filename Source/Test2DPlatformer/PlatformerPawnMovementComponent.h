@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
 #include "GameFramework/PawnMovementComponent.h"
 #include "PlatformerPawnMovementComponent.generated.h"
 

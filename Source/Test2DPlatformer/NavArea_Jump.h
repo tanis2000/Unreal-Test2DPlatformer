@@ -2,8 +2,9 @@
 
 #pragma once
 
-#include "AI/Navigation/NavAreas/NavArea.h"
-#include "AI/Navigation/RecastNavMesh.h"
+#include "CoreMinimal.h"
+#include "NavAreas/NavArea.h"
+#include "NavMesh/RecastNavMesh.h"
 #include "NavArea_Jump.generated.h"
 
 UENUM()
@@ -35,9 +36,9 @@ namespace FNavAreaHelper
 UCLASS()
 class TEST2DPLATFORMER_API UNavArea_Jump : public UNavArea
 {
-	GENERATED_UCLASS_BODY()
-	
-	
+	GENERATED_BODY()
+		//UNavArea_Jump(const FObjectInitializer& ObjectInitializer);
+	UNavArea_Jump();
 	
 	
 };

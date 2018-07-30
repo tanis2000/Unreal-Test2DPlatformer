@@ -1,10 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "TilemapNavComponent.h"
 #include "Test2DPlatformer.h"
 #include "PaperTileMapComponent.h"
-#include "TilemapNavComponent.h"
-#include "AI/Navigation/NavLinkProxy.h"
-#include "AI/Navigation/NavLinkCustomComponent.h"
+#include "Navigation/NavLinkProxy.h"
+#include "NavLinkCustomComponent.h"
 #include "NavArea_Jump.h"
 #include "Engine/World.h"
 
@@ -24,7 +24,7 @@ UTilemapNavComponent::UTilemapNavComponent()
 // Called when the game starts
 void UTilemapNavComponent::BeginPlay()
 {
-	Super::BeginPlay();
+	//Super::BeginPlay();
 
     AActor *actor = GetOwner();
     if (actor != nullptr) {
@@ -34,8 +34,8 @@ void UTilemapNavComponent::BeginPlay()
             UE_LOG(LogTemp, Warning, TEXT("Map size, X: %d, Y: %d Layers: %d"), MapWidth, MapHeight, NumLayers);
 
             // Build the connection between jumping/fallout positions
-            for (uint32 y = 0 ; y < MapHeight; y++) {
-                for (uint32 x = 0 ; x < MapWidth; x++) {
+            for (int32 y = 0 ; y < MapHeight; y++) {
+                for (int32 x = 0 ; x < MapWidth; x++) {
                     FPaperTileInfo tile = TileMapComponent->GetTile(x, y, NavLayer);
                     int32 tileIndex = tile.GetTileIndex();
                     int32 packedTileIndex = tile.PackedTileIndex;
@@ -106,14 +106,26 @@ void UTilemapNavComponent::BeginPlay()
                             FActorSpawnParameters spawnParameters;
                             ANavLinkProxy *navLinkProxy = GetWorld()->SpawnActor<ANavLinkProxy>(spawnLocation, spawnRotation, spawnParameters);
                             //FNavigationLink point = navLinkProxy->PointLinks[0];
-                            navLinkProxy->PointLinks[0].Left = FVector(0, link.Start->Location.X, link.Start->Location.Z);
+							TArray<FNavigationLink> navLinks;
+							TArray<FNavigationSegmentLink> navSegLinks;
+							navLinkProxy->GetNavigationLinksArray(navLinks, navSegLinks);
+							navLinks[0].Left = FVector(0, link.Start->Location.X, link.Start->Location.Z);
+							navLinks[0].Right = FVector(0, link.End->Location.X, link.End->Location.Z);
+							navLinks[0].SnapRadius = 8.0f;
+							navLinks[0].SnapHeight = 8.0f;
+							navLinks[0].bUseSnapHeight = true;
+							navLinks[0].SetAreaClass(UNavArea_Jump::StaticClass());
+							/*
+							navLinkProxy->PointLinks[0].Left = FVector(0, link.Start->Location.X, link.Start->Location.Z);
                             navLinkProxy->PointLinks[0].Right = FVector(0, link.End->Location.X, link.End->Location.Z);
                             navLinkProxy->PointLinks[0].SnapRadius = 8.0f;
                             navLinkProxy->PointLinks[0].SnapHeight = 8.0f;
                             navLinkProxy->PointLinks[0].bUseSnapHeight = true;
                             navLinkProxy->PointLinks[0].SetAreaClass(UNavArea_Jump::StaticClass());
-                            UNavLinkCustomComponent* smartLink = navLinkProxy->GetSmartLinkComp();
-                            smartLink->SetEnabled(false);
+							*/
+							UNavLinkCustomComponent* smartLink = navLinkProxy->GetSmartLinkComp();
+                            // TODO: find out how to disable it
+							//smartLink->SetEnabled(false);
                         }
                     }
                 }
@@ -135,7 +147,7 @@ void UTilemapNavComponent::BeginPlay()
 // Called every frame
 void UTilemapNavComponent::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
 {
-	Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
+	//Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
 
 	// ...
 }

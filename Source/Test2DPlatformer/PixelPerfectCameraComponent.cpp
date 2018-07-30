@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Test2DPlatformer.h"
 #include "PixelPerfectCameraComponent.h"
+#include "Test2DPlatformer.h"
 #include "UnrealEngine.h"
 
 UPixelPerfectCameraComponent::UPixelPerfectCameraComponent(const FObjectInitializer &ObjectInitializer) : Super(ObjectInitializer) {

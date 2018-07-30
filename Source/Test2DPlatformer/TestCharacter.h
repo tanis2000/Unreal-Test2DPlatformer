@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
 #include "PaperCharacter.h"
 #include "TestCharacter.generated.h"
 

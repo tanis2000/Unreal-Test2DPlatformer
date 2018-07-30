@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Test2DPlatformer.h"
 #include "PlatformerPawnMovementComponent.h"
+#include "Test2DPlatformer.h"
 #include "EnemyPawn.h"
 
 bool UPlatformerPawnMovementComponent::HasValidData() const

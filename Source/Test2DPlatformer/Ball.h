@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
 #include "BasePawn.h"
 #include "Ball.generated.h"
 

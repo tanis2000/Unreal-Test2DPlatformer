@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
 #include "AIController.h"
 #include "FollowerAIController.generated.h"
 

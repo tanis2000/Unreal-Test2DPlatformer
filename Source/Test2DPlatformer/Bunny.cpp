@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Test2DPlatformer.h"
 #include "Bunny.h"
+#include "Test2DPlatformer.h"
 #include "PaperSpriteComponent.h"
 #include "PaperSpriteAtlas.h"
 #include "Engine.h"
@@ -45,7 +45,7 @@ ABunny::ABunny() {
         //static FName CollisionProfileName(TEXT("CharacterMesh"));
         static FName CollisionProfileName(TEXT("OverlapAllDynamic"));
         Sprite->SetCollisionProfileName(CollisionProfileName);
-        Sprite->bGenerateOverlapEvents = true;
+		Sprite->SetGenerateOverlapEvents(true);
         Sprite->bAutoActivate = true;
         // TODO: maybe not needed
         //Sprite->bCanEverAffectNavigation = false;

@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
 #include "FAPPlayerController.generated.h"
 

@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Test2DPlatformer.h"
 #include "Ball.h"
+#include "Test2DPlatformer.h"
 #include "PaperFlipbookComponent.h"
 #include "PaperFlipbook.h"
 #include "PaperSprite.h"
@@ -43,7 +43,7 @@ ABall::ABall()
         Sprite->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
         static FName CollisionProfileName(TEXT("OverlapAllDynamic"));
         Sprite->SetCollisionProfileName(CollisionProfileName);
-        Sprite->bGenerateOverlapEvents = false;
+		Sprite->SetGenerateOverlapEvents(false);
 
         Sprite->SetFlipbook(IdleAnimation);
 
@@ -59,7 +59,7 @@ ABall::ABall()
         WorldCollisionBoxComponent = CreateOptionalDefaultSubobject<UBoxComponent>(TEXT("WorldCollisionBoxComponent"));
         WorldCollisionBoxComponent->SetRelativeTransform(hitboxSocket->LocalTransform);
         WorldCollisionBoxComponent->SetCollisionProfileName(CollisionProfileName);
-        WorldCollisionBoxComponent->bGenerateOverlapEvents = true;
+		WorldCollisionBoxComponent->SetGenerateOverlapEvents(true);
         FVector boxExtent = FVector(3.8f, 3.8f, 3.8f); // 0.2f is a skin around the sprite
         WorldCollisionBoxComponent->InitBoxExtent(boxExtent);
         WorldCollisionBoxComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);

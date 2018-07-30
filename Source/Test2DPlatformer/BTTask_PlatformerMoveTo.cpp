@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Test2DPlatformer.h"
 #include "BTTask_PlatformerMoveTo.h"
+#include "Test2DPlatformer.h"
 #include "EnemyPawn.h"
 
 #include "AIController.h"
@@ -13,7 +13,9 @@
 /* This contains includes all key types like UBlackboardKeyType_Vector used below. */
 #include "BehaviorTree/Blackboard/BlackboardKeyAllTypes.h"
 
-UBTTask_PlatformerMoveTo::UBTTask_PlatformerMoveTo(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
+// TODO: this no longer works in UE 4.20 .. no clue why
+/*
+UBTTask_PlatformerMoveTo::UBTTask_PlatformerMoveTo(const FObjectInitializer& ObjectInitializer)	: Super(ObjectInitializer)
 {
     NodeName = "Platformer Move To";
     bUseGameplayTasks = GET_AI_CONFIG_VAR(bEnableBTAITasks);
@@ -24,6 +26,7 @@ UBTTask_PlatformerMoveTo::UBTTask_PlatformerMoveTo(const FObjectInitializer& Obj
     // accept only vectors
     BlackboardKey.AddVectorFilter(this, GET_MEMBER_NAME_CHECKED(UBTTask_PlatformerMoveTo, BlackboardKey));
 }
+*/
 
 EBTNodeResult::Type UBTTask_PlatformerMoveTo::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {

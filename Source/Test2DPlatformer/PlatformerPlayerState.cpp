@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Test2DPlatformer.h"
 #include "PlatformerPlayerState.h"
+#include "Test2DPlatformer.h"
 #include "Net/UnrealNetwork.h"
 
 APlatformerPlayerState::APlatformerPlayerState(const FObjectInitializer& ObjectInitializer)

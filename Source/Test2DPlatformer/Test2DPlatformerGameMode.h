@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
 #include "GameFramework/GameMode.h"
 #include "Engine.h"
 #include "Test2DPlatformerGameMode.generated.h"
