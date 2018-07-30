@@ -17,6 +17,8 @@ class TEST2DPLATFORMER_API UBTTask_PlatformerMoveTo : public UBTTask_BlackboardB
     /** set automatically if move should use GameplayTasks */
     uint32 bUseGameplayTasks : 1;
 
+	UBTTask_PlatformerMoveTo();
+
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 	
 	
