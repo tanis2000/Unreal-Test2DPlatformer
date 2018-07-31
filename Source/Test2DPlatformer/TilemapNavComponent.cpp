@@ -24,7 +24,7 @@ UTilemapNavComponent::UTilemapNavComponent()
 // Called when the game starts
 void UTilemapNavComponent::BeginPlay()
 {
-	//Super::BeginPlay();
+	Super::BeginPlay();
 
     AActor *actor = GetOwner();
     if (actor != nullptr) {
@@ -125,7 +125,7 @@ void UTilemapNavComponent::BeginPlay()
 							*/
 							UNavLinkCustomComponent* smartLink = navLinkProxy->GetSmartLinkComp();
                             // TODO: find out how to disable it
-							//smartLink->SetEnabled(false);
+							smartLink->SetEnabled(false);
                         }
                     }
                 }
@@ -147,7 +147,7 @@ void UTilemapNavComponent::BeginPlay()
 // Called every frame
 void UTilemapNavComponent::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
 {
-	//Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
+	Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
 
 	// ...
 }
