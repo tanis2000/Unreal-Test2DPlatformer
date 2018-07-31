@@ -106,7 +106,9 @@ void UTilemapNavComponent::BeginPlay()
                             FActorSpawnParameters spawnParameters;
                             ANavLinkProxy *navLinkProxy = GetWorld()->SpawnActor<ANavLinkProxy>(spawnLocation, spawnRotation, spawnParameters);
                             //FNavigationLink point = navLinkProxy->PointLinks[0];
-							TArray<FNavigationLink> navLinks;
+
+                            /*
+                            TArray<FNavigationLink> navLinks;
 							TArray<FNavigationSegmentLink> navSegLinks;
 							navLinkProxy->GetNavigationLinksArray(navLinks, navSegLinks);
 							navLinks[0].Left = FVector(0, link.Start->Location.X, link.Start->Location.Z);
@@ -115,16 +117,16 @@ void UTilemapNavComponent::BeginPlay()
 							navLinks[0].SnapHeight = 8.0f;
 							navLinks[0].bUseSnapHeight = true;
 							navLinks[0].SetAreaClass(UNavArea_Jump::StaticClass());
-							/*
+                            */
+              
 							navLinkProxy->PointLinks[0].Left = FVector(0, link.Start->Location.X, link.Start->Location.Z);
                             navLinkProxy->PointLinks[0].Right = FVector(0, link.End->Location.X, link.End->Location.Z);
                             navLinkProxy->PointLinks[0].SnapRadius = 8.0f;
                             navLinkProxy->PointLinks[0].SnapHeight = 8.0f;
                             navLinkProxy->PointLinks[0].bUseSnapHeight = true;
                             navLinkProxy->PointLinks[0].SetAreaClass(UNavArea_Jump::StaticClass());
-							*/
+							
 							UNavLinkCustomComponent* smartLink = navLinkProxy->GetSmartLinkComp();
-                            // TODO: find out how to disable it
 							smartLink->SetEnabled(false);
                         }
                     }
