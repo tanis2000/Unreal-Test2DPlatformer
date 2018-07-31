@@ -1,5 +1,4 @@
 {
-	"typescript.tsc.autoDetect": "off",
 	"files.exclude": {
 		"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/.git": true,
 		"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/.idea": true,
@@ -11,6 +10,5 @@
 		"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Saved": true,
 		"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.xcworkspace": true,
 		"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug": true
-	},
-	"cmake.configureOnOpen": false
+	}
 }
