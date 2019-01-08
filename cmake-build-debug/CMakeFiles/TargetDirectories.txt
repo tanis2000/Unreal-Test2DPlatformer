@@ -1,5 +1,0 @@
-/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles/PleaseIgnoreMe.dir
-/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles/Test2DPlatformerEditor-Development-CLEAN.dir
-/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/cmake-build-debug/CMakeFiles/Test2DPlatformerEditor-Development.dir

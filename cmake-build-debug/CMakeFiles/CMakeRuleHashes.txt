@@ -1,3 +1,0 @@
-# Hashes of file build rules.
-b7c738cb62911abefecf178813947e97 CMakeFiles/Test2DPlatformerEditor-Development
-d6eff4e9d6bad8d9991478a4b8819b37 CMakeFiles/Test2DPlatformerEditor-Development-CLEAN
