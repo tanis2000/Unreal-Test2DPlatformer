@@ -1,24 +1,24 @@
 {
-  "FileVersion": 3,
-  "EngineAssociation": "4.20",
-  "Category": "",
-  "Description": "",
-  "Modules": [
-    {
-      "Name": "Test2DPlatformer",
-      "Type": "Runtime",
-      "LoadingPhase": "Default",
-      "AdditionalDependencies": [
-        "Engine",
-        "AIModule",
-        "NavigationSystem"
-      ]
-    }
-  ],
-  "Plugins": [
-    {
-      "Name": "Paper2D",
-      "Enabled": true
-    }
-  ]
+	"FileVersion": 3,
+	"EngineAssociation": "4.21",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Test2DPlatformer",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"AIModule",
+				"NavigationSystem"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "Paper2D",
+			"Enabled": true
+		}
+	]
 }
