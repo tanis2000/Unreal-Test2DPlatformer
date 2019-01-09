@@ -62,11 +62,14 @@ void UPlatformerPawnMovementComponent::PerformMovement(float DeltaSeconds)
         //UE_LOG(LogTemp, Warning, TEXT("Input vector: %s"), *inputVector.ToString());
         FVector amount = FVector(Velocity.X, Velocity.Y, Velocity.Z);
         amount.Normalize();
-        if (MovementMode == MOVE_Flying) {
-            pawn->Jump(amount * 3.0f * 50 * DeltaSeconds);
-        } else {
-            pawn->Move(amount * 3.0f * 50 * DeltaSeconds);
-        }
+		if (!amount.IsZero()) {
+			if (MovementMode == MOVE_Flying) {
+				pawn->Jump(amount * moveMultiplier * 50 * DeltaSeconds);
+			}
+			else {
+				pawn->Move(amount * moveMultiplier * 50 * DeltaSeconds);
+			}
+		}
     } else {
         UE_LOG(LogTemp, Warning, TEXT("Cannot cast the pawn to EnemyPawn."));
     }

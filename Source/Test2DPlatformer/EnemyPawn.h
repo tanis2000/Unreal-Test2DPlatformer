@@ -32,6 +32,7 @@ protected:
 
 public:
     float vyMax       = 7.0f;
+	UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     float jumpHeight  = 8.0f;
     float gravNorm    = -0.76f;
 

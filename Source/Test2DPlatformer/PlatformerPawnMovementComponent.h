@@ -18,6 +18,9 @@ public:
     UPROPERTY(Category="Character Movement: MovementMode", BlueprintReadOnly)
     TEnumAsByte<enum EMovementMode> MovementMode;
 
+	UPROPERTY(Category = "Character Movement", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	float moveMultiplier = 3.0f;
+
     virtual void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction) override;
 
     bool HasValidData() const;
