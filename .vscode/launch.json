@@ -8,7 +8,7 @@
 			"program": "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Binaries/Mac/Test2DPlatformer-Mac-Debug.app/Contents/MacOS/Test2DPlatformer-Mac-Debug",
 			"args": [
 			],
-			"cwd": "/Users/Shared/EpicGames/UE_4.20",
+			"cwd": "/Users/Shared/EpicGames/UE_4.21",
 			"type": "lldb"
 		},
 		{
@@ -18,7 +18,7 @@
 			"program": "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Binaries/Mac/Test2DPlatformer-Mac-DebugGame.app/Contents/MacOS/Test2DPlatformer-Mac-DebugGame",
 			"args": [
 			],
-			"cwd": "/Users/Shared/EpicGames/UE_4.20",
+			"cwd": "/Users/Shared/EpicGames/UE_4.21",
 			"type": "lldb"
 		},
 		{
@@ -28,7 +28,7 @@
 			"program": "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Binaries/Mac/Test2DPlatformer.app/Contents/MacOS/Test2DPlatformer",
 			"args": [
 			],
-			"cwd": "/Users/Shared/EpicGames/UE_4.20",
+			"cwd": "/Users/Shared/EpicGames/UE_4.21",
 			"type": "lldb"
 		},
 		{
@@ -38,7 +38,7 @@
 			"program": "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Binaries/Mac/Test2DPlatformer-Mac-Shipping.app/Contents/MacOS/Test2DPlatformer-Mac-Shipping",
 			"args": [
 			],
-			"cwd": "/Users/Shared/EpicGames/UE_4.20",
+			"cwd": "/Users/Shared/EpicGames/UE_4.21",
 			"type": "lldb"
 		},
 		{
@@ -48,49 +48,47 @@
 			"program": "/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Binaries/Mac/Test2DPlatformer-Mac-Test.app/Contents/MacOS/Test2DPlatformer-Mac-Test",
 			"args": [
 			],
-			"cwd": "/Users/Shared/EpicGames/UE_4.20",
+			"cwd": "/Users/Shared/EpicGames/UE_4.21",
 			"type": "lldb"
 		},
 		{
 			"name": "Test2DPlatformerEditor (Debug)",
 			"request": "launch",
 			"preLaunchTask": "Test2DPlatformerEditor Mac Debug Build",
-			"program": "/Users/Shared/EpicGames/UE_4.20/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"program": "/Users/Shared/EpicGames/UE_4.21/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
 			"args": [
-				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
-				"-debug"
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject"
 			],
-			"cwd": "/Users/Shared/EpicGames/UE_4.20",
+			"cwd": "/Users/Shared/EpicGames/UE_4.21",
 			"type": "lldb"
 		},
 		{
 			"name": "Test2DPlatformerEditor (DebugGame)",
 			"request": "launch",
 			"preLaunchTask": "Test2DPlatformerEditor Mac DebugGame Build",
-			"program": "/Users/Shared/EpicGames/UE_4.20/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"program": "/Users/Shared/EpicGames/UE_4.21/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
 			"args": [
-				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
-				"-debug"
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject"
 			],
-			"cwd": "/Users/Shared/EpicGames/UE_4.20",
+			"cwd": "/Users/Shared/EpicGames/UE_4.21",
 			"type": "lldb"
 		},
 		{
 			"name": "Test2DPlatformerEditor (Development)",
 			"request": "launch",
 			"preLaunchTask": "Test2DPlatformerEditor Mac Development Build",
-			"program": "/Users/Shared/EpicGames/UE_4.20/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"program": "/Users/Shared/EpicGames/UE_4.21/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
 			"args": [
 				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject"
 			],
-			"cwd": "/Users/Shared/EpicGames/UE_4.20",
+			"cwd": "/Users/Shared/EpicGames/UE_4.21",
 			"type": "lldb"
 		},
 		{
 			"name": "Generate Project Files",
 			"type": "mono",
 			"request": "launch",
-			"program": "/Users/Shared/EpicGames/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"program": "/Users/Shared/EpicGames/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe",
 			"console": "internalConsole",
 			"args": [
 				"-projectfiles",
@@ -100,7 +98,7 @@
 				"-engine"
 			],
 			"internalConsoleOptions": "openOnSessionStart",
-			"cwd": "/Users/Shared/EpicGames/UE_4.20"
+			"cwd": "/Users/Shared/EpicGames/UE_4.21"
 		}
 	]
 }

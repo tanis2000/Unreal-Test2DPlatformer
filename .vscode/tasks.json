@@ -15,7 +15,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -35,7 +35,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -53,7 +53,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -70,7 +70,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -90,7 +90,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -108,7 +108,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -125,7 +125,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -145,7 +145,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -163,7 +163,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -180,7 +180,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -200,7 +200,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -218,7 +218,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -235,7 +235,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -255,7 +255,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -273,7 +273,282 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
+			}
+		},
+		{
+			"label": "Test2DPlatformer HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Debug",
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
+			}
+		},
+		{
+			"label": "Test2DPlatformer HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Debug",
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Test2DPlatformer HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
+			}
+		},
+		{
+			"label": "Test2DPlatformer HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Debug",
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
+			}
+		},
+		{
+			"label": "Test2DPlatformer HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"DebugGame",
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
+			}
+		},
+		{
+			"label": "Test2DPlatformer HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"DebugGame",
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Test2DPlatformer HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
+			}
+		},
+		{
+			"label": "Test2DPlatformer HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"DebugGame",
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
+			}
+		},
+		{
+			"label": "Test2DPlatformer HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Development",
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
+			}
+		},
+		{
+			"label": "Test2DPlatformer HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Development",
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Test2DPlatformer HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
+			}
+		},
+		{
+			"label": "Test2DPlatformer HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Development",
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
+			}
+		},
+		{
+			"label": "Test2DPlatformer HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Shipping",
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
+			}
+		},
+		{
+			"label": "Test2DPlatformer HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Shipping",
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Test2DPlatformer HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
+			}
+		},
+		{
+			"label": "Test2DPlatformer HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Shipping",
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
+			}
+		},
+		{
+			"label": "Test2DPlatformer HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Test",
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
+			}
+		},
+		{
+			"label": "Test2DPlatformer HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Test",
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Test2DPlatformer HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
+			}
+		},
+		{
+			"label": "Test2DPlatformer HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Test2DPlatformer",
+				"HTML5",
+				"Test",
+				"/Users/tanis/Documents/Unreal Projects/Test2DPlatformer/Test2DPlatformer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -290,7 +565,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -310,7 +585,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -328,7 +603,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -345,7 +620,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -365,7 +640,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -383,7 +658,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -400,7 +675,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -420,7 +695,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		},
 		{
@@ -438,7 +713,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/EpicGames/UE_4.20"
+				"cwd": "/Users/Shared/EpicGames/UE_4.21"
 			}
 		}
 	]
