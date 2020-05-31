@@ -15,7 +15,7 @@ class TEST2DPLATFORMER_API UPlatformerGameViewportClient : public UGameViewportC
 {
 	GENERATED_BODY()
 	
-	virtual bool InputKey(FViewport* Viewport, int32 ControllerId, FKey Key, EInputEvent EventType, float AmountDepressed = 1.f, bool bGamepad = false) override;
-	
+	//virtual bool InputKey(FViewport* Viewport, int32 ControllerId, FKey Key, EInputEvent EventType, float AmountDepressed = 1.f, bool bGamepad = false) override;
+	virtual bool InputKey(const FInputKeyEventArgs& EventArgs) override;
 	
 };

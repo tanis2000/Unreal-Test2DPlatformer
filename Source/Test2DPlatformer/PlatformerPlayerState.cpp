@@ -18,7 +18,7 @@ void APlatformerPlayerState::Reset()
 
 	NumKills = 0;
 	NumDeaths = 0;
-	Score = 0;
+	SetScore(0);
 }
 
 void APlatformerPlayerState::AddKill()
@@ -33,7 +33,7 @@ void APlatformerPlayerState::AddDeath()
 
 void APlatformerPlayerState::ScorePoints(int32 Points)
 {
-	Score += Points;
+	SetScore(GetScore() + Points);
 
 	/* Add the score to the global score count */
     /*
@@ -66,13 +66,6 @@ int32 APlatformerPlayerState::GetDeaths() const
 {
 	return NumDeaths;
 }
-
-
-float APlatformerPlayerState::GetScore() const
-{
-	return Score;
-}
-
 
 void APlatformerPlayerState::GetLifetimeReplicatedProps(TArray< class FLifetimeProperty > & OutLifetimeProps) const
 {

@@ -38,8 +38,8 @@ ATestCharacter::ATestCharacter()
     SideViewCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("SideViewCamera"));
     SideViewCameraComponent->ProjectionMode = ECameraProjectionMode::Orthographic;
     SideViewCameraComponent->OrthoWidth = 512.0f;
-    SideViewCameraComponent->RelativeRotation = FRotator(0.0f, -90.0f, 0.0f);
-    SideViewCameraComponent->RelativeLocation = FVector(0.0f, 0.0f, 0.0f);
+    SideViewCameraComponent->SetRelativeRotation(FRotator(0.0f, -90.0f, 0.0f));
+    SideViewCameraComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
     //SideViewCameraComponent->AttachTo(CameraBoom, USpringArmComponent::SocketName);
     
     // Prevent all automatic rotation behavior on the camera, character, and camera component
@@ -84,10 +84,10 @@ void ATestCharacter::Tick( float DeltaTime )
 }
 
 // Called to bind functionality to input
-void ATestCharacter::SetupPlayerInputComponent(class UInputComponent* InputComponent)
+void ATestCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
-    InputComponent->BindAxis("MoveRight", this, &ATestCharacter::MoveRight);
-	Super::SetupPlayerInputComponent(InputComponent);
+    PlayerInputComponent->BindAxis("MoveRight", this, &ATestCharacter::MoveRight);
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
 

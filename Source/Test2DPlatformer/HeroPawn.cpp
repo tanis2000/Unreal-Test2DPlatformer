@@ -105,8 +105,8 @@ AHeroPawn::AHeroPawn() {
         //SideViewCameraComponent->SetAspectRatio(1.333334f);
         //SideViewCameraComponent->OrthoWidth = 320.0f;
         SideViewCameraComponent->bConstrainAspectRatio = true;
-        SideViewCameraComponent->RelativeRotation = FRotator(0.0f, -90.0f, 0.0f);
-        SideViewCameraComponent->RelativeLocation = FVector(0.0f, 0.0f, 0.0f);
+        SideViewCameraComponent->SetRelativeRotation(FRotator(0.0f, -90.0f, 0.0f));
+        SideViewCameraComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
         SideViewCameraComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 
 
@@ -410,8 +410,8 @@ void AHeroPawn::Tick(float DeltaTime) {
 }
 
 // Called to bind functionality to input
-void AHeroPawn::SetupPlayerInputComponent(class UInputComponent *InputComponent) {
-    Super::SetupPlayerInputComponent(InputComponent);
+void AHeroPawn::SetupPlayerInputComponent(class UInputComponent * PlayerInputComponent) {
+    Super::SetupPlayerInputComponent(PlayerInputComponent);
 
     AController *c = GetController();
     if (c == nullptr) {
@@ -433,15 +433,15 @@ void AHeroPawn::SetupPlayerInputComponent(class UInputComponent *InputComponent)
     UE_LOG(LogTemp, Warning, TEXT("SetupPlayerInputComponent says you are player %d"), PlayerId);
 
     if (PlayerId == 0) {
-        InputComponent->BindAxis("MoveSide_P1", this, &AHeroPawn::MoveSide);
-        InputComponent->BindAxis("MoveVertical_P1", this, &AHeroPawn::MoveVertical);
-        InputComponent->BindAxis("Jump_P1", this, &AHeroPawn::Jump);
-        InputComponent->BindAxis("Fire_P1", this, &AHeroPawn::Fire);
+        PlayerInputComponent->BindAxis("MoveSide_P1", this, &AHeroPawn::MoveSide);
+        PlayerInputComponent->BindAxis("MoveVertical_P1", this, &AHeroPawn::MoveVertical);
+        PlayerInputComponent->BindAxis("Jump_P1", this, &AHeroPawn::Jump);
+        PlayerInputComponent->BindAxis("Fire_P1", this, &AHeroPawn::Fire);
     } else {
-        InputComponent->BindAxis("MoveSide_P2", this, &AHeroPawn::MoveSide);
-        InputComponent->BindAxis("MoveVertical_P2", this, &AHeroPawn::MoveVertical);
-        InputComponent->BindAxis("Jump_P2", this, &AHeroPawn::Jump);
-        InputComponent->BindAxis("Fire_P2", this, &AHeroPawn::Fire);
+        PlayerInputComponent->BindAxis("MoveSide_P2", this, &AHeroPawn::MoveSide);
+        PlayerInputComponent->BindAxis("MoveVertical_P2", this, &AHeroPawn::MoveVertical);
+        PlayerInputComponent->BindAxis("Jump_P2", this, &AHeroPawn::Jump);
+        PlayerInputComponent->BindAxis("Fire_P2", this, &AHeroPawn::Fire);
     }
 
     // Reset the correct idle animation based on the player id

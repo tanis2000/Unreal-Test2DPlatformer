@@ -4,11 +4,11 @@
 #include "Test2DPlatformer.h"
 
 
-bool UPlatformerGameViewportClient::InputKey(FViewport* Viewport, int32 ControllerId, FKey Key, EInputEvent EventType, float AmountDepressed, bool bGamepad)
+bool UPlatformerGameViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
 {
-	if (IgnoreInput() || bGamepad || Key.IsMouseButton())
+	if (IgnoreInput() || EventArgs.IsGamepad() || EventArgs.Key.IsMouseButton())
 	{
-		return Super::InputKey(Viewport, ControllerId, Key, EventType, AmountDepressed, bGamepad);
+		return Super::InputKey(EventArgs);
 	}
 	else
 	{
@@ -16,9 +16,11 @@ bool UPlatformerGameViewportClient::InputKey(FViewport* Viewport, int32 Controll
 		UEngine* const Engine = GetOuterUEngine();
 		int32 const NumPlayers = Engine ? Engine->GetNumGamePlayers(this) : 0;
 		bool bRetVal = false;
+		FInputKeyEventArgs EventArgsNext = FInputKeyEventArgs(EventArgs);
 		for (int32 i = 0; i < NumPlayers; i++)
 		{
-			bRetVal = Super::InputKey(Viewport, i, Key, EventType, AmountDepressed, bGamepad) || bRetVal;
+			EventArgsNext.ControllerId = i;
+			bRetVal = Super::InputKey(EventArgsNext) || bRetVal;
 		}
  
 		return bRetVal;

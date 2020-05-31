@@ -13,8 +13,8 @@ APlatformerSpectatorPawn::APlatformerSpectatorPawn(const FObjectInitializer &Obj
     bAddDefaultMovementBindings = false;
     SpectatorCameraComponent = CreateDefaultSubobject<UPixelPerfectCameraComponent>(TEXT("PixelPerfectCameraComponent"));
     SpectatorCameraComponent->bConstrainAspectRatio = true;
-    SpectatorCameraComponent->RelativeRotation = FRotator(0.0f, -90.0f, 0.0f);
-    SpectatorCameraComponent->RelativeLocation = FVector(0.0f, 0.0f, 0.0f);
+    SpectatorCameraComponent->SetRelativeRotation(FRotator(0.0f, -90.0f, 0.0f));
+    SpectatorCameraComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
     SpectatorCameraComponent->DesignWidth = 40 * 16;
     SpectatorCameraComponent->DesignHeight = 30 * 16;
     SpectatorCameraComponent->BestFit();

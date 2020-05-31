@@ -114,8 +114,8 @@ void ABunny::Tick(float DeltaTime) {
 }
 
 // Called to bind functionality to input
-void ABunny::SetupPlayerInputComponent(class UInputComponent *InputComponent) {
-    Super::SetupPlayerInputComponent(InputComponent);
+void ABunny::SetupPlayerInputComponent(class UInputComponent * PlayerInputComponent) {
+    Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
 

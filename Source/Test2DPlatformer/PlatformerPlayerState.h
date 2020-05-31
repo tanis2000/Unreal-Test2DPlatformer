@@ -46,9 +46,6 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Score")
 	int32 GetDeaths() const;
-
-	UFUNCTION(BlueprintCallable, Category = "Score")
-	float GetScore() const;
 	
 	
 };

@@ -6,11 +6,11 @@ public class Test2DPlatformer : ModuleRules
 {
 	public Test2DPlatformer(ReadOnlyTargetRules Target) : base(Target)
 	{
-    PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-    PublicDependencyModuleNames.AddRange(new string[] { "AIModule", "Core", "CoreUObject", "Engine", "GameplayTasks", "InputCore", "Paper2D" });
+		PublicDependencyModuleNames.AddRange(new string[] { "AIModule", "Core", "CoreUObject", "Engine", "GameplayTasks", "InputCore", "Paper2D" });
 
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
+		//PrivateDependencyModuleNames.AddRange(new string[] {  });
 
 		// tanis - start faster compile time for small projects
 		//MinFilesUsingPrecompiledHeaderOverride = 1;
