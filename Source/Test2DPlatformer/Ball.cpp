@@ -84,14 +84,15 @@ void ABall::Tick(float DeltaTime) {
         SetActorLocation(Approach(GetActorLocation(), targetLocation, idleSpeed * TimeMult));
     } else {
         // Temporary vars
-        float tempAccel, tempFric;
+//        float tempAccel;
+        float tempFric;
 
         // Apply the correct form of acceleration and friction
         if (BottomCollided) {
-            tempAccel = groundAccel;
+//            tempAccel = groundAccel;
             tempFric  = groundFric;
         } else {
-            tempAccel = airAccel;
+//            tempAccel = airAccel;
             tempFric  = airFric;
         }
 
