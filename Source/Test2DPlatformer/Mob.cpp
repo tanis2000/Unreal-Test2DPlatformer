@@ -97,7 +97,7 @@ void AMob::Tick(float DeltaTime) {
   GetWorld()->SweepSingleByProfile(hitRes, StartLocation, EndLocation,
                                    FQuat::Identity, TEXT("OverlapAll"), box);
 
-  if (hitRes.Actor != NULL) {
+  if (hitRes.GetActor() != nullptr) {
     GEngine->AddOnScreenDebugMessage(
         -1, 5.f, FColor::Red, FString::Printf(TEXT("Time: %f"), hitRes.Time));
     return;
