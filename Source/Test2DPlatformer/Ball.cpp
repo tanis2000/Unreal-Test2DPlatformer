@@ -30,7 +30,7 @@ ABall::ABall()
 
     // Create a dummy root component we can attach things to.
     RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-    UE_LOG(LogTemp, Warning, TEXT("TEST"));
+    UE_LOG(LogTemp, Warning, TEXT("Created Ball RootComponent"));
 
     // Try to create the sprite component
     Sprite = CreateOptionalDefaultSubobject<UPaperFlipbookComponent>(ABall::SpriteComponentName);

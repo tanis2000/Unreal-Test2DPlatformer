@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="129c40e4-7501-4939-81a1-a8b7aab55aeb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Test2DPlatformer.dir/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test2DPlatformer.dir/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Test2DPlatformer.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test2DPlatformer.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Level.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Mob.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Mob.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test2DPlatformer.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/Test2DPlatformer.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test2DPlatformer.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/Test2DPlatformer.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test2DPlatformer.xcworkspace/xcuserdata/tanis.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Test2DPlatformer.xcworkspace/xcuserdata/tanis.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test2DPlatformer.xcworkspace/xcuserdata/tanis.xcuserdatad/WorkspaceSettings.xcsettings" beforeDir="false" afterPath="$PROJECT_DIR$/Test2DPlatformer.xcworkspace/xcuserdata/tanis.xcuserdatad/WorkspaceSettings.xcsettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Ball.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Ball.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Bunny.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,14 +27,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Test2DPlatformer" type="Uproject" factoryName="rider.uproject">
       <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Test2DPlatformer.uproject" />
@@ -75,6 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650523811125</updated>
       <workItem from="1650523819710" duration="921000" />
+      <workItem from="1659543302721" duration="1967000" />
     </task>
     <servers />
   </component>

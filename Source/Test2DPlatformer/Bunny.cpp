@@ -70,8 +70,8 @@ ABunny::ABunny() {
     FVector v = GetActorLocation();
     posX = v.X;
     posY = v.Z;
-    speedX = FMath::FRandRange(0, 1) * 5;
-    speedY = FMath::FRandRange(0, 1) * 5 - 2.5f;
+    speedX = FMath::FRandRange(0.0f, 1.0f) * 5.0f;
+    speedY = FMath::FRandRange(0.0f, 1.0f) * 5.0f - 2.5f;
 
 }
 
@@ -100,8 +100,8 @@ void ABunny::Tick(float DeltaTime) {
     if (posY > maxY) {
         speedY *= -0.8f;
         posY = maxY;
-        if (FMath::FRandRange(0, 1) > 0.5f)
-            speedY -= 3 + FMath::FRandRange(0, 1) * 4;
+        if (FMath::FRandRange(0.0f, 1.0f) > 0.5f)
+            speedY -= 3 + FMath::FRandRange(0.0f, 1.0f) * 4.0f;
     } else if (posY < minY) {
         speedY = 0;
         posY = minY;
