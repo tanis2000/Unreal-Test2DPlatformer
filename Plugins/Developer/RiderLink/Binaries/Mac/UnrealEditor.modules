@@ -1,12 +1,12 @@
 {
-	"BuildId": "19505902",
+	"BuildId": "23058290",
 	"Modules": 
 	{
-		"RD": "UnrealEditor-RD-0001.dylib",
-		"RiderBlueprint": "UnrealEditor-RiderBlueprint-0001.dylib",
-		"RiderGameControl": "UnrealEditor-RiderGameControl-0001.dylib",
-		"RiderLink": "UnrealEditor-RiderLink-0001.dylib",
-		"RiderLogging": "UnrealEditor-RiderLogging-0001.dylib",
-		"RiderShaderInfo": "UnrealEditor-RiderShaderInfo-0001.dylib"
+		"RD": "UnrealEditor-RD.dylib",
+		"RiderBlueprint": "UnrealEditor-RiderBlueprint.dylib",
+		"RiderGameControl": "UnrealEditor-RiderGameControl.dylib",
+		"RiderLink": "UnrealEditor-RiderLink.dylib",
+		"RiderLogging": "UnrealEditor-RiderLogging.dylib",
+		"RiderShaderInfo": "UnrealEditor-RiderShaderInfo.dylib"
 	}
 }

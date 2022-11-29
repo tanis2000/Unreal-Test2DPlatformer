@@ -13,10 +13,4 @@
          location = "group:Intermediate/ProjectFiles/Test2DPlatformer.xcodeproj">
       </FileRef>
    </Group>
-   <Group
-      location = "container:"      name = "Programs">
-      <FileRef
-         location = "group:Intermediate/ProjectFiles/UnrealHeaderTool.xcodeproj">
-      </FileRef>
-   </Group>
 </Workspace>
