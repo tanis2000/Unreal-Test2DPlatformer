@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.7)
 add_library(RdEditorRoot STATIC 
 instantiations_RdEditorRoot.h
 instantiations_RdEditorRoot.cpp
+LiveCodingModel/LiveCodingModel.Generated.cpp
+LiveCodingModel/LiveCodingModel.Generated.h
 RdEditorModel/RdEditorModel.Generated.cpp
 RdEditorModel/RdEditorModel.Generated.h
 RdEditorRoot/RdEditorRoot.Generated.cpp

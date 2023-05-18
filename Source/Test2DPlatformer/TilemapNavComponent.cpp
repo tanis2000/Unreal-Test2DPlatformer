@@ -3,6 +3,7 @@
 #include "TilemapNavComponent.h"
 #include "Test2DPlatformer.h"
 #include "PaperTileMapComponent.h"
+#include "PaperTileLayer.h"
 #include "Navigation/NavLinkProxy.h"
 #include "NavLinkCustomComponent.h"
 #include "NavArea_Jump.h"
@@ -40,7 +41,7 @@ void UTilemapNavComponent::BeginPlay()
                     int32 tileIndex = tile.GetTileIndex();
                     int32 packedTileIndex = tile.PackedTileIndex;
                     if (packedTileIndex != INDEX_NONE) {
-                        UE_LOG(LogTemp, Warning, TEXT("X: %d, Y: %d, Tile: %d"), x, y, tile.GetTileIndex());
+                        UE_LOG(LogTemp, Log, TEXT("X: %d, Y: %d, Tile: %d"), x, y, tile.GetTileIndex());
 
                         FPaperTileInfo upTile = TileMapComponent->GetTile(x, y-1, NavLayer);
                         FPaperTileInfo upLeftTile = TileMapComponent->GetTile(x-1, y-1, NavLayer);
@@ -58,7 +59,7 @@ void UTilemapNavComponent::BeginPlay()
                                                   0,
                                                   ((MapHeight-1)-y+1)*16 -((MapHeight-1)*16 - actor->GetActorLocation().Z));
                             WayPoints.Add(wp);
-                            UE_LOG(LogTemp, Warning, TEXT("WP %s"), *wp.Location.ToString());
+                            UE_LOG(LogTemp, Log, TEXT("WP %s"), *wp.Location.ToString());
                         }
                         /*
                         if (upLeftTile.PackedTileIndex == INDEX_NONE

@@ -28,9 +28,9 @@ void BlueprintReference::initialize()
 {
 }
 // primary ctor
-BlueprintReference::BlueprintReference(FString pathName_) :
+BlueprintReference::BlueprintReference(FString pathName_, FString guid_) :
 rd::IPolymorphicSerializable()
-,pathName_(std::move(pathName_))
+,pathName_(std::move(pathName_)), guid_(std::move(guid_))
 {
     initialize();
 }
@@ -40,13 +40,15 @@ rd::IPolymorphicSerializable()
 BlueprintReference BlueprintReference::read(rd::SerializationCtx& ctx, rd::Buffer & buffer)
 {
     auto pathName_ = rd::Polymorphic<FString>::read(ctx, buffer);
-    BlueprintReference res{std::move(pathName_)};
+    auto guid_ = rd::Polymorphic<FString>::read(ctx, buffer);
+    BlueprintReference res{std::move(pathName_), std::move(guid_)};
     return res;
 }
 // writer
 void BlueprintReference::write(rd::SerializationCtx& ctx, rd::Buffer& buffer) const
 {
     rd::Polymorphic<std::decay_t<decltype(pathName_)>>::write(ctx, buffer, pathName_);
+    rd::Polymorphic<std::decay_t<decltype(guid_)>>::write(ctx, buffer, guid_);
 }
 // virtual init
 // identify
@@ -55,6 +57,10 @@ FString const & BlueprintReference::get_pathName() const
 {
     return pathName_;
 }
+FString const & BlueprintReference::get_guid() const
+{
+    return guid_;
+}
 // intern
 // equals trait
 bool BlueprintReference::equals(rd::ISerializable const& object) const
@@ -62,6 +68,7 @@ bool BlueprintReference::equals(rd::ISerializable const& object) const
     auto const &other = dynamic_cast<BlueprintReference const&>(object);
     if (this == &other) return true;
     if (this->pathName_ != other.pathName_) return false;
+    if (this->guid_ != other.guid_) return false;
     
     return true;
 }
@@ -78,6 +85,7 @@ size_t BlueprintReference::hashCode() const noexcept
 {
     size_t __r = 0;
     __r = __r * 31 + (rd::hash<FString>()(get_pathName()));
+    __r = __r * 31 + (rd::hash<FString>()(get_guid()));
     return __r;
 }
 // type name trait
@@ -96,6 +104,9 @@ std::string BlueprintReference::toString() const
     std::string res = "BlueprintReference\n";
     res += "\tpathName = ";
     res += rd::to_string(pathName_);
+    res += '\n';
+    res += "\tguid = ";
+    res += rd::to_string(guid_);
     res += '\n';
     return res;
 }

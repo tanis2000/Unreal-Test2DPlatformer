@@ -17,7 +17,7 @@
 UBTTask_PlatformerMoveTo::UBTTask_PlatformerMoveTo()
 {
     NodeName = "Platformer Move To";
-    bUseGameplayTasks = GET_AI_CONFIG_VAR(bEnableBTAITasks);
+    bUseGameplayTasks = true;//GET_AI_CONFIG_VAR(bEnableBTAITasks);
     bNotifyTick = !bUseGameplayTasks;
     bNotifyTaskFinished = true;
 

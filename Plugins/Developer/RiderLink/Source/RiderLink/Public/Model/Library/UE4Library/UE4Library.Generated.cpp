@@ -24,6 +24,7 @@
 #include "UE4Library/ScriptMsgCallStack.Generated.h"
 #include "UE4Library/BlueprintHighlighter.Generated.h"
 #include "UE4Library/BlueprintReference.Generated.h"
+#include "UE4Library/ConnectionInfo.Generated.h"
 #include "UE4Library/NotificationType.Generated.h"
 #include "UE4Library/RequestResultBase_Unknown.Generated.h"
 #include "UE4Library/IScriptCallStack_Unknown.Generated.h"
@@ -64,6 +65,7 @@ void UE4Library::UE4LibrarySerializersOwner::registerSerializersCore(rd::Seriali
     serializers.registry<ScriptMsgCallStack>();
     serializers.registry<BlueprintHighlighter>();
     serializers.registry<BlueprintReference>();
+    serializers.registry<ConnectionInfo>();
     serializers.registry<RequestResultBase_Unknown>();
     serializers.registry<IScriptCallStack_Unknown>();
     serializers.registry<IScriptMsg_Unknown>();
@@ -81,7 +83,7 @@ void UE4Library::connect(rd::Lifetime lifetime, rd::IProtocol const * protocol)
 // initializer
 void UE4Library::initialize()
 {
-    serializationHash = 652350108289200731L;
+    serializationHash = 4930583670691204680L;
 }
 // primary ctor
 // secondary constructor

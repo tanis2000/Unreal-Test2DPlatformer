@@ -12,6 +12,8 @@
 
 #include "RdEditorModel/RdEditorModel.Generated.h"
 
+class ProtocolFactory;
+
 namespace rd
 {
 	class Protocol;
@@ -38,6 +40,7 @@ public:
 	virtual void ViewModel(rd::Lifetime Lifetime,
 	                       TFunction<void(rd::Lifetime,
 	                                      JetBrains::EditorPlugin::RdEditorModel const&)> Handler) override;
+	virtual void QueueModelAction(TFunction<void(JetBrains::EditorPlugin::RdEditorModel const&)> Handler) override;
 	virtual void QueueAction(TFunction<void()> Handler) override;
 	virtual bool FireAsyncAction(TFunction<void(JetBrains::EditorPlugin::RdEditorModel const&)> Handler) override;
 
@@ -47,6 +50,7 @@ private:
 	rd::LifetimeDefinition ModuleLifetimeDef{rd::Lifetime::Eternal()};
 	rd::SingleThreadScheduler Scheduler{ModuleLifetimeDef.lifetime, "MainScheduler"};
 	TUniquePtr<rd::LifetimeDefinition> WireLifetimeDef;
+	TUniquePtr<ProtocolFactory> ProtocolFactory;
 	TUniquePtr<rd::Protocol> Protocol;
 	rd::RdProperty<bool> RdIsModelAlive;
 	TUniquePtr<JetBrains::EditorPlugin::RdEditorModel> EditorModel;

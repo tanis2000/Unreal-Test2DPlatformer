@@ -40,6 +40,8 @@ UE4Library/BlueprintHighlighter.Generated.cpp
 UE4Library/BlueprintHighlighter.Generated.h
 UE4Library/BlueprintReference.Generated.cpp
 UE4Library/BlueprintReference.Generated.h
+UE4Library/ConnectionInfo.Generated.cpp
+UE4Library/ConnectionInfo.Generated.h
 UE4Library/NotificationType.Generated.cpp
 UE4Library/NotificationType.Generated.h
 UE4Library/UE4Library.Generated.cpp

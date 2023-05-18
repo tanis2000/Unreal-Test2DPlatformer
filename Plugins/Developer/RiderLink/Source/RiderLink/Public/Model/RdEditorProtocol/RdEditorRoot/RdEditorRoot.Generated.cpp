@@ -12,6 +12,7 @@
 #include "RdEditorRoot/RdEditorRoot.Generated.h"
 #include "RdEditorRoot/RdEditorRoot.Generated.h"
 #include "RdEditorModel/RdEditorModel.Generated.h"
+#include "LiveCodingModel/LiveCodingModel.Generated.h"
 
 #ifdef _MSC_VER
 #pragma warning( push )
@@ -31,6 +32,7 @@ RdEditorRoot::RdEditorRootSerializersOwner const RdEditorRoot::serializersOwner;
 void RdEditorRoot::RdEditorRootSerializersOwner::registerSerializersCore(rd::Serializers const& serializers) const
 {
     RdEditorModel::serializersOwner.registry(serializers);
+    LiveCodingModel::serializersOwner.registry(serializers);
 }
 
 void RdEditorRoot::connect(rd::Lifetime lifetime, rd::IProtocol const * protocol)

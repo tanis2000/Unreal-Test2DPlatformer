@@ -3,6 +3,8 @@
 #include "ProtocolFactory.h"
 #include "UE4Library/UE4Library.Generated.h"
 
+#include "Async/Async.h"
+#include "Misc/App.h"
 #include "Misc/ScopeRWLock.h"
 #include "Modules/ModuleManager.h"
 #include "HAL/Platform.h"
@@ -13,17 +15,28 @@ DEFINE_LOG_CATEGORY(FLogRiderLinkModule);
 
 IMPLEMENT_MODULE(FRiderLinkModule, RiderLink);
 
+static FString GetProjectName()
+{
+	FString ProjectNameNoExtension = FApp::GetProjectName();
+	if (ProjectNameNoExtension.IsEmpty())
+		ProjectNameNoExtension = TEXT("<ENGINE>");
+	return ProjectNameNoExtension;
+}
+
 void FRiderLinkModule::ShutdownModule()
 {
 	UE_LOG(FLogRiderLinkModule, Verbose, TEXT("RiderLink SHUTDOWN START"));
+	
 	ModuleLifetimeDef.terminate();
+	ProtocolFactory.Reset();
 	UE_LOG(FLogRiderLinkModule, Verbose, TEXT("RiderLink SHUTDOWN FINISH"));
 }
 
 void FRiderLinkModule::StartupModule()
 {
 	UE_LOG(FLogRiderLinkModule, Verbose, TEXT("RiderLink STARTUP START"));
-	ProtocolFactory::InitRdLogging();
+	
+	ProtocolFactory = MakeUnique<class ProtocolFactory>(GetProjectName());
 	Scheduler.queue([this]()
 	{
 		InitProtocol();
@@ -35,8 +48,8 @@ void FRiderLinkModule::InitProtocol()
 {
 	WireLifetimeDef = MakeUnique<rd::LifetimeDefinition>(ModuleLifetimeDef.lifetime);
 	rd::Lifetime WireLifetime = WireLifetimeDef->lifetime;
-	std::shared_ptr<rd::SocketWire::Server> Wire = ProtocolFactory::CreateWire(&Scheduler, WireLifetime);
-	Protocol = ProtocolFactory::CreateProtocol(&Scheduler, WireLifetime.create_nested(), Wire);
+	std::shared_ptr<rd::SocketWire::Server> Wire = ProtocolFactory->CreateWire(&Scheduler, WireLifetime);
+	Protocol = ProtocolFactory->CreateProtocol(&Scheduler, WireLifetime.create_nested(), Wire);
 	// Exception fired for Server::Base::~Base() when trying to invoke it this way
 //	WireLifetime->add_action([this]()
 //	{
@@ -69,6 +82,15 @@ void FRiderLinkModule::InitProtocol()
 				});
 			});
 			RdIsModelAlive.set(true);
+			
+			FString projectName = GetProjectName();
+			FString executableName = FPlatformProcess::ExecutableName(false);
+			uint32_t pid = FPlatformProcess::GetCurrentProcessId();
+			
+			std::wstring projectNameWstr = TCHAR_TO_WCHAR(GetData(projectName));
+			std::wstring executableNameWstr = TCHAR_TO_WCHAR(GetData(executableName));
+			auto connectionInfo = JetBrains::EditorPlugin::ConnectionInfo(projectNameWstr, executableNameWstr, pid);
+			EditorModel->get_connectionInfo().set(connectionInfo);
 		});
 	});
 }
@@ -87,6 +109,16 @@ void FRiderLinkModule::ViewModel(rd::Lifetime Lifetime,
 		{
 			if (Cond) Handler(ModelLifetime, *EditorModel.Get());
 		});
+	});
+}
+
+void FRiderLinkModule::QueueModelAction(TFunction<void(JetBrains::EditorPlugin::RdEditorModel const&)> Handler)
+{	
+	Scheduler.invoke_or_queue([this, Handler]
+	{
+		if(!RdIsModelAlive.has_value() || !RdIsModelAlive.get()) return;
+		
+		Handler(*EditorModel.Get());
 	});
 }
 
