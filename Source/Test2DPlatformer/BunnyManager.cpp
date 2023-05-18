@@ -12,12 +12,12 @@
 FName ABunnyManager::GroupComponentName(TEXT("BunnyGroup"));
 
 // Sets default values
-ABunnyManager::ABunnyManager() {
+ABunnyManager::ABunnyManager(): AActor()
+{
     // Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
     PrimaryActorTick.bCanEverTick = true;
 
     group = CreateOptionalDefaultSubobject<UPaperGroupedSpriteComponent>(ABunnyManager::GroupComponentName);
-
 }
 
 // Called when the game starts or when spawned

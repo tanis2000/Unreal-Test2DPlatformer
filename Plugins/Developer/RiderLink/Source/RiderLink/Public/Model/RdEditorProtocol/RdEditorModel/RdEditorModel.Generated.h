@@ -44,6 +44,7 @@
 #include "thirdparty.hpp"
 #include "instantiations_RdEditorRoot.h"
 
+#include "UE4Library/ConnectionInfo.Generated.h"
 #include "UE4Library/UnrealLogEvent.Generated.h"
 #include "UE4Library/BlueprintReference.Generated.h"
 #include "UE4Library/UClass.Generated.h"
@@ -93,6 +94,7 @@ public:
 
 protected:
     // fields
+    rd::RdProperty<ConnectionInfo, rd::Polymorphic<ConnectionInfo>> connectionInfo_;
     rd::RdSignal<UnrealLogEvent, rd::Polymorphic<UnrealLogEvent>> unrealLog_;
     rd::RdSignal<BlueprintReference, rd::Polymorphic<BlueprintReference>> openBlueprint_;
     rd::RdSignal<UClass, rd::Polymorphic<UClass>> onBlueprintAdded_;
@@ -109,6 +111,15 @@ protected:
     rd::RdSignal<RequestResultBase, rd::AbstractPolymorphic<RequestResultBase>> notificationReplyFromEditor_;
     rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> playModeFromEditor_;
     rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> playModeFromRider_;
+    rd::RdEndpoint<rd::Void, bool, rd::Polymorphic<rd::Void>, rd::Polymorphic<bool>> lC_IsEnabledByDefault_;
+    rd::RdSignal<bool, rd::Polymorphic<bool>> lC_EnableByDefault_;
+    rd::RdEndpoint<rd::Void, bool, rd::Polymorphic<rd::Void>, rd::Polymorphic<bool>> lC_IsEnabledForSession_;
+    rd::RdEndpoint<rd::Void, bool, rd::Polymorphic<rd::Void>, rd::Polymorphic<bool>> lC_CanEnableForSession_;
+    rd::RdSignal<bool, rd::Polymorphic<bool>> lC_EnableForSession_;
+    rd::RdEndpoint<rd::Void, bool, rd::Polymorphic<rd::Void>, rd::Polymorphic<bool>> lC_IsCompiling_;
+    rd::RdEndpoint<rd::Void, bool, rd::Polymorphic<rd::Void>, rd::Polymorphic<bool>> lC_HasStarted_;
+    rd::RdSignal<rd::Void, rd::Polymorphic<rd::Void>> lC_Compile_;
+    rd::RdSignal<rd::Void, rd::Polymorphic<rd::Void>> lC_OnPatchComplete_;
     
 
 private:
@@ -117,7 +128,7 @@ private:
 
 public:
     // primary ctor
-    RdEditorModel(rd::RdSignal<UnrealLogEvent, rd::Polymorphic<UnrealLogEvent>> unrealLog_, rd::RdSignal<BlueprintReference, rd::Polymorphic<BlueprintReference>> openBlueprint_, rd::RdSignal<UClass, rd::Polymorphic<UClass>> onBlueprintAdded_, rd::RdEndpoint<FString, bool, rd::Polymorphic<FString>, rd::Polymorphic<bool>> isBlueprintPathName_, rd::RdEndpoint<FString, rd::optional<FString>, rd::Polymorphic<FString>, RdEditorModel::__FStringNullableSerializer> getPathNameByPath_, rd::RdCall<int32_t, bool, rd::Polymorphic<int32_t>, rd::Polymorphic<bool>> allowSetForegroundWindow_, rd::RdProperty<bool, rd::Polymorphic<bool>> isGameControlModuleInitialized_, rd::RdSignal<PlayState, rd::Polymorphic<PlayState>> playStateFromEditor_, rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> requestPlayFromRider_, rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> requestPauseFromRider_, rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> requestResumeFromRider_, rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> requestStopFromRider_, rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> requestFrameSkipFromRider_, rd::RdSignal<RequestResultBase, rd::AbstractPolymorphic<RequestResultBase>> notificationReplyFromEditor_, rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> playModeFromEditor_, rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> playModeFromRider_);
+    RdEditorModel(rd::RdProperty<ConnectionInfo, rd::Polymorphic<ConnectionInfo>> connectionInfo_, rd::RdSignal<UnrealLogEvent, rd::Polymorphic<UnrealLogEvent>> unrealLog_, rd::RdSignal<BlueprintReference, rd::Polymorphic<BlueprintReference>> openBlueprint_, rd::RdSignal<UClass, rd::Polymorphic<UClass>> onBlueprintAdded_, rd::RdEndpoint<FString, bool, rd::Polymorphic<FString>, rd::Polymorphic<bool>> isBlueprintPathName_, rd::RdEndpoint<FString, rd::optional<FString>, rd::Polymorphic<FString>, RdEditorModel::__FStringNullableSerializer> getPathNameByPath_, rd::RdCall<int32_t, bool, rd::Polymorphic<int32_t>, rd::Polymorphic<bool>> allowSetForegroundWindow_, rd::RdProperty<bool, rd::Polymorphic<bool>> isGameControlModuleInitialized_, rd::RdSignal<PlayState, rd::Polymorphic<PlayState>> playStateFromEditor_, rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> requestPlayFromRider_, rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> requestPauseFromRider_, rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> requestResumeFromRider_, rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> requestStopFromRider_, rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> requestFrameSkipFromRider_, rd::RdSignal<RequestResultBase, rd::AbstractPolymorphic<RequestResultBase>> notificationReplyFromEditor_, rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> playModeFromEditor_, rd::RdSignal<int32_t, rd::Polymorphic<int32_t>> playModeFromRider_, rd::RdEndpoint<rd::Void, bool, rd::Polymorphic<rd::Void>, rd::Polymorphic<bool>> lC_IsEnabledByDefault_, rd::RdSignal<bool, rd::Polymorphic<bool>> lC_EnableByDefault_, rd::RdEndpoint<rd::Void, bool, rd::Polymorphic<rd::Void>, rd::Polymorphic<bool>> lC_IsEnabledForSession_, rd::RdEndpoint<rd::Void, bool, rd::Polymorphic<rd::Void>, rd::Polymorphic<bool>> lC_CanEnableForSession_, rd::RdSignal<bool, rd::Polymorphic<bool>> lC_EnableForSession_, rd::RdEndpoint<rd::Void, bool, rd::Polymorphic<rd::Void>, rd::Polymorphic<bool>> lC_IsCompiling_, rd::RdEndpoint<rd::Void, bool, rd::Polymorphic<rd::Void>, rd::Polymorphic<bool>> lC_HasStarted_, rd::RdSignal<rd::Void, rd::Polymorphic<rd::Void>> lC_Compile_, rd::RdSignal<rd::Void, rd::Polymorphic<rd::Void>> lC_OnPatchComplete_);
     
     // default ctors and dtors
     
@@ -140,6 +151,7 @@ public:
     void identify(const rd::Identities &identities, rd::RdId const &id) const override;
     
     // getters
+    rd::IProperty<ConnectionInfo> const & get_connectionInfo() const;
     rd::ISignal<UnrealLogEvent> const & get_unrealLog() const;
     rd::ISignal<BlueprintReference> const & get_openBlueprint() const;
     rd::ISignal<UClass> const & get_onBlueprintAdded() const;
@@ -156,6 +168,15 @@ public:
     rd::ISignal<RequestResultBase> const & get_notificationReplyFromEditor() const;
     rd::ISignal<int32_t> const & get_playModeFromEditor() const;
     rd::ISource<int32_t> const & get_playModeFromRider() const;
+    rd::RdEndpoint<rd::Void, bool, rd::Polymorphic<rd::Void>, rd::Polymorphic<bool>> const & get_lC_IsEnabledByDefault() const;
+    rd::ISource<bool> const & get_lC_EnableByDefault() const;
+    rd::RdEndpoint<rd::Void, bool, rd::Polymorphic<rd::Void>, rd::Polymorphic<bool>> const & get_lC_IsEnabledForSession() const;
+    rd::RdEndpoint<rd::Void, bool, rd::Polymorphic<rd::Void>, rd::Polymorphic<bool>> const & get_lC_CanEnableForSession() const;
+    rd::ISource<bool> const & get_lC_EnableForSession() const;
+    rd::RdEndpoint<rd::Void, bool, rd::Polymorphic<rd::Void>, rd::Polymorphic<bool>> const & get_lC_IsCompiling() const;
+    rd::RdEndpoint<rd::Void, bool, rd::Polymorphic<rd::Void>, rd::Polymorphic<bool>> const & get_lC_HasStarted() const;
+    rd::ISource<rd::Void> const & get_lC_Compile() const;
+    rd::ISignal<rd::Void> const & get_lC_OnPatchComplete() const;
     
     // intern
 

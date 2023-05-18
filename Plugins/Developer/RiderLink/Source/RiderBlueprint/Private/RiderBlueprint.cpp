@@ -4,13 +4,20 @@
 #include "IRiderLink.hpp"
 #include "Model/RdEditorProtocol/RdEditorModel/RdEditorModel.Generated.h"
 
-#include "AssetRegistryModule.h"
+
 #include "Engine/Blueprint.h"
 #include "Framework/Docking/TabManager.h"
 #include "HAL/PlatformProcess.h"
 #include "MessageEndpoint.h"
 #include "MessageEndpointBuilder.h"
 #include "Modules/ModuleManager.h"
+#include "Runtime/Launch/Resources/Version.h"
+
+#if ENGINE_MAJOR_VERSION < 5
+#include "AssetRegistryModule.h"
+#else
+#include "AssetRegistry/AssetRegistryModule.h"
+#endif
 
 #define LOCTEXT_NAMESPACE "RiderLink"
 
@@ -74,8 +81,7 @@ void FRiderBlueprintModule::StartupModule()
                     {
                         Window->HACK_ForceToFront();
                     }
-                    BluePrintProvider::OpenBlueprint(
-                        s.get_pathName(), MessageEndpoint);
+                    BluePrintProvider::OpenBlueprint(s, MessageEndpoint);
                 }
                 catch (std::exception const& e)
                 {

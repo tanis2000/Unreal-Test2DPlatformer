@@ -9,17 +9,20 @@
 FName ABunny::SpriteComponentName(TEXT("Sprite0"));
 
 // Sets default values
-ABunny::ABunny() {
+ABunny::ABunny(): APawn()
+{
     // Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
     PrimaryActorTick.bCanEverTick = true;
 
 
     // Setup the assets
-    struct FConstructorStatics {
+    struct FConstructorStatics
+    {
         ConstructorHelpers::FObjectFinderOptional<UPaperSprite> IdleSpriteAsset;
 
         FConstructorStatics()
-                : IdleSpriteAsset(TEXT("/Game/Sprites/HeroSpriteNoColl")) {
+            : IdleSpriteAsset(TEXT("/Game/Sprites/HeroSpriteNoColl"))
+        {
         }
     };
     static FConstructorStatics ConstructorStatics;
@@ -35,7 +38,8 @@ ABunny::ABunny() {
 
     // Try to create the sprite component
     Sprite = CreateOptionalDefaultSubobject<UPaperSpriteComponent>(ABunny::SpriteComponentName);
-    if (Sprite) {
+    if (Sprite)
+    {
         Sprite->AlwaysLoadOnClient = true;
         Sprite->AlwaysLoadOnServer = true;
         Sprite->bOwnerNoSee = false;
@@ -45,7 +49,7 @@ ABunny::ABunny() {
         //static FName CollisionProfileName(TEXT("CharacterMesh"));
         static FName CollisionProfileName(TEXT("OverlapAllDynamic"));
         Sprite->SetCollisionProfileName(CollisionProfileName);
-		Sprite->SetGenerateOverlapEvents(true);
+        Sprite->SetGenerateOverlapEvents(true);
         Sprite->bAutoActivate = true;
         // TODO: maybe not needed
         //Sprite->bCanEverAffectNavigation = false;
@@ -53,8 +57,9 @@ ABunny::ABunny() {
         // Enable replication on the Sprite component so animations show up when networked
         Sprite->SetIsReplicated(true);
         Sprite->SetSprite(IdleSprite);
-
-    } else {
+    }
+    else
+    {
         UE_LOG(LogTemp, Warning, TEXT("Problem creating sprite"));
     }
 
@@ -72,7 +77,6 @@ ABunny::ABunny() {
     posY = v.Z;
     speedX = FMath::FRandRange(0.0f, 1.0f) * 5.0f;
     speedY = FMath::FRandRange(0.0f, 1.0f) * 5.0f - 2.5f;
-
 }
 
 // Called when the game starts or when spawned

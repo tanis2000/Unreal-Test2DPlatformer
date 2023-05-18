@@ -45,7 +45,7 @@
 #include "instantiations_UE4Library.h"
 
 #include "UE4Library/UClass.Generated.h"
-#include "Runtime/Core/Public/Containers/UnrealString.h"
+#include "Containers/UnrealString.h"
 
 #include "UE4TypesMarshallers.h"
 #include "Runtime/Core/Public/Containers/Array.h"
@@ -62,7 +62,7 @@
 #endif
 
 /// <summary>
-/// <p>Generated from: UE4Library.kt:136</p>
+/// <p>Generated from: UE4Library.kt:139</p>
 /// </summary>
 namespace JetBrains {
 namespace EditorPlugin {

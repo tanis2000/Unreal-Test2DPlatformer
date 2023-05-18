@@ -1,5 +1,3 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
-
 using System.IO;
 using UnrealBuildTool;
 
@@ -9,7 +7,12 @@ public class RD : ModuleRules
 	{
 		PublicDependencyModuleNames.Add("Core");
 		bUseRTTI = true;
+
+#if UE_5_2_OR_LATER
+		IWYUSupport = IWYUSupport.KeepAsIs;
+#else
 		bEnforceIWYU = false;
+#endif
 
 #if UE_4_22_OR_LATER
 		CppStandard = CppStandardVersion.Cpp17;

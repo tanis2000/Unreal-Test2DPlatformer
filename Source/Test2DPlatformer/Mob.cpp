@@ -10,58 +10,65 @@
 FName AMob::SpriteComponentName(TEXT("MainSprite"));
 
 // Sets default values
-AMob::AMob() {
-  // Set this actor to call Tick() every frame.  You can turn this off to
-  // improve performance if you don't need it.
-  PrimaryActorTick.bCanEverTick = true;
+AMob::AMob(): AActor()
+{
+	// Set this actor to call Tick() every frame.  You can turn this off to
+	// improve performance if you don't need it.
+	PrimaryActorTick.bCanEverTick = true;
 
-  // Setup the assets
-  struct FConstructorStatics {
-    ConstructorHelpers::FObjectFinderOptional<UPaperSprite> MainSpriteAsset;
-    FConstructorStatics() : MainSpriteAsset(TEXT("/Game/Sprites/HeroSprite")) {}
-  };
-  static FConstructorStatics ConstructorStatics;
+	// Setup the assets
+	struct FConstructorStatics
+	{
+		ConstructorHelpers::FObjectFinderOptional<UPaperSprite> MainSpriteAsset;
 
-  MainSprite = ConstructorStatics.MainSpriteAsset.Get();
+		FConstructorStatics() : MainSpriteAsset(TEXT("/Game/Sprites/HeroSprite"))
+		{
+		}
+	};
+	static FConstructorStatics ConstructorStatics;
 
-  // Create a dummy root component we can attach things to.
-  RootComponent =
-      CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
+	MainSprite = ConstructorStatics.MainSpriteAsset.Get();
 
-  SpriteComponent = CreateOptionalDefaultSubobject<UPaperSpriteComponent>(
-      AMob::SpriteComponentName);
-  if (SpriteComponent) {
-    SpriteComponent->AlwaysLoadOnClient = true;
-    SpriteComponent->AlwaysLoadOnServer = true;
-    SpriteComponent->bOwnerNoSee = false;
-    SpriteComponent->bAffectDynamicIndirectLighting = true;
-    SpriteComponent->PrimaryComponentTick.TickGroup = TG_PrePhysics;
-    SpriteComponent->AttachToComponent(
-        RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
-    static FName CollisionProfileName(TEXT("OverlapAll"));
-    SpriteComponent->SetCollisionProfileName(CollisionProfileName);
-    SpriteComponent->SetGenerateOverlapEvents(true);
-    SpriteComponent->bAutoActivate = true;
-    // TODO: maybe not needed
-    // SpriteComponent->bCanEverAffectNavigation = false;
+	// Create a dummy root component we can attach things to.
+	RootComponent =
+		CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
 
-    // Enable replication on the Sprite component so animations show up when
-    // networked
-    SpriteComponent->SetIsReplicated(true);
-    SpriteComponent->SetSprite(MainSprite);
+	SpriteComponent = CreateOptionalDefaultSubobject<UPaperSpriteComponent>(
+		AMob::SpriteComponentName);
+	if (SpriteComponent)
+	{
+		SpriteComponent->AlwaysLoadOnClient = true;
+		SpriteComponent->AlwaysLoadOnServer = true;
+		SpriteComponent->bOwnerNoSee = false;
+		SpriteComponent->bAffectDynamicIndirectLighting = true;
+		SpriteComponent->PrimaryComponentTick.TickGroup = TG_PrePhysics;
+		SpriteComponent->AttachToComponent(
+			RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+		static FName CollisionProfileName(TEXT("OverlapAll"));
+		SpriteComponent->SetCollisionProfileName(CollisionProfileName);
+		SpriteComponent->SetGenerateOverlapEvents(true);
+		SpriteComponent->bAutoActivate = true;
+		// TODO: maybe not needed
+		// SpriteComponent->bCanEverAffectNavigation = false;
 
-  } else {
-    UE_LOG(LogTemp, Warning, TEXT("Problem creating sprite"));
-  }
+		// Enable replication on the Sprite component so animations show up when
+		// networked
+		SpriteComponent->SetIsReplicated(true);
+		SpriteComponent->SetSprite(MainSprite);
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Problem creating sprite"));
+	}
 
-  // enables hit events
-  SetActorEnableCollision(true);
-  SpawnCollisionHandlingMethod =
-      ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
+	// enables hit events
+	SetActorEnableCollision(true);
+	SpawnCollisionHandlingMethod =
+		ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 
-  SpriteComponent->OnComponentBeginOverlap.AddDynamic(this,
-                                                      &AMob::OnBeginOverlap);
-  SpriteComponent->OnComponentEndOverlap.AddDynamic(this, &AMob::OnEndOverlap);
+	SpriteComponent->OnComponentBeginOverlap.AddDynamic(this,
+	                                                    &AMob::OnBeginOverlap);
+	SpriteComponent->OnComponentEndOverlap.AddDynamic(this, &AMob::OnEndOverlap);
 }
 
 // Called when the game starts or when spawned

@@ -45,7 +45,7 @@
 #include "instantiations_UE4Library.h"
 
 #include "Logging/LogVerbosity.h"
-#include "Runtime/Core/Public/Containers/UnrealString.h"
+#include "Containers/UnrealString.h"
 
 #include "UE4TypesMarshallers.h"
 #include "Runtime/Core/Public/Containers/Array.h"
@@ -62,7 +62,7 @@
 #endif
 
 /// <summary>
-/// <p>Generated from: UE4Library.kt:114</p>
+/// <p>Generated from: UE4Library.kt:116</p>
 /// </summary>
 namespace JetBrains {
 namespace EditorPlugin {

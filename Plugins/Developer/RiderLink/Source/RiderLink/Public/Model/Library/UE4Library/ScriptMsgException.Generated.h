@@ -44,7 +44,7 @@
 #include "thirdparty.hpp"
 #include "instantiations_UE4Library.h"
 
-#include "Runtime/Core/Public/Containers/UnrealString.h"
+#include "Containers/UnrealString.h"
 #include "IScriptMsg.Generated.h"
 
 #include "UE4TypesMarshallers.h"
@@ -62,7 +62,7 @@
 #endif
 
 /// <summary>
-/// <p>Generated from: UE4Library.kt:177</p>
+/// <p>Generated from: UE4Library.kt:180</p>
 /// </summary>
 namespace JetBrains {
 namespace EditorPlugin {
