@@ -10,6 +10,9 @@ public class Test2DPlatformer : ModuleRules
 
 		PublicDependencyModuleNames.AddRange(new string[] { "AIModule", "Core", "CoreUObject", "Engine", "GameplayTasks", "InputCore", "Paper2D" });
 
+		// The following is needed for the online leaderboard
+		PrivateDependencyModuleNames.AddRange(new string[]{"HTTP", "Json", "JsonUtilities"});
+		
 		//PrivateDependencyModuleNames.AddRange(new string[] {  });
 
 		// tanis - start faster compile time for small projects
