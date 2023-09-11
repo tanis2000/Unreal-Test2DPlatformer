@@ -28,7 +28,7 @@ public:
     float ComputedDeltaTime = 0.0f;
 
 	// Sets default values for this pawn's properties
-	ABasePawn();
+	ABasePawn(const FObjectInitializer& ObjectInitializer);
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

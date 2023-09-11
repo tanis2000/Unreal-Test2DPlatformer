@@ -98,7 +98,7 @@ public:
     bool UseOwnCamera = false;
 
     // Sets default values for this pawn's properties
-    AHeroPawn();
+    AHeroPawn(const FObjectInitializer& ObjectInitializer);
 
     // Called when the game starts or when spawned
     virtual void BeginPlay() override;

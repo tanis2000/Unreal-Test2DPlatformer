@@ -5,10 +5,12 @@
 #include "Components/BoxComponent.h"
 
 // Sets default values
-ABasePawn::ABasePawn(): APawn()
+ABasePawn::ABasePawn(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	WorldCollisionBoxComponent = CreateDefaultSubobject<UBoxComponent>("WorldCollision");
 }
 
 // Called when the game starts or when spawned
@@ -137,7 +139,7 @@ AActor *ABasePawn::CollideFirst(FName tag, float x, float z) {
 	SetActorLocation(newLocation);
 
 	TArray<AActor *> actors;
-	WorldCollisionBoxComponent->GetOverlappingActors(actors, NULL);
+	WorldCollisionBoxComponent->GetOverlappingActors(actors, nullptr);
 	for (auto CompIt = actors.CreateIterator(); CompIt; ++CompIt) {
 		//UE_LOG(LogTemp, Warning, TEXT("Overlapping actor."));
 		AActor *OverlappingActor = *CompIt;

@@ -8,7 +8,599 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="129c40e4-7501-4939-81a1-a8b7aab55aeb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/AI/BP_NavLinkProxy.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test2DPlatformer.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test2DPlatformer.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/BTServiceFindPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BTServiceFindPlayer.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/FollowBT.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/FollowBT.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Level.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Mac/UnrealEditor.modules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/ActiveSocket.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/ActiveSocket.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/Buffer.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/Buffer.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/ByteBufferAsyncProcessor.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/ByteBufferAsyncProcessor.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/DateTime.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/DateTime.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/DefaultAbstractDeclaration.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/DefaultAbstractDeclaration.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/Definitions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/ExtWire.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/ExtWire.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/IProtocol.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/IProtocol.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/IRdWireable.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/IRdWireable.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/IScheduler.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/IScheduler.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/ISerializable.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/ISerializable.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/ISerializersOwner.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/ISerializersOwner.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/IUnknownInstance.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/IUnknownInstance.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/Identities.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/Identities.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/InternRoot.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/InternRoot.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/InternScheduler.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/InternScheduler.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/Lifetime.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/Lifetime.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/LifetimeDefinition.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/LifetimeDefinition.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/LifetimeImpl.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/LifetimeImpl.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/MessageBroker.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/MessageBroker.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/PassiveSocket.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/PassiveSocket.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/PkgInputStream.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/PkgInputStream.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/Polymorphic.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/Polymorphic.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/Protocol.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/Protocol.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/PumpScheduler.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/PumpScheduler.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RD.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RD.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RName.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RName.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RdAny.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RdAny.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RdBindableBase.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RdBindableBase.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RdExtBase.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RdExtBase.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RdId.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RdId.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RdReactiveBase.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RdReactiveBase.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RdTextBuffer.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/RdTextBuffer.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SequentialLifetimes.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SequentialLifetimes.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SerializationCtx.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SerializationCtx.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/Serializers.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/Serializers.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SignalCookie.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SignalCookie.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SimpleScheduler.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SimpleScheduler.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SimpleSocket.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SimpleSocket.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SingleThreadScheduler.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SingleThreadScheduler.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SingleThreadSchedulerBase.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SingleThreadSchedulerBase.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SocketWire.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SocketWire.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SynchronousScheduler.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/SynchronousScheduler.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/WireBase.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/WireBase.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/WireUtil.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/WireUtil.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/async.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/async.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/cfg.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/cfg.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/color_sinks.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/color_sinks.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/countdownlatch.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/countdownlatch.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/file_sinks.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/file_sinks.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/fmt.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/fmt.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/hashing.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/hashing.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/spdlog.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/spdlog.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/stdout_sinks.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/stdout_sinks.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/thirdparty.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/thirdparty.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/thread_util.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RD/thread_util.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderBlueprint/Definitions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderBlueprint/Module.RiderBlueprint.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderBlueprint/Module.RiderBlueprint.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderBlueprint/Module.RiderBlueprint.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderGameControl/Definitions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderGameControl/RiderGameControl.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderGameControl/RiderGameControl.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/BlueprintFunction.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/BlueprintFunction.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/BlueprintHighlighter.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/BlueprintHighlighter.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/BlueprintReference.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/BlueprintReference.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/ConnectionInfo.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/ConnectionInfo.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/Definitions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/EmptyScriptCallStack.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/EmptyScriptCallStack.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/IScriptCallStack.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/IScriptCallStack.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/IScriptMsg.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/IScriptMsg.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/LiveCodingModel.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/LiveCodingModel.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/LogMessageInfo.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/LogMessageInfo.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/Module.RiderLink.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/Module.RiderLink.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/Module.RiderLink.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/NotificationType.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/NotificationType.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/ProtocolFactory.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/ProtocolFactory.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/RdEditorModel.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/RdEditorModel.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/RdEditorRoot.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/RdEditorRoot.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/RequestFailed.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/RequestFailed.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/RequestSucceed.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/RequestSucceed.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/RiderLink.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/RiderLink.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/ScriptCallStack.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/ScriptCallStack.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/ScriptCallStackFrame.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/ScriptCallStackFrame.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/ScriptMsgCallStack.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/ScriptMsgCallStack.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/ScriptMsgException.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/ScriptMsgException.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/UClass.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/UClass.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/UE4Library.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/UE4Library.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/UnableToDisplayScriptCallStack.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/UnableToDisplayScriptCallStack.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/UnrealLogEvent.Generated.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLink/UnrealLogEvent.Generated.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLogging/Definitions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLogging/Module.RiderLogging.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLogging/Module.RiderLogging.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLogging/Module.RiderLogging.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderShaderInfo/Definitions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderShaderInfo/RiderShaderInfo.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderShaderInfo/RiderShaderInfo.cpp.d.response" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Resources/Icon128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Resources/checksum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/RiderLink.uplugin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/RD.Build.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/RD.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/RD.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/rd_core_export.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/lifetime/Lifetime.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/lifetime/Lifetime.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/lifetime/LifetimeDefinition.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/lifetime/LifetimeDefinition.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/lifetime/LifetimeImpl.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/lifetime/LifetimeImpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/lifetime/SequentialLifetimes.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/lifetime/SequentialLifetimes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/Property.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/ViewableList.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/ViewableMap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/ViewableSet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/IProperty.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/IPropertyBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/IViewableList.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/IViewableMap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/IViewableSet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/SignalCookie.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/SignalCookie.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/SignalX.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/interfaces.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/viewable_collections.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/allocator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/hash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/list.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/to_string.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/unordered_map.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/unordered_set.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/types/DateTime.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/types/DateTime.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/types/Void.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/types/wrapper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/core_traits.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/core_util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/enum.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/erase_if.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/gen_util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/overloaded.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/shared_function.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/rd_framework_export.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IProtocol.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IProtocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IRdBindable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IRdDynamic.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IRdReactive.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IRdWireable.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IRdWireable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/ISerializersOwner.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/ISerializersOwner.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IUnknownInstance.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IUnknownInstance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IWire.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/RdBindableBase.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/RdBindableBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/RdPropertyBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/RdReactiveBase.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/RdReactiveBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/WireBase.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/WireBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/ext/ExtWire.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/ext/ExtWire.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/ext/RdExtBase.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/ext/RdExtBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/impl/RName.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/impl/RName.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/impl/RdList.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/impl/RdMap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/impl/RdProperty.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/impl/RdSet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/impl/RdSignal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/intern/InternRoot.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/intern/InternRoot.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/intern/InternScheduler.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/intern/InternScheduler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/protocol/Buffer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/protocol/Buffer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/protocol/Identities.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/protocol/Identities.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/protocol/MessageBroker.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/protocol/MessageBroker.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/protocol/Protocol.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/protocol/Protocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/protocol/RdId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/protocol/RdId.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/SimpleScheduler.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/SimpleScheduler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/SingleThreadScheduler.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/SingleThreadScheduler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/SynchronousScheduler.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/SynchronousScheduler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/base/IScheduler.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/base/IScheduler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/base/SingleThreadSchedulerBase.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/base/SingleThreadSchedulerBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/AbstractPolymorphic.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/ArraySerializer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/DefaultAbstractDeclaration.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/DefaultAbstractDeclaration.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/ISerializable.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/ISerializable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/InternedAnySerializer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/InternedSerializer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/NullableSerializer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/Polymorphic.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/Polymorphic.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/RdAny.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/RdAny.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/SerializationCtx.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/SerializationCtx.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/Serializers.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/Serializers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/RdCall.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/RdEndpoint.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/RdSymmetricCall.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/RdTask.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/RdTaskImpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/RdTaskResult.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/WiredRdTask.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/WiredRdTaskImpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/util/framework_traits.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/util/guards.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/util/hashing.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/util/hashing.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/util/thread_util.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/util/thread_util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/wire/ByteBufferAsyncProcessor.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/wire/ByteBufferAsyncProcessor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/wire/PkgInputStream.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/wire/PkgInputStream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/wire/PumpScheduler.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/wire/PumpScheduler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/wire/SocketWire.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/wire/SocketWire.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/wire/WireUtil.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/wire/WireUtil.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_gen_cpp/src/RdTextBuffer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/src/rd_gen_cpp/src/RdTextBuffer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/CTPL/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/CTPL/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/CTPL/include/ctpl_stl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/ActiveSocket.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/ActiveSocket.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/Host.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/PassiveSocket.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/PassiveSocket.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/SimpleSocket.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/SimpleSocket.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/StatTimer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/countdownlatch/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/countdownlatch/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/countdownlatch/countdownlatch.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/countdownlatch/countdownlatch.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/optional/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/optional/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/optional/tl/optional.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/ordered-map/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/ordered-map/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/ordered-map/include/tsl/ordered_hash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/ordered-map/include/tsl/ordered_map.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/ordered-map/include/tsl/ordered_set.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/cmake/ide.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/cmake/pch.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/cmake/spdlog.pc.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/cmake/spdlogCPack.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/cmake/spdlogConfig.cmake.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/cmake/utils.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/cmake/version.rc.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/async.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/async_logger-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/async_logger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/cfg/argv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/cfg/env.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/cfg/helpers-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/cfg/helpers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/cfg/log_levels.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/common-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/backtracer-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/backtracer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/circular_q.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/console_globals.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/file_helper-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/file_helper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/fmt_helper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/log_msg-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/log_msg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/log_msg_buffer-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/log_msg_buffer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/mpmc_blocking_q.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/null_mutex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/os-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/os.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/periodic_worker-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/periodic_worker.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/registry-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/registry.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/synchronous_factory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/tcp_client-windows.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/tcp_client.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/thread_pool-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/thread_pool.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/udp_client-windows.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/udp_client.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/windows_include.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bin_to_hex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/LICENSE.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/args.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/chrono.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/color.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/compile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/core.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/fmt.license.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/format-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/format.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/locale.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/os.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/ostream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/posix.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/printf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/ranges.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/xchar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/chrono.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/compile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/fmt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/ostr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/ranges.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/xchar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/formatter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fwd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/logger-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/logger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/pattern_formatter-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/pattern_formatter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/android_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/ansicolor_sink-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/ansicolor_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/base_sink-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/base_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/basic_file_sink-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/basic_file_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/daily_file_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/dist_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/dup_filter_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/hourly_file_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/mongo_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/msvc_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/null_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/ostream_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/qt_sinks.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/ringbuffer_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/rotating_file_sink-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/rotating_file_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/sink-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/stdout_color_sinks.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/stdout_sinks-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/stdout_sinks.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/syslog_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/systemd_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/tcp_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/udp_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/win_eventlog_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/wincolor_sink-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/sinks/wincolor_sink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/spdlog-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/spdlog.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/stopwatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/tweakme.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/version.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/logos/jetbrains-variant-4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/scripts/extract_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/scripts/format.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/src/async.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/src/cfg.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/src/color_sinks.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/src/file_sinks.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/src/fmt.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/src/spdlog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/src/stdout_sinks.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/string-view-lite/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/string-view-lite/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/string-view-lite/cmake/string_view-lite-config.cmake.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/string-view-lite/include/nonstd/string_view.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/thirdparty.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/thirdparty.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/variant/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/variant/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/variant/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/variant/cmake/mpark_variant-config.cmake.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/variant/include/mpark/config.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/variant/include/mpark/in_place.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/variant/include/mpark/lib.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RD/thirdparty/variant/include/mpark/variant.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderBlueprint/Private/BlueprintProvider.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderBlueprint/Private/RiderBlueprint.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderBlueprint/Public/BlueprintProvider.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderBlueprint/Public/RiderBlueprint.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderBlueprint/RiderBlueprint.Build.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderGameControl/Private/RiderGameControl.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderGameControl/Public/RiderGameControl.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderGameControl/RiderGameControl.Build.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLC/Private/RiderLC.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLC/Private/RiderLC.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLC/RiderLC.Build.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Private/ProtocolFactory.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Private/ProtocolFactory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Private/RiderLink.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Private/RiderLink.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Private/UE4TypesMarshallers.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/IRiderLink.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/BlueprintFunction.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/BlueprintFunction.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/BlueprintHighlighter.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/BlueprintHighlighter.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/BlueprintReference.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/BlueprintReference.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/ConnectionInfo.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/ConnectionInfo.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/EmptyScriptCallStack.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/EmptyScriptCallStack.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/IScriptCallStack.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/IScriptCallStack.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/IScriptCallStack_Unknown.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/IScriptCallStack_Unknown.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/IScriptMsg.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/IScriptMsg.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/IScriptMsg_Unknown.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/IScriptMsg_Unknown.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/LogMessageInfo.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/LogMessageInfo.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/NotificationType.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/NotificationType.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/PlayState.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/PlayState.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/RequestFailed.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/RequestFailed.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/RequestResultBase.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/RequestResultBase.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/RequestResultBase_Unknown.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/RequestResultBase_Unknown.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/RequestSucceed.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/RequestSucceed.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/ScriptCallStack.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/ScriptCallStack.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/ScriptCallStackFrame.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/ScriptCallStackFrame.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/ScriptMsgCallStack.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/ScriptMsgCallStack.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/ScriptMsgException.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/ScriptMsgException.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/StringRange.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/StringRange.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/UClass.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/UClass.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/UE4Library.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/UE4Library.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/UnableToDisplayScriptCallStack.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/UnableToDisplayScriptCallStack.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/UnrealLogEvent.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/UnrealLogEvent.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/instantiations_UE4Library.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/instantiations_UE4Library.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/RdEditorProtocol/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/RdEditorProtocol/LiveCodingModel/LiveCodingModel.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/RdEditorProtocol/LiveCodingModel/LiveCodingModel.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/RdEditorProtocol/RdEditorModel/RdEditorModel.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/RdEditorProtocol/RdEditorModel/RdEditorModel.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/RdEditorProtocol/RdEditorRoot/RdEditorRoot.Generated.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/RdEditorProtocol/RdEditorRoot/RdEditorRoot.Generated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/RdEditorProtocol/instantiations_RdEditorRoot.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/RdEditorProtocol/instantiations_RdEditorRoot.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/Public/UE4TypesMarshallers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLink/RiderLink.Build.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLogging/Private/RiderLogging.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLogging/Private/RiderLogging.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLogging/Private/RiderOutputDevice.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLogging/Private/RiderOutputDevice.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderLogging/RiderLogging.Build.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderShaderInfo/RiderShaderInfo.Build.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderShaderInfo/RiderShaderInfo.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Source/RiderShaderInfo/RiderShaderInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Ball.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Ball.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Ball.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Ball.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/BasePawn.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/EnemyPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/EnemyPawn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/EnemyPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/EnemyPawn.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/HeroPawn.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test2DPlatformer.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/Test2DPlatformer.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test2DPlatformer.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test2DPlatformer.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test2DPlatformer.xcworkspace/xcshareddata/Test2DPlatformer.xcscmblueprint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test2DPlatformer.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test2DPlatformer.xcworkspace/xcuserdata/tanis.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test2DPlatformer.xcworkspace/xcuserdata/tanis.xcuserdatad/WorkspaceSettings.xcsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test2DPlatformer.xcworkspace/xcuserdata/tanis.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,39 +610,93 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="Toolset" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2864g8U3bBxuH6uPdNsQQWZZzFL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "UnrealLinkOptionsId",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;UnrealLinkOptionsId&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/tanis/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
-      "/Users/tanis/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache",
-      "/Users/tanis/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/tanis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/tanis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
+      &quot;/Users/tanis/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Test2DPlatformer" type="Uproject" factoryName="rider.uproject">
       <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Test2DPlatformer.uproject" />
@@ -58,7 +704,7 @@
         <option name="CONFIGURATION" value="Development" />
         <option name="PLATFORM" value="Mac" />
         <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/Binaries/Mac/Test2DPlatformer.app/Contents/MacOS/Test2DPlatformer" />
-        <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.2" />
+        <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.3" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
         <option name="PASS_PARENT_ENVS" value="1" />
@@ -68,7 +714,7 @@
         <option name="CONFIGURATION" value="DebugGame" />
         <option name="PLATFORM" value="Mac" />
         <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/Binaries/Mac/Test2DPlatformer-Mac-DebugGame.app/Contents/MacOS/Test2DPlatformer-Mac-DebugGame" />
-        <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.2" />
+        <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.3" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
         <option name="PASS_PARENT_ENVS" value="1" />
@@ -78,7 +724,7 @@
         <option name="CONFIGURATION" value="Shipping" />
         <option name="PLATFORM" value="Mac" />
         <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/Binaries/Mac/Test2DPlatformer-Mac-Shipping.app/Contents/MacOS/Test2DPlatformer-Mac-Shipping" />
-        <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.2" />
+        <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.3" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
         <option name="PASS_PARENT_ENVS" value="1" />
@@ -87,8 +733,8 @@
       <configuration_5>
         <option name="CONFIGURATION" value="DebugGame Editor" />
         <option name="PLATFORM" value="Mac" />
-        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.2/Engine/Binaries/Mac/UnrealEditor-Mac-DebugGame.app/Contents/MacOS/UnrealEditor-Mac-DebugGame" />
-        <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.2" />
+        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.3/Engine/Binaries/Mac/UnrealEditor-Mac-DebugGame.app/Contents/MacOS/UnrealEditor-Mac-DebugGame" />
+        <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.3" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;$PROJECT_DIR$/Test2DPlatformer.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
         <option name="PASS_PARENT_ENVS" value="1" />
@@ -97,8 +743,8 @@
       <configuration_6>
         <option name="CONFIGURATION" value="Development Editor" />
         <option name="PLATFORM" value="Mac" />
-        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.2/Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor" />
-        <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.2" />
+        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.3/Engine/Binaries/Mac/UnrealEditor" />
+        <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.3" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;$PROJECT_DIR$/Test2DPlatformer.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
         <option name="PASS_PARENT_ENVS" value="1" />
@@ -121,6 +767,13 @@
       <workItem from="1659543302721" duration="1967000" />
       <workItem from="1684404402448" duration="596000" />
       <workItem from="1684405127762" duration="5920000" />
+      <workItem from="1690794048675" duration="3309000" />
+      <workItem from="1690995386548" duration="772000" />
+      <workItem from="1690996176906" duration="43000" />
+      <workItem from="1690996250003" duration="2683000" />
+      <workItem from="1694419935892" duration="218000" />
+      <workItem from="1694420481496" duration="715000" />
+      <workItem from="1694421330499" duration="634000" />
     </task>
     <servers />
   </component>
@@ -131,6 +784,17 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerPawnMovementComponent.cpp</url>
+          <line>66</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

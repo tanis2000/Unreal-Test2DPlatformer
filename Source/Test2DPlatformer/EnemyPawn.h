@@ -44,7 +44,7 @@ public:
     FVector TargetLocation;
 
     // Sets default values for this pawn's properties
-    AEnemyPawn();
+    AEnemyPawn(const FObjectInitializer& ObjectInitializer);
 
     // Called every frame
     virtual void Tick(float DeltaSeconds) override;

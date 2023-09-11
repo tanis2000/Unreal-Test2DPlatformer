@@ -29,7 +29,7 @@ protected:
     class UPaperFlipbook *IdleAnimation;
 	
     // Sets default values for this pawn's properties
-    ABall();
+    ABall(const FObjectInitializer& ObjectInitializer);
 
     // Called every frame
     virtual void Tick(float DeltaSeconds) override;

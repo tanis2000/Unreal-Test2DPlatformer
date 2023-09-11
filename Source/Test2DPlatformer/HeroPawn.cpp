@@ -23,7 +23,7 @@ FName AHeroPawn::SpriteComponentName(TEXT("Sprite0"));
 
 
 // Sets default values
-AHeroPawn::AHeroPawn() {
+AHeroPawn::AHeroPawn(const FObjectInitializer& ObjectInitializer): Super(ObjectInitializer) {
     // Setup the assets
     struct FConstructorStatics {
         ConstructorHelpers::FObjectFinderOptional<UPaperFlipbook> IdleAnimationAsset;

@@ -15,7 +15,7 @@ FName AEnemyPawn::SpriteComponentName(TEXT("Sprite0"));
 
 
 // Sets default values
-AEnemyPawn::AEnemyPawn() {
+AEnemyPawn::AEnemyPawn(const FObjectInitializer& ObjectInitializer): Super(ObjectInitializer) {
     // Setup the assets
     struct FConstructorStatics {
         ConstructorHelpers::FObjectFinderOptional<UPaperFlipbook> IdleAnimationAsset;

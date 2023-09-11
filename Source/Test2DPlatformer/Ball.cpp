@@ -11,7 +11,7 @@
 
 FName ABall::SpriteComponentName(TEXT("Sprite0"));
 
-ABall::ABall()
+ABall::ABall(const FObjectInitializer& ObjectInitializer): Super(ObjectInitializer)
 {
     // Setup the assets
     struct FConstructorStatics {
