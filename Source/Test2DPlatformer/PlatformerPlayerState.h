@@ -15,6 +15,7 @@ class TEST2DPLATFORMER_API APlatformerPlayerState : public APlayerState
 	GENERATED_BODY()
 	
 	APlatformerPlayerState(const FObjectInitializer& ObjectInitializer);
+	void ClearData();
 
 	UPROPERTY(Transient, Replicated)
 	int32 NumKills;
@@ -25,6 +26,9 @@ class TEST2DPLATFORMER_API APlatformerPlayerState : public APlayerState
 	/* Team number assigned to player */
 	UPROPERTY(Transient, Replicated)
 	int32 TeamNumber;
+
+	UPROPERTY(Transient, Replicated)
+	FText PlayerDisplayName;
 
 	virtual void Reset() override;
 	
@@ -46,6 +50,10 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Score")
 	int32 GetDeaths() const;
-	
-	
+
+	UFUNCTION(BlueprintCallable, Category = "Player")
+	FText GetPlayerDisplayName() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Player")
+	void SetPlayerDisplayName(const FText Name);
 };

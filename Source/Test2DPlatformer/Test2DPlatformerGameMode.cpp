@@ -6,6 +6,7 @@
 #include "HeroPawn.h"
 #include "PlatformerSpectatorPawn.h"
 #include "FAPPlayerController.h"
+#include "PlatformerGameState.h"
 #include "Kismet/GameplayStatics.h"
 #include "PlatformerPlayerState.h"
 
@@ -18,6 +19,7 @@ ATest2DPlatformerGameMode::ATest2DPlatformerGameMode(const FObjectInitializer& O
     SpectatorClass = APlatformerSpectatorPawn::StaticClass();
     PlayerControllerClass = AFAPPlayerController::StaticClass();
 	PlayerStateClass = APlatformerPlayerState::StaticClass();
+	GameStateClass = APlatformerGameState::StaticClass();
 
 	PlayerTeamNum = 0;
 }
