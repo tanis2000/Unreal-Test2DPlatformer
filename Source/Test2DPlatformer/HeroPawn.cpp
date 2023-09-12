@@ -18,6 +18,8 @@
 #include "Engine/LocalPlayer.h"
 #include "FAPPlayerController.h"
 #include "Ball.h"
+#include "Feedback/PopText.h"
+#include "Weapon/Bullet.h"
 
 FName AHeroPawn::SpriteComponentName(TEXT("Sprite0"));
 
@@ -146,7 +148,7 @@ AHeroPawn::AHeroPawn(const FObjectInitializer& ObjectInitializer): Super(ObjectI
     Scale = FVector(1, 1, 1);
 
     bReplicates = true;
-
+    BulletFireSpeed = 10;
 
 }
 
@@ -315,6 +317,10 @@ void AHeroPawn::Tick(float DeltaTime) {
         ABall *ball = FindBall();
         if (ball != nullptr && ball->Carrier == this) {
             ball->Shoot(Facing * 50);
+        } else
+        {
+            // Shoot a bullet if we are not carrying the ball
+            FireBullet();
         }
     }
 
@@ -548,10 +554,49 @@ void AHeroPawn::NotifyActorBeginOverlap(AActor *OtherActor) {
     //UE_LOG(LogTemp, Warning, TEXT("BEGIN OVERLAP"));
 }
 
-ABall *AHeroPawn::FindBall() {
-    ABall *ball = nullptr;
+ABall *AHeroPawn::FindBall() const
+{
+    ABall *Ball = nullptr;
     for (TActorIterator<ABall> ActorItr(GetWorld()); ActorItr; ++ActorItr) {
-        ball =  Cast<ABall>(*ActorItr);
+        Ball =  Cast<ABall>(*ActorItr);
     }
-    return ball;
+    return Ball;
+}
+
+void AHeroPawn::FireBullet()
+{
+    if (BulletClass == nullptr)
+    {
+        UE_LOG(LogTemp, Error, TEXT("Trying to fire a bullet with undefined class. Assign BulletClass to this actor."));
+        return;
+    }
+
+    UPaperFlipbook *FlipBook = Sprite->GetFlipbook();
+    UPaperSprite *FirstSprite = FlipBook->GetSpriteAtFrame(0);
+    FPaperSpriteSocket *WeaponSocket = FirstSprite->FindSocket(TEXT("WeaponSocket"));
+    FVector SpawnLocation;
+    
+    if (WeaponSocket == nullptr)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("No WeaponSocket found in this Sprite. Using Actor Location."));
+        SpawnLocation = GetActorLocation();
+    } else
+    {
+        FVector FacingVector = WeaponSocket->LocalTransform.GetLocation();
+        FacingVector.X *= Facing;
+        SpawnLocation = GetActorLocation() + FacingVector;
+    }
+    
+    ABullet *Bullet = GetWorld()->SpawnActor<ABullet>(BulletClass, SpawnLocation, FRotator(), FActorSpawnParameters());
+    Bullet->Shoot(BulletFireSpeed);
+}
+
+void AHeroPawn::ApplyDamage(float Amount)
+{
+    if (CombatTextClass == nullptr)
+    {
+        UE_LOG(LogTemp, Error, TEXT("Missing CombatTextClass. Please assign it in the BP."));
+        return;
+    }
+    GetWorld()->SpawnActor<APopText>(CombatTextClass, GetActorLocation(),FRotator(), FActorSpawnParameters());
 }

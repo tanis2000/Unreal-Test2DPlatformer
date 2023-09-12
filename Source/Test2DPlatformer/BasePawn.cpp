@@ -49,6 +49,12 @@ bool ABasePawn::MoveH(float moveH) {
 			if (entity != nullptr)
 			{
 				SubPixelCounter.X = 0.0f;
+				OnCollide(entity);
+				if (entity->IsA(ABasePawn::StaticClass()))
+				{
+					ABasePawn *BasePawn = Cast<ABasePawn>(entity);
+					BasePawn->OnCollide(entity);
+				}
                 /*
 				if (onCollide != nullptr)
                 {
@@ -79,6 +85,12 @@ bool ABasePawn::MoveV(float moveV) {
 			if (entity != nullptr)
 			{
 				SubPixelCounter.Z = 0.0f;
+				OnCollide(entity);
+				if (entity->IsA(ABasePawn::StaticClass()))
+				{
+					ABasePawn *BasePawn = Cast<ABasePawn>(entity);
+					BasePawn->OnCollide(entity);
+				}
                 /*
 				if (onCollide != nullptr)
                 {
@@ -102,6 +114,12 @@ bool ABasePawn::MoveV(float moveV) {
 			if (entity != nullptr)
 			{
 				SubPixelCounter.Z = 0.0f;
+				OnCollide(entity);
+				if (entity->IsA(ABasePawn::StaticClass()))
+				{
+					ABasePawn *BasePawn = Cast<ABasePawn>(entity);
+					BasePawn->OnCollide(entity);
+				}
                 /*
 				if (onCollide != nullptr)
                 {
@@ -113,6 +131,12 @@ bool ABasePawn::MoveV(float moveV) {
 			if (!IgnoreJumpThrus && ((entity = CollideFirst(TEXT("JumpThru"), GetActorLocation().X, GetActorLocation().Z + 1.0f)) != nullptr))
 			{
 				SubPixelCounter.Z = 0.0f;
+				OnCollide(entity);
+				if (entity->IsA(ABasePawn::StaticClass()))
+				{
+					ABasePawn *BasePawn = Cast<ABasePawn>(entity);
+					BasePawn->OnCollide(entity);
+				}
                 /*
 				if (onCollide != nullptr)
                 {
@@ -220,4 +244,8 @@ FVector ABasePawn::ActualPosition()
 {
     FVector location = GetActorLocation();
     return FVector(location.X + SubPixelCounter.X, location.Y + SubPixelCounter.Y, location.Z + SubPixelCounter.Z);
+}
+
+void ABasePawn::OnCollide(AActor* Actor)
+{
 }

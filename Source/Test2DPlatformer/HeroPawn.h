@@ -7,6 +7,9 @@
 #include "BasePawn.h"
 #include "HeroPawn.generated.h"
 
+class APopText;
+class ABullet;
+
 UCLASS()
 
 class TEST2DPLATFORMER_API AHeroPawn : public ABasePawn {
@@ -93,6 +96,15 @@ public:
     UPROPERTY(EditDefaultsOnly, Category=Pawn)
     class UParticleSystem *PuffEmitter;
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Bullet")
+    TSubclassOf<ABullet> BulletClass;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Bullet")
+    float BulletFireSpeed;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Damage")
+    TSubclassOf<APopText> CombatTextClass;
+    
     int Facing = 1;
 
     bool UseOwnCamera = false;
@@ -135,6 +147,7 @@ public:
 
     int32 PlayerId;
 
-    class ABall *FindBall();
-
+    class ABall *FindBall() const;
+    void FireBullet();
+    void ApplyDamage(float Amount);
 };
