@@ -8,16 +8,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="129c40e4-7501-4939-81a1-a8b7aab55aeb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/BP_LeaderboardActor.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MainMenuGM.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MainMenuPawn.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/BP_ScoreRow.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/WBP_LeaderboardEntry.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/WBP_MainMenu.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/WBP_EnterName.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerGameState.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerGameState.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test2DPlatformer.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test2DPlatformer.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_MainMenuGM.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MainMenuGM.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_MainMenuPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MainMenuPawn.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Main.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Main.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformer.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/BP_ScoreRow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/BP_ScoreRow.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_LeaderboardEntry.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_LeaderboardEntry.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_MainMenu.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Leaderboard/LeaderboardActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Leaderboard/LeaderboardActor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Leaderboard/LeaderboardActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Leaderboard/LeaderboardActor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerPlayerState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerPlayerState.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerPlayerState.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/PlatformerPlayerState.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Test2DPlatformer/Test2DPlatformerGameMode.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,28 +53,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;UnrealLinkOptionsId&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "leaderboard",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "UnrealLinkOptionsId",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/tanis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/tanis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
-      &quot;/Users/tanis/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/tanis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
+      "/Users/tanis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
+      "/Users/tanis/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Test2DPlatformer" type="Uproject" factoryName="rider.uproject">
       <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Test2DPlatformer.uproject" />
@@ -115,7 +121,7 @@
       <configuration_6>
         <option name="CONFIGURATION" value="Development Editor" />
         <option name="PLATFORM" value="Mac" />
-        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.3/Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor" />
+        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.3/Engine/Binaries/Mac/UnrealEditor" />
         <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../Shared/EpicGames/UE_5.3" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;$PROJECT_DIR$/Test2DPlatformer.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
@@ -146,7 +152,7 @@
       <workItem from="1694419935892" duration="218000" />
       <workItem from="1694420481496" duration="715000" />
       <workItem from="1694421330499" duration="1432000" />
-      <workItem from="1694426159755" duration="2741000" />
+      <workItem from="1694426159755" duration="8872000" />
     </task>
     <servers />
   </component>

@@ -6,6 +6,18 @@
 #include "GameFramework/Actor.h"
 #include "LeaderboardActor.generated.h"
 
+USTRUCT(BlueprintType)
+struct FScore
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString Name;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 Score;
+};
+
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDataLoaded, AActor*, InstigatorActor);
 
 UCLASS()
@@ -43,10 +55,10 @@ public:
 	void RetrieveData();
 
 	UFUNCTION(BlueprintCallable)
-	TArray<FString> GetScores();
+	TArray<FScore> GetScores();
 
 private:
-	TArray<FString> Scores;
+	TArray<FScore> Scores;
 
 	UPROPERTY(BlueprintAssignable, Category = "Attributes")
 	FOnDataLoaded OnDataLoaded;

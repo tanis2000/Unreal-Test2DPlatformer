@@ -111,15 +111,22 @@ void ALeaderboardActor::ProcessMemberObject(const TSharedPtr<FJsonObject>& JsonR
 		if (JsonResponseObject->TryGetStringField("publicID", name))
 		{
 			UE_LOG(LogTemp, Display, TEXT("Added %s"), *FString(name));
-			Scores.Add(name);
 		}
+		
+		int32 Score = 0;
+		if (JsonResponseObject->TryGetNumberField("score", Score))
+		{
+			UE_LOG(LogTemp, Display, TEXT("Added %d"), Score);
+		}
+		FScore Sc = { name, Score };
+		Scores.Add(Sc);
 	} else
 	{
 		UE_LOG(LogTemp, Error, TEXT("Error processing member object"));
 	}
 }
 
-TArray<FString> ALeaderboardActor::GetScores()
+TArray<FScore> ALeaderboardActor::GetScores()
 {
 	return Scores;
 }

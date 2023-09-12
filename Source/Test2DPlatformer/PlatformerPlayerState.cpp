@@ -9,16 +9,22 @@ APlatformerPlayerState::APlatformerPlayerState(const FObjectInitializer& ObjectI
 {
 	/* AI will remain in team 0, players are updated to team 1 through the GameMode::InitNewPlayer */
 	TeamNumber = 0;
+	ClearData();
 }
 
+void APlatformerPlayerState::ClearData()
+{
+	NumKills = 0;
+	NumDeaths = 0;
+	SetScore(0);
+	PlayerDisplayName = FText();
+}
 
 void APlatformerPlayerState::Reset()
 {
 	Super::Reset();
 
-	NumKills = 0;
-	NumDeaths = 0;
-	SetScore(0);
+	ClearData();
 }
 
 void APlatformerPlayerState::AddKill()
@@ -67,6 +73,16 @@ int32 APlatformerPlayerState::GetDeaths() const
 	return NumDeaths;
 }
 
+FText APlatformerPlayerState::GetPlayerDisplayName() const
+{
+	return PlayerDisplayName;
+}
+
+void APlatformerPlayerState::SetPlayerDisplayName(const FText Name)
+{
+	PlayerDisplayName = Name;
+}
+
 void APlatformerPlayerState::GetLifetimeReplicatedProps(TArray< class FLifetimeProperty > & OutLifetimeProps) const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
@@ -74,6 +90,7 @@ void APlatformerPlayerState::GetLifetimeReplicatedProps(TArray< class FLifetimeP
 	DOREPLIFETIME(APlatformerPlayerState, NumKills);
 	DOREPLIFETIME(APlatformerPlayerState, NumDeaths);
 	DOREPLIFETIME(APlatformerPlayerState, TeamNumber);
+	DOREPLIFETIME(APlatformerPlayerState, PlayerDisplayName);
 }
 
 
