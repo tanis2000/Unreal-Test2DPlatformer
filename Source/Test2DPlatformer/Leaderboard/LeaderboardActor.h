@@ -57,6 +57,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 	TArray<FScore> GetScores();
 
+	UFUNCTION(BlueprintCallable)
+	void SubmitScore(FString Name, int32 Score);
+
 private:
 	TArray<FScore> Scores;
 

@@ -130,3 +130,33 @@ TArray<FScore> ALeaderboardActor::GetScores()
 {
 	return Scores;
 }
+
+void ALeaderboardActor::SubmitScore(FString Name, int32 Score)
+{
+	UE_LOG(LogTemp, Display, TEXT("Submitting score"));
+	const FString Url = "https://podium.altralogica.it/l/" + GameName + "/members/" + Name + "/score";
+	FHttpModule& HttpModule = FHttpModule::Get();
+	const TSharedRef<IHttpRequest, ESPMode::ThreadSafe> LeaderBoardRequest = HttpModule.CreateRequest();
+	LeaderBoardRequest->SetVerb("PUT");
+	LeaderBoardRequest->SetURL(Url);
+	LeaderBoardRequest->SetContentAsString("{\"score\":" + FString::FromInt(Score) + "}");
+	LeaderBoardRequest->OnProcessRequestComplete().BindLambda(
+	[&](FHttpRequestPtr pRequest,
+		FHttpResponsePtr pResponse,
+		bool connectedSuccessfully) mutable
+	{
+		if (connectedSuccessfully)
+		{
+			UE_LOG(LogTemp, Error, TEXT("Score submitted."));
+		} else
+		{
+			switch (pRequest->GetStatus()) {
+			case EHttpRequestStatus::Failed_ConnectionError:
+				UE_LOG(LogTemp, Error, TEXT("Connection failed."));
+			default:
+				UE_LOG(LogTemp, Error, TEXT("Request failed."));
+			}
+		}
+	});
+	LeaderBoardRequest->ProcessRequest();
+}
