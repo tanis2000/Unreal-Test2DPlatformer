@@ -8,10 +8,13 @@ public class Test2DPlatformer : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "AIModule", "Core", "CoreUObject", "Engine", "GameplayTasks", "InputCore", "Paper2D" });
+		PublicDependencyModuleNames.AddRange(new string[] { "AIModule", "Core", "CoreUObject", "Engine", "GameplayTasks", "InputCore", "Paper2D", "UMG" });
 
 		// The following is needed for the online leaderboard
 		PrivateDependencyModuleNames.AddRange(new string[]{"HTTP", "Json", "JsonUtilities"});
+		
+		// Needed by UMG
+		PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
 		
 		//PrivateDependencyModuleNames.AddRange(new string[] {  });
 

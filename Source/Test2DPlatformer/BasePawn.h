@@ -57,4 +57,5 @@ public:
 
     FVector ActualPosition();
 
+	virtual void OnCollide(AActor *Actor);
 };

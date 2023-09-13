@@ -14,7 +14,7 @@ ATest2DPlatformerGameMode::ATest2DPlatformerGameMode(const FObjectInitializer& O
 : Super(ObjectInitializer)
 {
     // set default pawn class to our character
-    //DefaultPawnClass = ATestCharacter::StaticClass();
+	// This is going to be overridden with BP_Hero in the BP of this GameMode
     DefaultPawnClass = AHeroPawn::StaticClass();
     SpectatorClass = APlatformerSpectatorPawn::StaticClass();
     PlayerControllerClass = AFAPPlayerController::StaticClass();
