@@ -1,6 +1,6 @@
-# Unreal Engine 4 2D Platformer Project
+# Unreal Engine 5 2D Platformer Project
 
-This is a personal project that I use as testbed for different features for 2D games made with Unreal Engine 4.
+This is a personal project that I use as testbed for different features for 2D games made with Unreal Engine 5.
 
 I am biased towards C++ code so there's a sparse usage of blueprints over this project. 
 
@@ -10,12 +10,15 @@ I am biased towards C++ code so there's a sparse usage of blueprints over this p
 - arcade-style controls (movement, jumps, etc..)
 - behavior tree based AI
 - navigation mesh
+- combat text
+- leaderboard
+- menus
 
 I'm pretty sure there's more interesting stuff in there, but this is the main content.
 
 ## License
 
-Copyright 2015-2019 Valerio Santinelli
+Copyright 2015-2023 Valerio Santinelli
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
