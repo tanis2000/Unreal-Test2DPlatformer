@@ -8,6 +8,8 @@
 #include "GameFramework/Actor.h"
 #include "PopText.generated.h"
 
+class UPopTextWidget;
+
 UCLASS()
 class TEST2DPLATFORMER_API APopText : public AActor
 {
@@ -21,10 +23,10 @@ public:
 	TObjectPtr<UBillboardComponent> Billboard;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TSubclassOf<UUserWidget> StartingWidgetClass;
+	TSubclassOf<UPopTextWidget> StartingWidgetClass;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-	TObjectPtr<UUserWidget> CurrentWidget;
+	TObjectPtr<UPopTextWidget> CurrentWidget;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float Duration;
@@ -44,5 +46,8 @@ protected:
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	
 	void UpdatePosition(float DeltaTime);
+
+	void SetContent(FString Content);
 };

@@ -3,6 +3,7 @@
 
 #include "PopText.h"
 
+#include "PopTextWidget.h"
 #include "Kismet/GameplayStatics.h"
 
 
@@ -24,7 +25,7 @@ void APopText::BeginPlay()
 {
 	Super::BeginPlay();
 	UE_LOG(LogTemp, Display, TEXT("Attempting to create widget"));
-	CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), StartingWidgetClass);
+	CurrentWidget = CreateWidget<UPopTextWidget>(GetWorld(), StartingWidgetClass);
 	CurrentWidget->AddToViewport();
 
 	CurrentDuration = Duration;
@@ -61,6 +62,15 @@ void APopText::UpdatePosition(float DeltaTime)
 	FVector2d ScreenPosition;
 	UGameplayStatics::ProjectWorldToScreen(GetWorld()->GetFirstPlayerController(), WorldLocation, ScreenPosition);
 	CurrentWidget->SetPositionInViewport(ScreenPosition);
+}
+
+void APopText::SetContent(FString Content)
+{
+	if (CurrentWidget == nullptr)
+	{
+		return;
+	}
+	CurrentWidget->SetContent(Content);
 }
 
 // void APopText::ChangeWidget(TSubclassOf<UUserWidget> NewWidgetClass)

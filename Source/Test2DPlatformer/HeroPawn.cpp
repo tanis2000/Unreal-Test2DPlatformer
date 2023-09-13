@@ -598,5 +598,6 @@ void AHeroPawn::ApplyDamage(float Amount)
         UE_LOG(LogTemp, Error, TEXT("Missing CombatTextClass. Please assign it in the BP."));
         return;
     }
-    GetWorld()->SpawnActor<APopText>(CombatTextClass, GetActorLocation(),FRotator(), FActorSpawnParameters());
+    APopText *Pop = GetWorld()->SpawnActor<APopText>(CombatTextClass, GetActorLocation(),FRotator(), FActorSpawnParameters());
+    Pop->SetContent(FString::FromInt(Amount));
 }
