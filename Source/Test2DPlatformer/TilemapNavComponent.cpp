@@ -57,7 +57,7 @@ void UTilemapNavComponent::BeginPlay()
                             WayPoint wp = WayPoint();
                             wp.Location = FVector(x * 16,
                                                   0,
-                                                  ((MapHeight-1)-y+1)*16 -((MapHeight-1)*16 - actor->GetActorLocation().Z));
+                                                  (MapHeight * 16) - (y * 16));
                             WayPoints.Add(wp);
                             UE_LOG(LogTemp, Log, TEXT("WP %s"), *wp.Location.ToString());
                         }
@@ -103,7 +103,7 @@ void UTilemapNavComponent::BeginPlay()
 
                             //FVector spawnLocation = FVector(link.Start->Location.X, 0, link.Start->Location.Z);
                             FVector spawnLocation = FVector(0, 0, 0);
-                            FRotator spawnRotation(0.0f, -90.0f, 0.0f);
+                            FRotator spawnRotation(0.0f, 0.0f, 0.0f);
                             FActorSpawnParameters spawnParameters;
                             ANavLinkProxy *navLinkProxy = GetWorld()->SpawnActor<ANavLinkProxy>(spawnLocation, spawnRotation, spawnParameters);
                             //FNavigationLink point = navLinkProxy->PointLinks[0];
@@ -120,8 +120,8 @@ void UTilemapNavComponent::BeginPlay()
 							navLinks[0].SetAreaClass(UNavArea_Jump::StaticClass());
                             */
               
-							navLinkProxy->PointLinks[0].Left = FVector(0, link.Start->Location.X, link.Start->Location.Z);
-                            navLinkProxy->PointLinks[0].Right = FVector(0, link.End->Location.X, link.End->Location.Z);
+							navLinkProxy->PointLinks[0].Left = FVector(link.Start->Location.X, 0, link.Start->Location.Z);
+                            navLinkProxy->PointLinks[0].Right = FVector(link.End->Location.X, 0, link.End->Location.Z);
                             navLinkProxy->PointLinks[0].SnapRadius = 8.0f;
                             navLinkProxy->PointLinks[0].SnapHeight = 8.0f;
                             navLinkProxy->PointLinks[0].bUseSnapHeight = true;

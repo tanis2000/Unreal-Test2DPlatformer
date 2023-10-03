@@ -56,6 +56,30 @@ void UJumpingPathFollowingComponent::SetMovementComponent(UNavMovementComponent*
     PlatformerMovementComponent = Cast<UPlatformerPawnMovementComponent>(MovementComp);
 }
 
+void UJumpingPathFollowingComponent::FollowPathSegment(float DeltaTime)
+{
+    Super::FollowPathSegment(DeltaTime);
+
+    if (Path && DrawDebug)
+    {
+        // Just draw the current path
+        Path->DebugDraw(MyNavData, FColor::White, nullptr, false, 1.0f);
+		
+        // Draw the start point of the current path segment we are traveling.
+        FNavPathPoint CurrentPathPoint{};
+        FNavigationPath::GetPathPoint(&Path->AsShared().Get(), GetCurrentPathIndex(), CurrentPathPoint);
+        DrawDebugLine(GetWorld(), CurrentPathPoint.Location, CurrentPathPoint.Location + FVector(0.f, 0.f, 200.f), FColor::Blue);
+        DrawDebugSphere(GetWorld(), CurrentPathPoint.Location + FVector(0.f, 0.f, 200.f), 25.f, 16, FColor::Blue);
+
+        // Draw the end point of the current path segment we are traveling.
+        FNavPathPoint NextPathPoint{};
+        FNavigationPath::GetPathPoint(&Path->AsShared().Get(), GetNextPathIndex(), NextPathPoint);
+        DrawDebugLine(GetWorld(), NextPathPoint.Location, NextPathPoint.Location + FVector(0.f, 0.f, 200.f), FColor::Green);
+        DrawDebugSphere(GetWorld(), NextPathPoint.Location + FVector(0.f, 0.f, 200.f), 25.f, 16, FColor::Green);
+    }
+}
+
+
 
 
 

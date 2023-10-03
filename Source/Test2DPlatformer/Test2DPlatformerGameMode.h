@@ -11,7 +11,7 @@
  * 
  */
 UCLASS()
-class TEST2DPLATFORMER_API ATest2DPlatformerGameMode : public AGameMode
+class TEST2DPLATFORMER_API ATest2DPlatformerGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
 	
