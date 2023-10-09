@@ -15,7 +15,7 @@ struct FScore
 	FString Name;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int32 Score;
+	int32 Score = 0;
 };
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDataLoaded, AActor*, InstigatorActor);

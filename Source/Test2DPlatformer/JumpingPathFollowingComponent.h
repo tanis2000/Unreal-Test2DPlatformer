@@ -24,7 +24,7 @@ protected:
 
 	/** cached UPlatformerPawnMovementComponent */
 	UPROPERTY(transient)
-	class UPlatformerPawnMovementComponent *PlatformerMovementComponent;
+	class UPlatformerPawnMovementComponent *PlatformerMovementComponent = nullptr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="JumpingPathFollowingComponent")
 	bool DrawDebug;

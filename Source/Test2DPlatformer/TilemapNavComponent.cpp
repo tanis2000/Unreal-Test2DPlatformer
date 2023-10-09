@@ -27,39 +27,46 @@ void UTilemapNavComponent::BeginPlay()
 {
 	Super::BeginPlay();
 
-    AActor *actor = GetOwner();
-    if (actor != nullptr) {
-        TileMapComponent = actor->FindComponentByClass<UPaperTileMapComponent>();
+    AActor *Actor = GetOwner();
+    if (Actor != nullptr) {
+        TileMapComponent = Actor->FindComponentByClass<UPaperTileMapComponent>();
         if (TileMapComponent != nullptr) {
             TileMapComponent->GetMapSize(MapWidth, MapHeight, NumLayers);
-            UE_LOG(LogTemp, Warning, TEXT("Map size, X: %d, Y: %d Layers: %d"), MapWidth, MapHeight, NumLayers);
+            UE_LOG(LogTemp, Warning, TEXT("Map size, X: %d, Y: %d Layers: %d - Using layer %d"), MapWidth, MapHeight, NumLayers, NavLayer);
 
             // Build the connection between jumping/fallout positions
             for (int32 y = 0 ; y < MapHeight; y++) {
                 for (int32 x = 0 ; x < MapWidth; x++) {
-                    FPaperTileInfo tile = TileMapComponent->GetTile(x, y, NavLayer);
-                    int32 tileIndex = tile.GetTileIndex();
-                    int32 packedTileIndex = tile.PackedTileIndex;
-                    if (packedTileIndex != INDEX_NONE) {
-                        UE_LOG(LogTemp, Log, TEXT("X: %d, Y: %d, Tile: %d"), x, y, tile.GetTileIndex());
+                    FPaperTileInfo Tile = TileMapComponent->GetTile(x, y, NavLayer);
+                    int32 TileIndex = Tile.GetTileIndex();
+                    int32 PackedTileIndex = Tile.PackedTileIndex;
+                    if (PackedTileIndex != INDEX_NONE) {
+                        UE_LOG(LogTemp, Log, TEXT("X: %d, Y: %d, TileIndex: %d, PackedTileIndex: %d"), x, y, TileIndex, PackedTileIndex);
 
-                        FPaperTileInfo upTile = TileMapComponent->GetTile(x, y-1, NavLayer);
+                        FPaperTileInfo UpTile = TileMapComponent->GetTile(x, y-1, NavLayer);
                         FPaperTileInfo upLeftTile = TileMapComponent->GetTile(x-1, y-1, NavLayer);
                         FPaperTileInfo upRightTile = TileMapComponent->GetTile(x+1, y-1, NavLayer);
                         FPaperTileInfo leftTile = TileMapComponent->GetTile(x-1, y, NavLayer);
                         FPaperTileInfo rightTile = TileMapComponent->GetTile(x+1, y, NavLayer);
-                        if (upTile.PackedTileIndex == INDEX_NONE) {
+                        if (UpTile.PackedTileIndex == INDEX_NONE) {
                             /*
                             var wp:WayPoint = new WayPoint(x*16+4, (y-1)*16+4, wpCount, "awp"+wpCount, state);
                             waypoints.push(wp);
                             wpCount++;
                              */
-                            WayPoint wp = WayPoint();
-                            wp.Location = FVector(x * 16,
+                            WayPoint WP = WayPoint();
+                            WP.Location = FVector(x * 16,
                                                   0,
                                                   (MapHeight * 16) - (y * 16));
-                            WayPoints.Add(wp);
-                            UE_LOG(LogTemp, Log, TEXT("WP %s"), *wp.Location.ToString());
+                            WayPoints.Add(WP);
+                            UE_LOG(LogTemp, Log, TEXT("WP %s"), *WP.Location.ToString());
+                        	if (WayPointClassMarker.Get() != nullptr)
+                        	{
+                        		FVector Location = WP.Location;
+                        		Location.Y = 100;
+                        		GetWorld()->SpawnActor(WayPointClassMarker, &Location);
+                        	}
+                        	
                         }
                         /*
                         if (upLeftTile.PackedTileIndex == INDEX_NONE

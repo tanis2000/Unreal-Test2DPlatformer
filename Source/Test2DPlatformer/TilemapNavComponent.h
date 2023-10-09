@@ -32,17 +32,23 @@ class TEST2DPLATFORMER_API UTilemapNavComponent : public UActorComponent
 {
 	GENERATED_BODY()
 private:
-    UPaperTileMapComponent* TileMapComponent;
-    int32 MapWidth;
-    int32 MapHeight;
-    int32 NumLayers;
+	UPROPERTY()
+    UPaperTileMapComponent* TileMapComponent = nullptr;
+	
+    int32 MapWidth = 0;
+    int32 MapHeight = 0;
+    int32 NumLayers = 0;
     TArray<WayPoint> WayPoints;
     TArray<Link> Links;
 
 public:
 
-    uint32 NavLayer;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+    int32 NavLayer = 0; // By default we use the first layer
 
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<AActor> WayPointClassMarker;
+	
 	// Sets default values for this component's properties
 	UTilemapNavComponent();
 
