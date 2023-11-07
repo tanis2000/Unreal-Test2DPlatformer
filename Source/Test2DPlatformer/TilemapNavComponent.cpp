@@ -8,6 +8,7 @@
 #include "NavLinkCustomComponent.h"
 #include "NavArea_Jump.h"
 #include "Engine/World.h"
+#include "Navigation/PlatformerNavLinkProxy.h"
 
 
 // Sets default values for this component's properties
@@ -27,6 +28,11 @@ void UTilemapNavComponent::BeginPlay()
 {
 	Super::BeginPlay();
 
+	if (!bEnableLinkGeneration)
+	{
+		return;
+	}
+	
     AActor *Actor = GetOwner();
     if (Actor != nullptr) {
         TileMapComponent = Actor->FindComponentByClass<UPaperTileMapComponent>();
@@ -60,6 +66,7 @@ void UTilemapNavComponent::BeginPlay()
                                                   (MapHeight * 16) - (y * 16));
                             WayPoints.Add(WP);
                             UE_LOG(LogTemp, Log, TEXT("WP %s"), *WP.Location.ToString());
+                        	// Create the billboard to show the marked areas
                         	if (WayPointClassMarker.Get() != nullptr)
                         	{
                         		FVector Location = WP.Location;
@@ -101,18 +108,22 @@ void UTilemapNavComponent::BeginPlay()
                     if (wp1 != wp2) {
                         //trace(wp1.x + ","+wp1.y+" - " + wp2.x+","+wp2.y);
                         FHitResult hit;
-                        bool traceRes = GetWorld()->LineTraceSingleByChannel(hit, wp1.Location, wp2.Location, ECC_WorldStatic);
-                        if (FVector::Dist(wp1.Location, wp2.Location) < 16*5 /* && !traceRes */) {
+                        bool traceRes = GetWorld()->LineTraceSingleByChannel(hit, wp1.Location, wp2.Location, ECC_Visibility);
+                        if (FVector::Dist(wp1.Location, wp2.Location) < 16*5  && !traceRes) {
                             Link link = Link();
                             link.Start = &wp1;
                             link.End = &wp2;
                             Links.Add(link);
 
                             //FVector spawnLocation = FVector(link.Start->Location.X, 0, link.Start->Location.Z);
+                        	// This has to be in 0,0,0 because the links are relative
                             FVector spawnLocation = FVector(0, 0, 0);
                             FRotator spawnRotation(0.0f, 0.0f, 0.0f);
                             FActorSpawnParameters spawnParameters;
-                            ANavLinkProxy *navLinkProxy = GetWorld()->SpawnActor<ANavLinkProxy>(spawnLocation, spawnRotation, spawnParameters);
+                        	FString Name = FString::Printf(TEXT("NLP_%ls_%ls"), *link.Start->Location.ToString(), *link.End->Location.ToString());
+                        	spawnParameters.Name = "";
+                        	spawnParameters.Name.AppendString(Name);
+                            APlatformerNavLinkProxy *navLinkProxy = GetWorld()->SpawnActor<APlatformerNavLinkProxy>(spawnLocation, spawnRotation, spawnParameters);
                             //FNavigationLink point = navLinkProxy->PointLinks[0];
 
                             /*
@@ -133,9 +144,13 @@ void UTilemapNavComponent::BeginPlay()
                             navLinkProxy->PointLinks[0].SnapHeight = 8.0f;
                             navLinkProxy->PointLinks[0].bUseSnapHeight = true;
                             navLinkProxy->PointLinks[0].SetAreaClass(UNavArea_Jump::StaticClass());
-							
+
+                        	navLinkProxy->SetSmartLinkEnabled(true);
 							UNavLinkCustomComponent* smartLink = navLinkProxy->GetSmartLinkComp();
-							smartLink->SetEnabled(false);
+							smartLink->SetEnabled(true);
+                        	smartLink->SetLinkData(navLinkProxy->PointLinks[0].Left, navLinkProxy->PointLinks[0].Right, ENavLinkDirection::BothWays);
+                        	smartLink->SetEnabledArea(navLinkProxy->PointLinks[0].GetAreaClass());
+                        	smartLink->SetNavigationRelevancy(true);
                         }
                     }
                 }

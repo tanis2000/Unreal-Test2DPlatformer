@@ -8,100 +8,104 @@
 
 void UJumpingPathFollowingComponent::SetMoveSegment(int32 SegmentStartIndex)
 {
-    Super::SetMoveSegment(SegmentStartIndex);
+	Super::SetMoveSegment(SegmentStartIndex);
 
-    if (CharacterMoveComp != nullptr)
-    {
-        const FNavPathPoint& SegmentStart = Path->GetPathPoints()[MoveSegmentStartIndex];
+	if (!bUseNavAreas)
+	{
+		return;
+	}
 
-        if (FNavAreaHelper::HasJumpFlag(SegmentStart))
-        {
-            //UE_LOG(LogTemp, Warning, TEXT("Has Jump flag."));
-            // jump! well... fly-in-straight-line!
-            CharacterMoveComp->SetMovementMode(MOVE_Flying);
-        }
-        else
-        {
-            //UE_LOG(LogTemp, Warning, TEXT("Missing Jump flag."));
-            // regular move
-            CharacterMoveComp->SetMovementMode(MOVE_Walking);
-        }
-    }
+	if (CharacterMoveComp != nullptr)
+	{
+		const FNavPathPoint& SegmentStart = Path->GetPathPoints()[MoveSegmentStartIndex];
 
-    if (PlatformerMovementComponent != nullptr)
-    {
-        const FNavPathPoint& SegmentStart = Path->GetPathPoints()[MoveSegmentStartIndex];
-        if (FNavAreaHelper::IsNavLink(SegmentStart))
-        {
-            UE_LOG(LogTemp, Display, TEXT("Path is nav link"));
-        }
-        if (Path->ContainsAnyCustomLink())
-        {
-            UE_LOG(LogTemp, Display, TEXT("Path contains custom link"));
-        }
+		if (FNavAreaHelper::HasJumpFlag(SegmentStart))
+		{
+			//UE_LOG(LogTemp, Warning, TEXT("Has Jump flag."));
+			// jump! well... fly-in-straight-line!
+			CharacterMoveComp->SetMovementMode(MOVE_Flying);
+		}
+		else
+		{
+			//UE_LOG(LogTemp, Warning, TEXT("Missing Jump flag."));
+			// regular move
+			CharacterMoveComp->SetMovementMode(MOVE_Walking);
+		}
+	}
 
-        if (FNavAreaHelper::HasJumpFlag(SegmentStart))
-        {
-            //UE_LOG(LogTemp, Warning, TEXT("Has Jump flag."));
-            // jump! well... fly-in-straight-line!
-            PlatformerMovementComponent->SetMovementMode(MOVE_Flying);
-        }
-        else
-        {
-            //UE_LOG(LogTemp, Warning, TEXT("Missing Jump flag."));
-            // regular move
-            PlatformerMovementComponent->SetMovementMode(MOVE_Walking);
-        }
-    }
-
+	if (PlatformerMovementComponent != nullptr)
+	{
+		const FNavPathPoint& SegmentStart = Path->GetPathPoints()[MoveSegmentStartIndex];
+		if (FNavAreaHelper::IsNavLink(SegmentStart))
+		{
+			UE_LOG(LogTemp, Display, TEXT("Path is nav link"));
+		}
+		if (Path->ContainsAnyCustomLink())
+		{
+			UE_LOG(LogTemp, Display, TEXT("Path contains custom link"));
+		}
+	}
 }
 
 void UJumpingPathFollowingComponent::SetMovementComponent(UNavMovementComponent* MoveComp)
 {
-    Super::SetMovementComponent(MoveComp);
+	Super::SetMovementComponent(MoveComp);
 
-    CharacterMoveComp = Cast<UCharacterMovementComponent>(MovementComp);
-    PlatformerMovementComponent = Cast<UPlatformerPawnMovementComponent>(MovementComp);
+	CharacterMoveComp = Cast<UCharacterMovementComponent>(MovementComp);
+	PlatformerMovementComponent = Cast<UPlatformerPawnMovementComponent>(MovementComp);
 }
 
 void UJumpingPathFollowingComponent::FollowPathSegment(float DeltaTime)
 {
-    Super::FollowPathSegment(DeltaTime);
+	Super::FollowPathSegment(DeltaTime);
 
-    if (Path && DrawDebug)
-    {
-        // Just draw the current path
-        // Path->DebugDraw(MyNavData, FColor::White, nullptr, false, 1.0f);
-		
-        // // Draw the start point of the current path segment we are traveling.
-        // FNavPathPoint CurrentPathPoint{};
-        // FNavigationPath::GetPathPoint(&Path->AsShared().Get(), GetCurrentPathIndex(), CurrentPathPoint);
-        // DrawDebugLine(GetWorld(), CurrentPathPoint.Location, CurrentPathPoint.Location + FVector(0.f, 0.f, 200.f), FColor::Blue);
-        // DrawDebugSphere(GetWorld(), CurrentPathPoint.Location + FVector(0.f, 0.f, 200.f), 25.f, 16, FColor::Blue);
-        //
-        // // Draw the end point of the current path segment we are traveling.
-        // FNavPathPoint NextPathPoint{};
-        // FNavigationPath::GetPathPoint(&Path->AsShared().Get(), GetNextPathIndex(), NextPathPoint);
-        // DrawDebugLine(GetWorld(), NextPathPoint.Location, NextPathPoint.Location + FVector(0.f, 0.f, 200.f), FColor::Green);
-        // DrawDebugSphere(GetWorld(), NextPathPoint.Location + FVector(0.f, 0.f, 200.f), 25.f, 16, FColor::Green);
-    }
+	if (!bUseNavAreas)
+	{
+		return;
+	}
 
-    if (Path && PlatformerMovementComponent != nullptr)
-    {
-        FVector Target = Path->GetPathPointLocation(GetNextPathIndex()).Position;
-        if (Target.Z > GetOwner()->GetActorLocation().Z)
-        {
-            // UE_LOG(LogTemp, Display, TEXT("We should jump"));
-            PlatformerMovementComponent->SetMovementMode(MOVE_Flying);
-        } else
-        {
-            PlatformerMovementComponent->SetMovementMode(MOVE_Walking);
-        }
-    }
-    
+	if (Path && DrawDebug)
+	{
+		// Just draw the current path
+		// Path->DebugDraw(MyNavData, FColor::White, nullptr, false, 1.0f);
+
+		// // Draw the start point of the current path segment we are traveling.
+		// FNavPathPoint CurrentPathPoint{};
+		// FNavigationPath::GetPathPoint(&Path->AsShared().Get(), GetCurrentPathIndex(), CurrentPathPoint);
+		// DrawDebugLine(GetWorld(), CurrentPathPoint.Location, CurrentPathPoint.Location + FVector(0.f, 0.f, 200.f), FColor::Blue);
+		// DrawDebugSphere(GetWorld(), CurrentPathPoint.Location + FVector(0.f, 0.f, 200.f), 25.f, 16, FColor::Blue);
+		//
+		// // Draw the end point of the current path segment we are traveling.
+		// FNavPathPoint NextPathPoint{};
+		// FNavigationPath::GetPathPoint(&Path->AsShared().Get(), GetNextPathIndex(), NextPathPoint);
+		// DrawDebugLine(GetWorld(), NextPathPoint.Location, NextPathPoint.Location + FVector(0.f, 0.f, 200.f), FColor::Green);
+		// DrawDebugSphere(GetWorld(), NextPathPoint.Location + FVector(0.f, 0.f, 200.f), 25.f, 16, FColor::Green);
+	}
+
+	if (Path && PlatformerMovementComponent != nullptr)
+	{
+		const FNavPathPoint& SegmentStart = Path->GetPathPoints()[MoveSegmentStartIndex];
+		if (FNavAreaHelper::HasJumpFlag(SegmentStart))
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Has Jump flag."));
+			Target = Path->GetPathPointLocation(GetNextPathIndex()).Position;
+			if (Target.Z > GetOwner()->GetActorLocation().Z)
+			{
+				// jump! well... fly-in-straight-line!
+				UE_LOG(LogTemp, Warning, TEXT("Target is higher than us, jumping -> %s"), *Target.ToString());
+				PlatformerMovementComponent->SetMovementMode(MOVE_Flying);
+			}
+			else
+			{
+				// regular move
+				UE_LOG(LogTemp, Warning, TEXT("Target is lower than us, walking -> %s"), *Target.ToString());
+				PlatformerMovementComponent->SetMovementMode(MOVE_Walking);
+			}
+		}
+		else
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Missing Jump flag."));
+			PlatformerMovementComponent->SetMovementMode(MOVE_Walking);
+		}
+	}
 }
-
-
-
-
-

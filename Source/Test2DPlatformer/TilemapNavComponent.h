@@ -43,11 +43,14 @@ private:
 
 public:
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TilemapNavComponent")
     int32 NavLayer = 0; // By default we use the first layer
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category="TilemapNavComponent")
 	TSubclassOf<AActor> WayPointClassMarker;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="TilemapNavComponent")
+	bool bEnableLinkGeneration = true;
 	
 	// Sets default values for this component's properties
 	UTilemapNavComponent();

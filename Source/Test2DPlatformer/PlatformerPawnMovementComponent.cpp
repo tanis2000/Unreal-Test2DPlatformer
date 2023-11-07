@@ -13,7 +13,7 @@ bool UPlatformerPawnMovementComponent::HasValidData() const
 
 void UPlatformerPawnMovementComponent::TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction)
 {
-    const FVector InputVector = ConsumeInputVector();
+    //const FVector InputVector = ConsumeInputVector();
     if (!HasValidData() || ShouldSkipUpdate(DeltaTime))
     {
         return;
@@ -58,11 +58,11 @@ void UPlatformerPawnMovementComponent::PerformMovement(float DeltaSeconds)
         //FRotator rotator = FRotator();
         //MoveUpdatedComponent(delta, rotator, false);
         //UE_LOG(LogTemp, Warning, TEXT("Velocity: %s"), *Velocity.ToString());
-        FVector inputVector = ConsumeInputVector();
+        // FVector inputVector = ConsumeInputVector();
         //UE_LOG(LogTemp, Warning, TEXT("Input vector: %s"), *inputVector.ToString());
         FVector amount = FVector(Velocity.X, Velocity.Y, Velocity.Z);
         amount.Normalize();
-		if (!amount.IsZero()) {
+		if (!amount.IsNearlyZero(1e-6f)) {
 			if (MovementMode == MOVE_Flying) {
 				pawn->Jump(amount * moveMultiplier * 50 * DeltaSeconds);
 			}

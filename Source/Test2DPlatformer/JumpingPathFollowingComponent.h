@@ -28,6 +28,12 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="JumpingPathFollowingComponent")
 	bool DrawDebug;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="JumpingPathFollowingComponent")
+	FVector Target;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="JumpingPathFollowingComponent")
+	bool bUseNavAreas = true;
 	
 public:
 	// used to detect properties of a path's segment a character is about to follow
