@@ -7,6 +7,8 @@
 UPixelPerfectCameraComponent::UPixelPerfectCameraComponent(const FObjectInitializer &ObjectInitializer) : Super(ObjectInitializer) {
     ProjectionMode = ECameraProjectionMode::Orthographic;
     bConstrainAspectRatio = true;
+    bUpdateOrthoPlanes = false;
+    bUseCameraHeightAsViewTarget = false;
 
     // Prevent all automatic rotation behavior on the camera, character, and camera component
     bUsePawnControlRotation = false;
@@ -32,7 +34,7 @@ void UPixelPerfectCameraComponent::BestFit() {
     float width = height * aspect;
 
     SetAspectRatio(aspect);
-    OrthoWidth = DesignWidth;
+    SetOrthoWidth(DesignWidth);
 
 }
 

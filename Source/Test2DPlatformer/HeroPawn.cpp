@@ -49,6 +49,12 @@ AHeroPawn::AHeroPawn(const FObjectInitializer& ObjectInitializer): Super(ObjectI
     RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
     UE_LOG(LogTemp, Warning, TEXT("TEST"));
 
+    RunAnimation = CreateDefaultSubobject<UPaperFlipbook>("RunAnimation");
+    JumpAnimation = CreateDefaultSubobject<UPaperFlipbook>("JumpAnimation");
+    FallAnimation = CreateDefaultSubobject<UPaperFlipbook>("FallAnimation");
+    WallGrabAnimation = CreateDefaultSubobject<UPaperFlipbook>("WallGrabAnimation");
+    ShootAnimation = CreateDefaultSubobject<UPaperFlipbook>("ShootAnimation");
+
     // Try to create the sprite component
     Sprite = CreateOptionalDefaultSubobject<UPaperFlipbookComponent>(AHeroPawn::SpriteComponentName);
     if (Sprite) {
@@ -216,6 +222,15 @@ void AHeroPawn::Tick(float DeltaTime) {
         kFire = false;
     }
 
+    // Reset the animation states;
+    bIsFalling = false;
+    bHasLanded = false;
+    bIsJumping = false;
+    bHasGrabbedWall = false;
+    bIsShooting = false;
+    bIsRunning = false;
+    
+    // Landed
     if (BottomCollided && !OnGroundPrev) {
         // Squash + stretch
         Scale.X = 1.5f;
@@ -223,6 +238,9 @@ void AHeroPawn::Tick(float DeltaTime) {
         if (PuffEmitter != nullptr) {
             UGameplayStatics::SpawnEmitterAttached(PuffEmitter, Sprite);
         }
+
+        bHasLanded = true;
+
         /*
         var pos = transform.position;
         pos.y -= coll.bounds.size.y/2;
@@ -246,6 +264,7 @@ void AHeroPawn::Tick(float DeltaTime) {
     } else if (((kRight && LeftCollided) || (kLeft && RightCollided)) && canStick && !BottomCollided) {
         sticking = true;
         canStick = false;
+        bHasGrabbedWall = true;
     }
 
     if ((kRight || kLeft) && sticking) {
@@ -261,9 +280,12 @@ void AHeroPawn::Tick(float DeltaTime) {
             if(OnRightPrev) Velocity.Z = 0;
 
             Velocity.Z = Approach(Velocity.Z, -vyMax, -gravSlide);
+            bIsFalling = true;
+            bHasGrabbedWall = true;
         } else {
             // Fall normally
             Velocity.Z = Approach(Velocity.Z, -vyMax, -gravNorm);
+            bIsFalling = true;
         }
     }
 
@@ -272,10 +294,12 @@ void AHeroPawn::Tick(float DeltaTime) {
     {
         Facing = -1;
         Velocity.X = Approach(Velocity.X, -vxMax, tempAccel);
+        bIsRunning = true;
         // Right
     } else if (kRight && !kLeft && !sticking) {
         Facing = 1;
         Velocity.X = Approach(Velocity.X, vxMax, tempAccel);
+        bIsRunning = true;
     }
 
     // Friction
@@ -296,6 +320,7 @@ void AHeroPawn::Tick(float DeltaTime) {
             Velocity.X = 0;//vxMax;
             Velocity.Z = jumpHeightStickY;
         }
+        bIsJumping = true;
     } else if (kJump && RightCollided && !BottomCollided) {
         Scale.X = 0.5f;
         Scale.Z = 1.5f;
@@ -307,6 +332,7 @@ void AHeroPawn::Tick(float DeltaTime) {
             Velocity.X = 0;//-vxMax;
             Velocity.Z = jumpHeightStickY;
         }
+        bIsJumping = true;
     }
     // Fire
     if(kFire){
@@ -322,6 +348,7 @@ void AHeroPawn::Tick(float DeltaTime) {
             // Shoot a bullet if we are not carrying the ball
             FireBullet();
         }
+        bIsShooting = true;
     }
 
     // Ladders
@@ -346,11 +373,13 @@ void AHeroPawn::Tick(float DeltaTime) {
             Scale.X = 0.5f;
             Scale.Z = 1.5f;
             Velocity.Z = jumpHeight;
+            bIsJumping = true;
         } else if (!doubleJumped && !LeftCollided && !RightCollided) {
             Scale.X = 0.5f;
             Scale.Z = 1.5f;
             Velocity.Z = jumpHeight;
             doubleJumped = true;
+            bIsJumping = true;
         }
         // Variable jumping
     } /*else if (kDown && !physicsComponent.bottomCollided) {
@@ -361,13 +390,13 @@ void AHeroPawn::Tick(float DeltaTime) {
             Velocity.Z *= 0.25f;
     }
 
-    // Jump state check
-    if (!BottomCollided) {
-        if (LeftCollided)
-            Facing = 1;
-        if (RightCollided)
-            Facing = -1;
-    }
+    // Swap the direction the sprite is facing if wall-grabbing
+    // if (!BottomCollided) {
+    //     if (LeftCollided)
+    //         Facing = 1;
+    //     if (RightCollided)
+    //         Facing = -1;
+    // }
 
     Scale.X = Approach(Scale.X, 1.0f, 0.05f);
     Scale.Z = Approach(Scale.Z, 1.0f, 0.05f);
@@ -393,6 +422,7 @@ void AHeroPawn::Tick(float DeltaTime) {
     TopCollided = CollideFirst(TEXT("Solid"), GetActorLocation().X, GetActorLocation().Z+1) != nullptr;
     RightCollided = CollideFirst(TEXT("Solid"), GetActorLocation().X+1, GetActorLocation().Z) != nullptr;
 
+    UpdateAnimation();
 
     /*
      * Old movement code
@@ -600,4 +630,49 @@ void AHeroPawn::ApplyDamage(float Amount)
     }
     APopText *Pop = GetWorld()->SpawnActor<APopText>(CombatTextClass, GetActorLocation(),FRotator(), FActorSpawnParameters());
     Pop->SetContent(FString::FromInt(Amount));
+}
+
+void AHeroPawn::UpdateAnimation()
+{
+    if (bIsShooting)
+    {
+        Sprite->SetFlipbook(ShootAnimation);
+        Sprite->SetLooping(false);
+        Sprite->Play();
+    }
+    else if (bIsJumping)
+    {
+        Sprite->SetFlipbook(JumpAnimation);
+        Sprite->SetLooping(false);
+        Sprite->Play();
+    }
+    else if (bHasGrabbedWall)
+    {
+        Sprite->SetFlipbook(WallGrabAnimation);
+        Sprite->SetLooping(false);
+        Sprite->Play();
+    }
+    else if (bIsFalling)
+    {
+        Sprite->SetFlipbook(FallAnimation);
+        Sprite->SetLooping(false);
+        Sprite->Play();
+    }
+    else if (bHasLanded)
+    {
+        Sprite->SetFlipbook(IdleAnimation);
+        Sprite->SetLooping(false);
+        Sprite->Play();
+    }
+    else if (bIsRunning)
+    {
+        Sprite->SetFlipbook(RunAnimation);
+        Sprite->SetLooping(true);
+        Sprite->Play();
+    } else
+    {
+        Sprite->SetFlipbook(IdleAnimation);
+        Sprite->SetLooping(false);
+        Sprite->Play();
+    }
 }

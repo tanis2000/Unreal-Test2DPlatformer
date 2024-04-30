@@ -49,9 +49,16 @@ void ALeaderboardActor::RetrieveData()
 			ProcessLeaderboardResponse(pResponse.Get()->GetContentAsString());
 		} else
 		{
-			switch (pRequest->GetStatus()) {
-			case EHttpRequestStatus::Failed_ConnectionError:
-				UE_LOG(LogTemp, Error, TEXT("Connection failed."));
+			switch (pRequest->GetStatus())
+			{
+			case EHttpRequestStatus::Failed:
+				switch (pRequest->GetFailureReason())
+				{
+				case EHttpFailureReason::ConnectionError:
+					UE_LOG(LogTemp, Error, TEXT("Connection failed."));
+				default:
+					UE_LOG(LogTemp, Error, TEXT("Request failed."));
+				}
 			default:
 				UE_LOG(LogTemp, Error, TEXT("Request failed."));
 			}
@@ -82,7 +89,7 @@ void ALeaderboardActor::ProcessLeaderboardObject(const TSharedPtr<FJsonValue>& J
 	if (JsonResponseValue)
 	{
 		const TArray<TSharedPtr<FJsonValue>> *OutArray;
-		if (JsonResponseValue.Get()->AsObject()->TryGetArrayField("members", OutArray))
+		if (JsonResponseValue.Get()->AsObject()->TryGetArrayField(TEXT("members"), OutArray))
 		{
 			ProcessMembersList(*OutArray);
 		}
@@ -108,13 +115,13 @@ void ALeaderboardActor::ProcessMemberObject(const TSharedPtr<FJsonObject>& JsonR
 	if (JsonResponseObject)
 	{
 		FString name = TEXT("");
-		if (JsonResponseObject->TryGetStringField("publicID", name))
+		if (JsonResponseObject->TryGetStringField(TEXT("publicID"), name))
 		{
 			UE_LOG(LogTemp, Display, TEXT("Added %s"), *FString(name));
 		}
 		
 		int32 Score = 0;
-		if (JsonResponseObject->TryGetNumberField("score", Score))
+		if (JsonResponseObject->TryGetNumberField(TEXT("score"), Score))
 		{
 			UE_LOG(LogTemp, Display, TEXT("Added %d"), Score);
 		}
@@ -150,9 +157,16 @@ void ALeaderboardActor::SubmitScore(FString Name, int32 Score)
 			UE_LOG(LogTemp, Error, TEXT("Score submitted."));
 		} else
 		{
-			switch (pRequest->GetStatus()) {
-			case EHttpRequestStatus::Failed_ConnectionError:
-				UE_LOG(LogTemp, Error, TEXT("Connection failed."));
+			switch (pRequest->GetStatus())
+			{
+			case EHttpRequestStatus::Failed:
+				switch (pRequest->GetFailureReason())
+				{
+				case EHttpFailureReason::ConnectionError:
+					UE_LOG(LogTemp, Error, TEXT("Connection failed."));
+				default:
+					UE_LOG(LogTemp, Error, TEXT("Request failed."));
+				}
 			default:
 				UE_LOG(LogTemp, Error, TEXT("Request failed."));
 			}

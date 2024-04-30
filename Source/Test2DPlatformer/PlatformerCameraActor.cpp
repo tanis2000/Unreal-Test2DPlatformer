@@ -30,6 +30,8 @@ void APlatformerCameraActor::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	// We need to run BestFit here because doing it in the constructor gets overridden since UE5.4, no idea why
+	SpectatorCameraComponent->BestFit();
 }
 
 // Called every frame

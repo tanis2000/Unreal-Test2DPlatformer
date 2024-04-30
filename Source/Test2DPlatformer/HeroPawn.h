@@ -57,9 +57,23 @@ private:
 protected:
     // The animation to play while idle (standing still)
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
-
     class UPaperFlipbook *IdleAnimation;
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
+    class UPaperFlipbook *RunAnimation;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
+    class UPaperFlipbook *JumpAnimation;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
+    class UPaperFlipbook *FallAnimation;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
+    class UPaperFlipbook *WallGrabAnimation;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
+    class UPaperFlipbook *ShootAnimation;
+    
     FVector CurrentVelocity;
 
 public:
@@ -87,6 +101,15 @@ public:
     bool OnLadderPrev;
 
     bool Dead;
+
+    // States to drive animations
+    bool bIsShooting;
+    bool bIsFalling;
+    bool bIsJumping;
+    bool bHasLanded;
+    bool bHasGrabbedWall;
+    bool bIsRunning;
+    // End of states
 
     UPROPERTY(Category = Character, EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
     FVector Velocity;
@@ -150,4 +173,6 @@ public:
     class ABall *FindBall() const;
     void FireBullet();
     void ApplyDamage(float Amount);
+
+    void UpdateAnimation();
 };
