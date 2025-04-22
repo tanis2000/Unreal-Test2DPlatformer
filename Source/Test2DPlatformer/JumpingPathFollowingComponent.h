@@ -40,7 +40,8 @@ public:
 	virtual void SetMoveSegment(int32 SegmentStartIndex) override;
 
 	// used to cache UCharacterMovementComponent we're using in SetMoveSegment implementation
-	virtual void SetMovementComponent(UNavMovementComponent* MoveComp) override;
+	// virtual void SetMovementComponent(UNavMovementComponent* MoveComp) override;
+	virtual void SetNavMovementInterface(INavMovementInterface* NavMoveInterface) override;
 	
 	virtual void FollowPathSegment(float DeltaTime) override;
 };

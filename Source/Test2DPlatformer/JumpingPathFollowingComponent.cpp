@@ -47,12 +47,13 @@ void UJumpingPathFollowingComponent::SetMoveSegment(int32 SegmentStartIndex)
 	}
 }
 
-void UJumpingPathFollowingComponent::SetMovementComponent(UNavMovementComponent* MoveComp)
+void UJumpingPathFollowingComponent::SetNavMovementInterface(INavMovementInterface* NavMoveInterface)
 {
-	Super::SetMovementComponent(MoveComp);
+	Super::SetNavMovementInterface(NavMoveInterface);
 
-	CharacterMoveComp = Cast<UCharacterMovementComponent>(MovementComp);
-	PlatformerMovementComponent = Cast<UPlatformerPawnMovementComponent>(MovementComp);
+	// TODO: I am not 100% sure this is the way to go now.
+	CharacterMoveComp = Cast<UCharacterMovementComponent>(NavMovementInterface.Get());
+	PlatformerMovementComponent = Cast<UPlatformerPawnMovementComponent>(NavMovementInterface.Get());
 }
 
 void UJumpingPathFollowingComponent::FollowPathSegment(float DeltaTime)
